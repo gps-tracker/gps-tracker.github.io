@@ -38,3 +38,26 @@ affix-top{position:relative;top:20px !important;margin-bottom:-65px;box-sizing:c
 affix-top{margin-left:150px;margin-right:150px;}
 }
 .slider .slides li .caption{top:60%;}
+.brand-logo {
+	top: 3px;
+}
+
+#menu-img {
+	margin-top: 6px;
+}
+
+.nav-icon {
+	margin-bottom: -6px;
+}
+
+.btn-large {
+	text-transform:none;
+	font-size: 1.4em;
+	margin: 10px;
+	width: 200px;
+	
+}
+
+.mobile-link {
+	font-size: 1.3em;
+}
