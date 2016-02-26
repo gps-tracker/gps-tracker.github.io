@@ -1,184 +1,40 @@
-/* Custom Stylesheet */
-
-
-/**
- * Use this file to override Materialize files so you can update
- * the core Materialize files in the future
- *
- * Made By MaterializeCSS.com
- */
-
-html {
-	font-family: 'Trebuchet MS';
-}
-
+html{font-family:'Trebuchet MS';}
 nav ul a,
-nav .brand-logo {
-	color: #444;
-	font-size: 1.18em;
+nav .brand-logo{color:#444;font-size:1.18em;}
+p{line-height:2rem;}
+.button-collapse{color:#26a69a;margin-left:10px;}
+.parallax-container{min-height:380px;line-height:0;height:auto;color:rgba(255, 255, 255, .9);}
+.parallax-container .section{width:100%;}
+@media only screen and (max-width:992px){.parallax-container .section{position:absolute;top:40%;}
+#index-banner .section{top:10%;}
 }
-
-p {
-	line-height: 2rem;
+@media only screen and (max-width:600px){#index-banner .section{top:0;}
 }
-
-.button-collapse {
-	color: #26a69a;
-	margin-left: 10px;
-}
-
-.parallax-container {
-	min-height: 380px;
-	line-height: 0;
-	height: auto;
-	color: rgba(255, 255, 255, .9);
-}
-
-.parallax-container .section {
-	width: 100%;
-}
-
-@media only screen and (max-width: 992px) {
-	.parallax-container .section {
-		position: absolute;
-		top: 40%;
-	}
-	#index-banner .section {
-		top: 10%;
-	}
-}
-
-@media only screen and (max-width: 600px) {
-	#index-banner .section {
-		top: 0;
-	}
-}
-
-.icon-block {
-	padding: 0 15px;
-}
-
-.icon-block .material-icons {
-	font-size: inherit;
-}
-
-footer.page-footer {
-	margin: 0;
-}
-
+.icon-block{padding:0 15px;}
+.icon-block .material-icons{font-size:inherit;}
+footer.page-footer{margin:0;}
 #titleport,
-valign {
-	vertical-align: middle;
-}
-
-.no-pad {
-	padding: 0px;
-	font-size: 0px;
-}
-
-.no-mar {
-	margin: 0px;
-}
-
-#plat-btn {
-	color: #F16136;
-	-webkit-transition: font-size .5s, background-color .5s, color 2s;
-	/* Safari */
-	transition: font-size .5s, background-color .5s, color 2s;
-}
-
-#plat-btn:hover {
-	background-color: #F16136;
-	color: black;
-	font-size: 1.3em;
-}
-
-.card .card-action a:not(.btn):not(.btn-large):not(.btn-floating):hover {
-	color: inherit;
-}
-
-#contact-btn {
-	color: #2B5493;
-	-webkit-transition: font-size .5s, background-color .5s, color 2s;
-	/* Safari */
-	transition: font-size .5s, background-color .5s, color 2 s;
-}
-
-#contact-btn:hover {
-	background-color: #2196f3;
-	color: black;
-	font-size: 1.3em;
-}
-
+valign{vertical-align:middle;}
+.no-pad{padding:0px;font-size:0px;}
+.no-mar{margin:0px;}
+#plat-btn{color:#F16136;-webkit-transition:font-size .5s, background-color .5s, color 2s;transition:font-size .5s, background-color .5s, color 2s;}
+#plat-btn:hover{background-color:#F16136;color:black;font-size:1.3em;}
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-floating):hover{color:inherit;}
+#contact-btn{color:#2B5493;-webkit-transition:font-size .5s, background-color .5s, color 2s;transition:font-size .5s, background-color .5s, color 2 s;}
+#contact-btn:hover{background-color:#2196f3;color:black;font-size:1.3em;}
 .dropdown-content li > a,
-.button-collapse {
-	color: #2B5493;
+.button-collapse{color:#2B5493;}
+#footer-fix{position:fixed;left:0px;bottom:0px;height:70px;width:100%;}
+.slider{z-index:-1;}
+.black50{background-color:rgba(0, 0, 0, 0.7);border-radius:5px;padding:20px;}
+.nav{z-index:8;padding-left:10px;padding-right:10px;transition:all 0.5s;}
+@media only screen and (min-width:601px){.pin-top,
+affix-top{position:relative;top:20px !important;margin-bottom:-65px;box-sizing:content-box;margin-left:70px;margin-right:70px;width:auto;transition:all 0.2s;}
+.affix,
+.pinned{width:100%;margin-left:0px;margin-right:0px;z-index:3;}
+.up{top:-50px;position:relative;margin-bottom:-50px;}
 }
-
-#footer-fix {
-	position: fixed;
-	left: 0px;
-	bottom: 0px;
-	height: 70px;
-	width: 100%;
+@media only screen and (min-width:941px){.pin-top,
+affix-top{margin-left:150px;margin-right:150px;}
 }
-
-.slider {
-	z-index: -1;
-}
-
-.black50 {
-	background-color: rgba(0, 0, 0, 0.7);
-	border-radius: 5px;
-	padding: 20px;
-}
-
-.nav {
-	z-index: 8;
-	padding-left: 10px;
-	padding-right: 10px;
-	transition: all 0.5s;
-}
-
-
-
-
-/*without pushpin, use nav*/
-
-@media only screen and (min-width: 601px) {
-	.pin-top,
-	affix-top {
-		position: relative;
-		top: 20px !important;
-		margin-bottom: -65px;
-		box-sizing: content-box;
-		margin-left: 70px;
-		margin-right: 70px;
-		width: auto;
-		transition: all 0.2s;
-	}
-	.affix,
-	.pinned {
-		width: 100%;
-		margin-left: 0px;
-		margin-right: 0px;
-		z-index: 3;
-	}
-	.up {
-		top: -50px;
-		position: relative;
-		margin-bottom: -50px;
-	}
-}
-@media only screen and (min-width: 941px) {
-	.pin-top,
-	affix-top {
-		margin-left: 150px;
-		margin-right: 150px;
-	}
-}
-
-
-.slider .slides li .caption {
-	top: 60%;
-}
+.slider .slides li .caption{top:60%;}
