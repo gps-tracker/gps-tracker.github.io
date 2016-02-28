@@ -1,0 +1,591 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<title> GPS Tracker | Plataforma GPS A, acceder.</title>
+	<link rel="icon" href="images/favicon.ico">
+	<meta http-equiv="Content-Type" content="text/html; <charset></charset>=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Acceso a la plataforma de monitoreo satelital">
+
+	<!-- <CSS> 	</CSS> -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/materialize.css" />
+	<link rel="stylesheet" href="css/style.css" class="css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css" />
+
+	<!-- <PlatformJavascript></PlatformJavascript> -->
+	<script type="text/javascript" src="http://www.gpstrackerrls.com/js/gmapxz_v3.js"></script>
+	<script type="text/javascript" src="http://www.gpstrackerrls.com/js/component/adapter/ext/ext-base.js"></script>
+	<script type="text/javascript" src="http://www.gpstrackerrls.com/js/component/ext-all.js"></script>
+	<script type="text/javascript" src="http://www.gpstrackerrls.com/js/cookie.js"></script>
+	<script type="text/javascript" src="http://www.gpstrackerrls.com/js/extends/Ext.ux.JSLoader.js"></script>
+	<script type="text/javascript" src="http://www.gpstrackerrls.com/js/resource/res_es_es.js?v=1.0.7.2"></script>
+
+
+
+	<script language="javascript" type="text/javascript">
+		function async_load(url) {
+			var s = document.createElement('script');
+			s.type = 'text/javascript';
+			s.async = true;
+			s.src = url;
+			var x = document.getElementsByTagName('script')[0];
+			x.parentNode.insertBefore(s, x);
+		}
+
+		function window_onload() {
+			var meimaptype = getCookie("meimaptype") == null ? 0 : parseInt(getCookie("meimaptype"));
+			if (meimaptype == 2)
+				async_load('js/abcxz.js');
+			else if (meimaptype == 3 || meimaptype == 0)
+				async_load('js/gmapxz_v3.js');
+
+		}
+
+
+		/// <reference path="vswd-ext_2.2.js" />
+
+		/********************loginwindow.js*********************************
+
+		 *Create Date: 2009-12-10
+		 *Description : this js file use ext js to create AJAX login window for gpsserver
+		*********************************************************************/
+		Ext.onReady(function () {
+			var showSavePasswordAutoLogin = true; //是否显示Save Password,AutoLogin功能,该功能其他语种未能完成字符 ,标准版本暂时不能显示
+			var timAutoLogin = null;
+			//create login image 
+			var logoimage = new Ext.BoxComponent({
+				id: 'imglogo',
+				xtype: 'box',
+				width: 0,
+				//        height: 56,
+				style: '',
+				autoEl: {
+					tag: 'img',
+					src: 'images/favicon.ico'
+				}
+			});
+
+			//to create username label and input textbox
+			var username = new Ext.form.TextField({
+				fieldLabel: _Login_lblUserName,
+				labelStyle: 'padding-top:6px;padding-left:40px;width:90px;text-align: left',
+				width: 120,
+				listeners: {
+					'specialkey': function (txt, ev) {
+						if (ev.getKey() == ev.ENTER) {
+							query();
+						}
+					},
+					'keypress': function () {
+						if (timAutoLogin != null)
+							clearTimeout(timAutoLogin);
+					}
+				}
+			});
+
+			//to create password label and input textbox
+			var pwd = new Ext.form.TextField({
+				fieldLabel: _Login_lblPassword,
+				labelStyle: 'padding-top:6px;padding-left:40px;width:90px;text-align: left',
+				width: 120,
+				inputType: 'password',
+				listeners: {
+					'specialkey': function (txt, ev) {
+						if (ev.getKey() == ev.ENTER) {
+							query();
+						}
+					}
+				},
+				'keypress': function () {
+					if (timAutoLogin != null)
+						clearTimeout(timAutoLogin);
+				}
+
+			});
+
+			//to create login button
+			var butlogin = new Ext.Button({
+				id: 'butlogin',
+				text: _Login_butLogin,
+				style: 'margin-right:16px',
+				width: 80,
+				handler: function () {
+					query();
+				}
+			});
+
+			//to create reset button
+			var bugreset = new Ext.Button({
+				id: 'butreset',
+				text: _Login_butReset,
+				handler: function () {
+					username.setValue("");
+					pwd.setValue("");
+				}
+			});
+
+			var butrecoverpassowrd = new Ext.Button({
+				text: _Login_ForgetMyPassword,
+				handler: function () {
+					recoverPassword();
+				}
+			});
+
+
+			//to create AJAX message callback panel
+			var msgpanel = new Ext.Panel({
+				id: 'msg',
+				bodyStyle: 'margin-top:30px;font-size:12px;text-align:right;padding-right:10px;color:red',
+				height: 60,
+				border: false
+			});
+
+			//create a panel to put the buttons
+			var panelButton = new Ext.Panel({
+				layout: 'table',
+				border: false,
+				bodyStyle: 'padding-top:5px;padding-left:56px',
+				layoutConfig: {
+					columns: 2
+				},
+				items: [butlogin, butrecoverpassowrd]
+			});
+
+			var bolSavePassword = getCookie("savepassword") == "true" ? true : false;
+			var bolAutoLogin = getCookie("autologin") == "true" ? true : false;
+
+			var chkSavePassword = new Ext.form.Checkbox({
+				checked: bolSavePassword,
+				labelStyle: "text-align:center",
+				hideLabel: true,
+				boxLabel: _TrackerMain_SavePassword
+			});
+			var chkAutoLogin = new Ext.form.Checkbox({
+				checked: bolAutoLogin,
+				labelStyle: "text-align:center",
+				hideLabel: true,
+				boxLabel: _TrackerMain_AutoLogin
+			});
+
+			chkAutoLogin.on('check', function () {
+				if (timAutoLogin != null)
+					clearTimeout(timAutoLogin);
+			});
+			if (bolSavePassword) {
+				username.setValue(getCookie("defaultusername"));
+				pwd.setValue(getCookie("defaultpassword"));
+			}
+
+
+			var panelCheckAutoLogin = new Ext.Panel({
+				layout: 'table',
+				border: false,
+				bodyStyle: 'padding-top:5px;padding-left:56px',
+				layoutConfig: {
+					columns: 2
+				},
+				items: [{
+					layout: 'form',
+					colspan: 1,
+					border: false,
+					labelSeparator: "",
+					items: [chkSavePassword],
+					width: 120
+        }, {
+					layout: 'form',
+					colspan: 1,
+					border: false,
+					labelSeparator: "",
+					items: [chkAutoLogin]
+        }]
+			});
+
+
+			//create a panel to put all input
+			var panelInfo = new Ext.Panel({
+				id: 'infopanel',
+				width: 300,
+				height: 226,
+				bodyStyle: 'padding-top:20px',
+				border: false,
+				layout: 'form',
+				items: [username, pwd, panelButton, panelCheckAutoLogin, msgpanel]
+			});
+
+
+
+			//create panel login    
+			var panellogin = new Ext.Panel({
+				width: 300,
+				height: 326,
+				title: _Login_LoginStr,
+				//renderTo: 'login',
+				bodyStyle: 'padding-top:0px',
+				border: false,
+				//layout : 'table',
+				//layoutConfig:{columns:2},
+				labelAlign: 'right',
+				items: [logoimage, panelInfo]
+
+			});
+
+
+			var beian = '';
+			var panelLinkBeian = new Ext.Panel({
+				width: 300,
+				height: 20,
+				border: false,
+				html: '<div align="center"><font size="2" ><a href="http://www.miibeian.gov.cn" >' + beian + '</a></font></div>'
+			});
+			panellogin.add(panelLinkBeian);
+
+
+			var companyInfo = '';
+
+			var companyInfoPanel = new Ext.Panel({
+				width: 300,
+				height: 110,
+				border: false,
+				bodyStyle: 'font-size:12px;text-align:left;padding-left:10px',
+				html: companyInfo
+			});
+
+			var panelcontainer = new Ext.Panel({
+				width: 300,
+				//height: 256,
+				border: true,
+				//layout: 'fit',
+				renderTo: 'login',
+				items: [panellogin]
+			});
+
+			if (companyInfo.length > 0) {
+				panelcontainer.add(companyInfoPanel);
+				panelcontainer.doLayout();
+			}
+
+			username.focus(true);
+
+			//get time zone
+			function gettimezone() {
+				var now = new Date();
+				return now.getTimezoneOffset();
+			}
+
+			function msgEmailSent() {
+				Ext.MessageBox.buttonText.ok = _TrackerMain_OK;
+				Ext.Msg.show({
+					title: _TrackerMain_Title,
+					msg: _Login_EmailWithPasswordSent,
+					buttons: Ext.Msg.OK,
+					animEl: 'elId',
+					icon: Ext.MessageBox.INFO
+				});
+			}
+
+			function recoverPassword() {
+				var obj = panellogin.findById('msg');
+				var name = username.getValue();
+				if (name.trim().length <= 0) {
+					obj.body.update(_Login_UserNameEmpty);
+					obj.body.show();
+					window.setTimeout(function () {
+						obj.body.setDisplayed("none");
+					}, 1000);
+					return;
+				} else {
+					Ext.Ajax.request({
+						url: 'Handler/HandlerRecoverPassword.ashx',
+						method: 'post',
+						params: {
+							username: name
+						},
+						success: function (btn) {
+							var val = btn.responseText;
+							if (val == 0) {
+								obj.body.update(_Login_InvalidUserName);
+								obj.body.show();
+								window.setTimeout(function () {
+									obj.body.setDisplayed("none");
+								}, 2000);
+							} else if (val == 100) {
+								obj.body.update(_Login_NoEmail);
+								obj.body.show();
+								window.setTimeout(function () {
+									obj.body.setDisplayed("none");
+								}, 2000);
+							} else {
+								obj.body.update(_Login_EmailWithPasswordSent);
+								obj.body.show();
+								window.setTimeout(function () {
+									obj.body.setDisplayed("none");
+								}, 2000);
+								msgEmailSent();
+							}
+
+						}
+					});
+				}
+			}
+
+			//    var obj = panellogin.findById('msg');
+			//    obj.body.update('Server hardware upgrading at 3:00~5:00 P.M (USA GMT) on Jan., 18th, 2013. During this period, the server can be out of service for little time. Sorry for the inconvenience.');
+			//    obj.body.show();
+
+			//send request for login
+			function query() {
+				var obj = panellogin.findById('msg');
+				var name = username.getValue();
+				var password = pwd.getValue();
+				var tt = getCookie("gpstimezone");
+				var timezone;
+				if (tt != null)
+					timezone = parseInt(tt);
+				else
+					timezone = -gettimezone();
+				if (name.trim().length <= 0 || password.trim().length <= 0) {
+					obj.body.update(_Login_UserNamePasswordEmpty);
+					obj.body.show();
+					window.setTimeout(function () {
+						obj.body.setDisplayed("none");
+					}, 1000);
+					return;
+				}
+				Ext.MessageBox.show({
+					msg: _TrackerMain_Loading,
+					progressText: _TrackerMain_Loading,
+					width: 300,
+					wait: true,
+					waitConfig: {
+						interval: 200
+					},
+					icon: Ext.MessageBox.INFO
+				});
+				Ext.Ajax.request({
+					url: 'Handler/HandlerLogin.ashx',
+					method: 'post',
+					params: {
+						username: name,
+						password: password,
+						timezone: timezone
+					},
+					success: function (btn) {
+						var val = btn.responseText;
+						if (val == 0) {
+							obj.body.update(_Login_UserNamePasswordWrong);
+							obj.body.show();
+							window.setTimeout(function () {
+								obj.body.setDisplayed("none");
+							}, 1000);
+						} else if (val == 1) {
+							obj.body.update(_Login_AccountExpired);
+							obj.body.show();
+							window.setTimeout(function () {
+								obj.body.setDisplayed("none");
+							}, 1000);
+						} else if (val == 2) {
+							obj.body.update(_Login_AccountWillExpired);
+							obj.body.show();
+							window.setTimeout(function () {
+								window.location.href = 'trackermain.aspx';
+							}, 2000);
+						} else {
+							if (chkSavePassword.getValue()) {
+								setCookie("defaultusername", username.getValue(), 365);
+								setCookie("defaultpassword", pwd.getValue(), 365);
+								setCookie("savepassword", true, 365);
+
+							} else {
+								setCookie("savepassword", false, 365);
+							}
+							if (chkAutoLogin.getValue()) {
+								setCookie("autologin", true, 365);
+							} else
+								setCookie("autologin", false, 365);
+							window.location.href = val;
+						}
+						Ext.MessageBox.hide();
+					},
+					failure: function () {
+						Ext.MessageBox.hide();
+					}
+				});
+
+			}
+
+
+
+
+
+			// query();
+
+
+
+
+
+			if (bolAutoLogin) {
+				timAutoLogin = setTimeout(function () {
+					query();
+				}, 8000);
+			}
+
+			function loginPageLoadSkin() {
+				var skin = getCookie("gpsskin");
+				if (skin == null || skin == "blue") {} else if (skin == "indigo")
+					Ext.util.CSS.swapStyleSheet("theme", "js/component/resources/css/xtheme-indigo.css");
+				else if (skin == "black")
+					Ext.util.CSS.swapStyleSheet("theme", "js/component/resources/css/xtheme-darkgray.css");
+				else if (skin == "olive")
+					Ext.util.CSS.swapStyleSheet("theme", "js/component/resources/css/xtheme-olive.css");
+			}
+
+			function loginPageLoadLang() {
+
+
+			}
+
+			loginPageLoadSkin();
+			loginPageLoadLang();
+
+			//    var popupTransServer = true; //是否显示转换服务器信息
+
+			//    if (popupTransServer) {
+			//        var isChinese = false;
+			//        var lang = getCookie("gpslang");
+			//        var clientlang = window.navigator.language;
+			//        if (clientlang == null)
+			//            clientlang = window.navigator.systemLanguage;
+			//        if (lang == null) {
+			//            if (clientlang == "zh-cn" || clientlang == "zh-CN")
+			//                isChinese = true;
+			//        }
+			//        else if (lang == "zh-CN" || lang == "zh-cn")
+			//            isChinese = true;
+			//        var chsAbout = "由于服务器升级到云服务器级别及为您提供更好的服务，现运营的所有设备需要转移到云服务器上进行运营。届时平台会自动下发指令更改现有运营设备的IP地址到云平台，所有帐号及设备会自动迁移到新的服务器。转移时间会根据域名备案完成后开始，约2014年11月1号左右执行。请提前做好资料备份。如果出现转移失败的设备，请联系技术支持：jason.chin@meitrack.com QQ: 510444113 电话：0755-83462229转861";
+			//        var chsNotice = "重要通知";
+			//        var engAbout = "The server has changed. All users served by the previous server need to be transfered to another server";
+			//        var engNotice = "Notice";
+			//        var txtUpdate = new Ext.form.TextArea({
+			//            enableColors: false,
+			//            readOnly: true,
+			//            enableColors: false,
+			//            enableFont: false,
+			//            enableFontSize: false,
+			//            enableFormat: false,
+			//            enableLinks: false,
+			//            enableLists: false,
+			//            enableSourceEdit: false,
+			//            enableAlignments: false,
+			//            //value: isChinese ? chsAbout : engAbout
+			//            html: isChinese ? chsAbout : engAbout
+			//        });
+
+			//        var bugreset = new Ext.Button({
+			//            text: isChinese ? "详细信息" : "Details",
+			//            handler: function () {
+			//                if (isChinese)
+			//                    window.location.href = "chsTransServer.htm";
+			//                else
+			//                    window.location.href = "engTransServer.htm";
+			//            }
+			//        });
+
+			//        var aboutwin = new Ext.Window({
+			//            title: isChinese ? chsNotice : engNotice,
+			//            layout: 'fit',
+			//            x: 0,
+			//            y: 0,
+			//            height: 270,
+			//            width: 300,
+			//            iconCls: 'icon-about',
+			//            items: txtUpdate,
+			//            constrain: true,
+			//            buttons:[bugreset],
+			//            listeners: {
+			//                'minimize': function () {
+			//                    addTaskButtonForWindow(aboutwindow);
+			//                }
+			//            }
+			//        });
+
+			//        aboutwin.show();
+			//    }
+		});
+
+
+
+		//	    function loadScript() {
+		//	        setTimeout(function() {
+		//	            var script = document.createElement("script");
+		//	            script.type = "text/javascript";
+		//	            script.src = "http://maps.google.com/maps?file=api&amp;v=2&amp;key=";
+		//	            document.body.appendChild(script);
+		//	        }, 100);
+		//	    }
+	</script>
+</head>
+
+<body onload="return window_onload()">
+	<ul id="dropdown1" class="dropdown-content black-text">
+		<li><a href="plataforma-a.html">Plataforma A</a></li>
+		<li><a href="plataforma-b.html">Plataforma B</a></li>
+	</ul>
+	<!--    <nav>				</nav>	-->
+	<nav class="white" role="navigation">
+		<div class="nav-wrapper container">
+			<a id="logo-container" href="#" class="brand-logo"><img height="59px" src="images/logo-grande.png" alt="GPS tracker Logo"></a>
+			<ul class="right hide-on-med-and-down">
+				<li><a href="index.html">Empresa</a></li>
+				<li><a href="productos.html">Productos</a></li>
+				<li><a href="blog.html">blog</a></li>
+				<li><a id="contact-btn" href="contacto">Contactanos</a></li>
+				<li><a id="plat-btn" class="dropdown-button" href="#!" data-activates="dropdown1">Plataformas<i class="material-icons right">arrow_drop_down</i></a></li>
+			</ul>
+
+			<ul id="nav-mobile" class="side-nav">
+				<li><a href="index.html">Empresa</a></li>
+				<li><a href="productos.html">Productos</a></li>
+				<li><a href="blog.html">blog</a></li>
+				<li><a href="contacto.html">Habla con Nosotros</a></li>
+				<li><a href="plataforma-a.html">Plataforma A</a></li>
+				<li><a href="plataforma-b.html">Plataforma B</a></li>
+			</ul>
+			<a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+		</div>
+	</nav>
+	<main>
+	<div class="container center">
+		<h4 class="orange-text">Plataforma A</h4>
+	</div>
+	<!--   <main>		</main>-->
+	<form name="form1" method="post" action="trackerlogin.aspx" id="form1">
+		<div>
+			<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTQ2MTcwNDEyOGRkMLDlaNCLI/lHAQnAw3Xf7RMkwDY=" />
+		</div>
+
+		<div>
+
+			<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="61F893EF" />
+		</div>
+
+		<div id="login">
+			<!--    <div id="login" style="position: absolute; top: 30%; left: 35%;"> -->
+		</div>
+	</form>
+	</main>
+	<!--    <footer>		</footer>	-->
+	<footer class="page-footer indigo">
+		<div class="container center">
+			<h5>banner</h5>
+		</div>
+	</footer>
+	<!--  Scripts-->
+	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="js/materialize.js"></script>
+	<script src="js/init.js"></script>
+</body>
+
+</html>
