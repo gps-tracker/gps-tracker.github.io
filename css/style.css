@@ -124,10 +124,13 @@ valign {
 .nav {
 	margin-bottom: -64px;
 	position: relative;
-	z-index: 8;
+	z-index: 1003;
 	padding-left: 10px;
 	padding-right: 10px;
 	transition: all 0.5s;
+}
+.pinned{
+	z-index: 1003;
 }
 .brand-logo>img{
 	height: 53px;
@@ -138,7 +141,6 @@ valign {
 		position: relative;
 		top: 20px !important;
 		margin-bottom: -64px;
-
 		box-sizing: content-box;
 		margin-left: 70px;
 		margin-right: 70px;
@@ -152,11 +154,10 @@ valign {
 	.pinned {
 		
 		margin-bottom: -64px;
-		
 		width: 100%;
+		z-index: 1003;
 		margin-left: 0px;
 		margin-right: 0px;
-		z-index: 100;
 		transition: all 0s;
 	}
 	.up {
