@@ -122,3 +122,10 @@ iframe.plataforma {
 	position: relative;
 	left: -70px;
 }
+
+@media screen and (max-width: 601px) {
+	iframe.plataforma {
+		position: relative;
+		left: -191px;
+	}
+}
