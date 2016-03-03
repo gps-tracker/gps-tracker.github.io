@@ -204,7 +204,7 @@ valign {
 }
 
 .gradient {
-	height: 110px;
+	min-height: 110px;
 	background: #00C9FF;
 	/* fallback for old browsers */
 	background: -webkit-linear-gradient(to left, #00C9FF, #FFFFFF);
@@ -235,3 +235,4 @@ div.container.footer-copyright {
 	font-size: 0.8em;
 	
 }
+
