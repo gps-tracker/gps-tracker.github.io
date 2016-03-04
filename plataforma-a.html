@@ -25,14 +25,20 @@
 	</ul>
 	<!-- NAV BAR-->
 	<header>
+			<!-- Dropdown Structure -->
+		<ul id="dropdown1" class="dropdown-content black-text">
+			<li><a href="plataforma-a.html">Plataforma A</a></li>
+			<li><a href="plataforma-b.html">Plataforma B</a></li>
+		</ul>
+		<!-- NAV BAR-->
 		<nav class="white">
 			<div class="nav-wrapper " data-spy="affix" data-offset-top="100">
-				<a id="logo-container" href="#" class="brand-logo"><img height=59 src="images/logo-grande.png" alt="GPS tracker Logo"></a>
+				<a id="logo-container" href="./index.html" class="brand-logo"><img height=59 src="images/logo-grande.png" alt="GPS tracker Logo"></a>
 				<ul class="right hide-on-med-and-down">
 					<li><a href="index.html">Inicio</a></li>
 					<li><a href="empresa.html">Empresa</a></li>
-					<li><a id="contact-btn" href="./contacto.html">Contáctanos</a></li>
-					<li><a id="plat-btn" class="dropdown-button" href="#!" data-activates="dropdown1">Plataformas <img class="nav-icon" src="/images/arrow.png" alt="plataformas"></a></li>
+					<li><a id="contact-btn" href="/contacto.html">Contáctanos</a></li>
+					<li><a id="plat-btn" class="dropdown-button" data-activates="dropdown1">Plataformas <img class="nav-icon" src="/images/arrow.png" alt="plataformas"></a></li>
 				</ul>
 
 				<ul id="nav-mobile" class="side-nav">
@@ -42,7 +48,7 @@
 					<li><a href="plataforma-a.html">Plataforma A</a></li>
 					<li><a href="plataforma-b.html">Plataforma B</a></li>
 				</ul>
-				<a href="#" data-activates="nav-mobile" class="button-collapse"><img id="menu-img" src="/images/menu.png" alt="menu"></a>
+				<a data-activates="nav-mobile" class="button-collapse"><img id="menu-img" src="/images/menu.png" alt="menu"></a>
 			</div>
 		</nav>
 	</header>
