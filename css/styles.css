@@ -136,3 +136,6 @@ iframe.plataforma {
     min-height: 100vh;
     flex-direction: column;
   }
+#logo-container{
+	height: 44px;
+}
