@@ -17,15 +17,15 @@
 	<link rel="stylesheet" type="text/css" href="css/styles.css" />
 </head>
 
-<body>
+<body onresize="resize()">
 	<!-- Dropdown Structure -->
 	<ul id="dropdown1" class="dropdown-content black-text">
 		<li><a href="plataforma-a.html">Plataforma A</a></li>
 		<li><a href="plataforma-b.html">Plataforma B</a></li>
 	</ul>
 	<!-- NAV BAR-->
-	<header>
-			<!-- Dropdown Structure -->
+	<header style="z-index: 1;">
+		<!-- Dropdown Structure -->
 		<ul id="dropdown1" class="dropdown-content black-text">
 			<li><a href="plataforma-a.html">Plataforma A</a></li>
 			<li><a href="plataforma-b.html">Plataforma B</a></li>
@@ -53,20 +53,35 @@
 		</nav>
 	</header>
 	<main>
-		<div class="container center plataforma">
-			<iframe onLoad="alert(this.contentWindow.location.href);" class="plataforma" src="http://www.gpstrackerls.com/" frameborder="0" height="480" width="490"></iframe>
-		</div>
+		<iframe id="iframe" onLoad="console.log(this.contentWindow.location.href);" class="plataforma" src="http://www.gpstrackerls.com/" frameborder="0"></iframe>
 	</main>
 	<!--    <footer>		</footer>	-->
-	<footer class="page-footer indigo">
+	<!--<footer class="page-footer indigo">
 		<div class="container center valing-wrapper">
 			<h5 class="valign">banner</h5>
 		</div>
-	</footer>
+	</footer>-->
 	<!--  Scripts-->
 	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 	<script src="js/materialize.js"></script>
 	<script src="js/init.js"></script>
+	<script>
+		$(document).ready(function () {
+			resize();
+		});
+
+		function resize() {
+			var x = window.innerWidth;
+			var y = window.innerHeight;
+			document.getElementById("iframe").style.width = x + "px";
+			document.getElementById("iframe").style.height = y - 10 - 28 + "px";
+			console.log(document.getElementById("iframe").style.height);
+			console.log(x)
+			console.log(y)
+
+			console.log("resized!")
+		}
+	</script>
 </body>
 
 </html>

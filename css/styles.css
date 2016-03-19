@@ -119,8 +119,9 @@ div.container.footer-copyright {
 }
 
 iframe.plataforma {
-	position: relative;
-	left: -70px;
+	/*position: relative;*/
+	/*left: -70px;*/
+	margin-top: -34px;	
 }
 
 @media screen and (max-width: 601px) {
