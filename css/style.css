@@ -196,12 +196,29 @@ valign {
 	margin-bottom: -6px;
 }
 
-.btn-large.orange {
+.btn-large.orange:not(.btn-floating) {
 	text-transform: none;
 	font-size: 1.4em;
 	margin: 10px;
 	min-width: 200px;
 	max-width: 300px;
+}
+
+.btn-large.orange:hover:not(.btn-floating) {
+	text-transform: none;
+	font-size: 1.7em;
+	min-width: 200px;
+	max-width: 300px;
+}
+.btn-large.orange.btn-floating i:hover {
+	text-transform: none;
+	font-size: 2.6em;
+	transition: all 0.3s;
+}
+.btn-large.orange.btn-floating i {
+	text-transform: none;
+	font-size: 1.7em;
+	transition: all 0.3s;
 }
 
 .mobile-link {
@@ -319,8 +336,8 @@ h1.impacto {
 }
 
 #cap4 {
-	margin-top: -320px;
-	margin-bottom: 220px;
+	margin-top: -200px;
+	margin-bottom: 50px;
 }
 
 #cap4 h1.impacto {
@@ -343,6 +360,31 @@ h1.impacto {
 	margin-top: -25px;
 	left: 55px;
 	text-shadow: 0 1px 2px #000;
+}
+
+@media only screen and (max-width:350px) {
+	#cap4 {
+		margin-top: -150px;
+		margin-bottom: 0px;
+	}
+	cap4 h1.impacto {
+		font-size: 1.72.3em;
+		text-shadow: 0 1px 2px #000;
+	}
+	#cap4 h2.impacto {
+		font-size: 0.8em;
+		text-shadow: 0 1px 2px #000;
+	}
+	#cap4 .imp-1 {
+		margin-bottom: -25px;
+		left: 0px;
+		text-shadow: 0 1px 2px #000;
+	}
+	#cap4 .imp-3 {
+		margin-top: -25px;
+		left: 0px;
+		text-shadow: 0 1px 2px #000;
+	}
 }
 
 #cap2 span {
