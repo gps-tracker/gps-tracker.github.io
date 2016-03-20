@@ -277,13 +277,13 @@ h1.impacto {
 }
 
 .imp-1 {
-	margin-bottom: -35px;
+	margin-bottom: -30px;
 	left: -100px;
 	text-shadow: 0 0px 6px #000;
 }
 
 .imp-3 {
-	margin-top: -35px;
+	margin-top: -30px;
 	left: 115px;
 	text-shadow: 0 0px 4px #000;
 }
@@ -305,6 +305,7 @@ h1.impacto {
 		top: 100px;
 	}
 }
+
 @media only screen and (min-width:600px) {
 	#cap1 {
 		top: 100px;
@@ -316,23 +317,38 @@ h1.impacto {
 		top: 100px;
 	}
 }
-#cap4{
-	margin-top: -110px;
-	margin-bottom: 0px;
-}
-#cap4 h1.impacto{
-	font-size: 2.3em;
-} 
 
-#cap4 h2.impacto{
+#cap4 {
+	margin-top: -320px;
+	margin-bottom: 220px;
+}
+
+#cap4 h1.impacto {
+	font-size: 2.3em;
+	text-shadow: 0 1px 2px #000;
+}
+
+#cap4 h2.impacto {
 	font-size: 1.0em;
-} 
+	text-shadow: 0 1px 2px #000;
+}
+
 #cap4 .imp-1 {
 	margin-bottom: -25px;
 	left: -45px;
+	text-shadow: 0 1px 2px #000;
 }
 
 #cap4 .imp-3 {
 	margin-top: -25px;
 	left: 55px;
+	text-shadow: 0 1px 2px #000;
+}
+
+#cap2 span {
+	font-size: 1.8em;
+}
+
+#cap2 .imp-3 {
+	left: 185px;
 }
