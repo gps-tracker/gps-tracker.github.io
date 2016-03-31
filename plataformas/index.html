@@ -38,7 +38,7 @@
 			var ff = document.getElementById('Form1');
 			var evnobj = document.getElementById('clientevent');
 			evnobj.value = "0";
-			ff.action = "http://www.gpstrackerrls.com/trackermain.aspx";
+			ff.action = "http://gpstrackerrls.com/rlogin.aspx";
 			ff.submit();
 		}
 
@@ -46,7 +46,7 @@
 			var ff = document.getElementById('Form1');
 			var evnobj = document.getElementById('clientevent');
 			evnobj.value = "1";
-			ff.action = "http://www.gpstrackerrls.com/trackermain.aspxx";
+			ff.action = "http://gpstrackerrls.com/rlogin.aspx";
 			ff.submit();
 		}
 	</script>
@@ -94,19 +94,19 @@
 	</div>
 	<div class="container align-center center">
 		<form id="Form1" method="post" action="">
-			<div class="center"><h4 clas id="lblAccount">Cuenta     :</h4 clas>
+			<div class="center"><h4 clas id="lblAccount">Cuenta     :</h4>
 				<input id="account" type="text" name="account" />
 			</div>
-			<div class="center"><h4 clas id="lblPassword">Contraseña:</h4 clas>
+			<div class="center"><h4 clas id="lblPassword">Contraseña:</h4>
 				<input id="password" type="password" name="password" />
 			</div>
 			<br><br>
 			<div class="row">
 				<div class="center col s6">
-					<button class="white-text x-btn-text" name="butLogin" id="butLogin" value="Login" onclick="butLogin_onclick()" title="Login" type="button" disabled="disabled">Ingresar</button>
+					<input class="white-text x-btn-text" name="butLogin" id="butLogin" value="Login" onclick="butLogin_onclick()" title="Login" type="button" disabled="disabled"/>
 				</div>
 				<div class="center col s6">
-					<button class="white-text 	x-btn-text" name="butGetPassword" id="butGetPassword" type="button" title="Forgot your password" onclick="butForgetPassword_onclick()" value="Forgot your password">Olvidé mi contraseña</button>
+					<input class="white-text 	x-btn-text" name="butGetPassword" id="butGetPassword" type="button" title="Forgot your password" onclick="butForgetPassword_onclick()" value="Forgot your password"/>
 				</div>
 				<input id="timezone" name="timezone" type="hidden" />
 				<input id="loginurl" name="loginurl" type="hidden" />
