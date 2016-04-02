@@ -43,5 +43,5 @@
 	"start_url": "./plataformas/movil.html",
 	"display": "standalone",
 	"theme_color": "#2B5493",
-	"background_color": "2B5493"
+	"background_color": "#2B5493"
 }
