@@ -1,0 +1,493 @@
+﻿#header{
+   border:0 none;
+   background:#1E4176 repeat-x 0 0;
+   padding-top:3px;
+   padding-left:3px;
+   font-weight:bold;
+}
+
+#header .api-title {
+    font:normal 16px tahoma, arial, sans-serif;
+    color:white;
+    margin:5px;
+    font-weight:bold ;
+}
+
+.pan 
+{
+	 CURSOR: move 
+}
+
+.dragzoom 
+{
+	 CURSOR: crosshair 
+}
+
+.click 
+{
+	 CURSOR: pointer 
+}
+.icon-alarmdefine {
+	background-image:url(../images/alarmdefine.gif) ! important;
+}
+.remove-icon{
+	background-image:url(../images/delete.png) ! important;
+}
+.see-icon{
+	background-image:url(../images/searchmap16.gif) ! important;
+}
+.icon-report-polygon-fence-tracker
+{
+     background-image:url(../images/speeding.png) ! important;
+}
+.icon-report-polygon-fence{
+    background-image:url(../images/snipshot.png) ! important;
+}
+.icon-statedefine {
+	background-image:url(../images/statedefine.gif) ! important;
+}
+.icon-calculatedefine {
+	background-image:url(../images/calculatedefine.gif) ! important;
+}
+.icon-sensor
+{
+	background-image:url(../images/item-sensor.gif) ! important;
+}
+
+.icon-fuel
+{
+	background-image:url(../images/fuel2.jpg) ! important;
+}
+.icon-resend {
+	background-image:url(../images/resend2.gif) ! important;
+}
+.icon-record {
+	background-image:url(../images/speedChart.gif) ! important;
+}
+.icon-none 
+{
+}
+.icon-alarm
+{
+	background-image:url(../images/alarm16.gif) ! important;
+}
+
+.icon-maintenance
+{
+	background-image:url(../images/maintenance.png) ! important;
+}
+
+ .x-grid-record-red table{ color: red; }
+
+.icon-upgrade
+{
+	background-image:url(../images/UpdateIcon.gif) ! important;
+}
+
+.icon-register
+{
+	background-image:url(../images/register.png) ! important;
+}
+
+.icon-unregister
+{
+	background-image:url(../images/unregister.png) ! important;
+}
+
+.icon-cancelupgrade
+{
+	background-image:url(../images/delete.gif) ! important;
+}
+
+.icon-information
+{
+	background-image:url(../images/information.png) ! important;
+}
+
+.icon-vertex
+{
+    background-image:url(../images/polygon.png) ! important;
+}
+
+.icon-vertex-banding
+{
+    background-image:url(../images/electronicfence.gif) ! important;
+}
+
+
+.icon-upload
+{
+	background-image:url(../images/upload.png) ! important;
+}
+.icon-selectall
+{
+	background-image:url(../images/selectall16.gif) ! important;
+}
+
+.icon-selectnone
+{
+	background-image:url(../images/selectnone16.gif) ! important;
+}
+
+.icon-saveselection
+{
+	background-image:url(../images/save16.gif) ! important;
+}
+
+.icon-loadselection
+{
+	background-image:url(../images/reload16.gif) ! important;
+}
+
+.icon-userrtt
+{
+	background-image:url(../images/track216.gif) ! important;
+}
+
+.icon-movepoi
+{
+	background-image:url(../images/move.gif) ! important;
+}
+
+.icon-delete
+{
+	background-image:url(../images/delete.gif) ! important;
+}
+
+.icon-getimage
+{
+	background-image:url(../images/getimage16.gif) ! important;
+}
+
+.icon-ledadv
+{
+	background-image:url(../images/ledadv.gif) ! important;
+}
+
+.icon-ledsettings
+{
+	background-image:url(../images/ledsettings.gif) ! important;
+}
+
+.icon-getmedia
+{
+	background-image:url(../images/upload.png) ! important;
+}
+
+.icon-downloadmedia
+{
+	background-image:url(../images/save16.gif) ! important;
+}
+
+.icon-customerdefine
+{
+	background-image:url(../images/tag_edit.gif) ! important;
+}
+
+.icon-trackerdefine
+{
+	background-image:url(../images/config.png) ! important;
+}
+
+.report-history
+{
+	background-image:url(../images/history16.gif) ! important;
+}
+
+.icon-quickly-report
+{
+	background-image:url(../images/linereport.png) ! important;
+}
+
+.report-alarm
+{
+	background-image:url(../images/alarm16.gif) ! important;
+}
+
+.report-speedtime
+{
+	background-image:url(../images/speedtime.jpg) ! important;
+}
+
+.report-parking
+{
+	background-image:url(../images/parking.png) ! important;
+}
+
+.report-driving
+{
+	background-image:url(../images/drive.gif) ! important;
+}
+
+.report-photo
+{
+	background-image:url(../images/view.gif) ! important;
+}
+
+.report-calculate
+{
+	background-image:url(../images/record.png) ! important;
+}
+
+.report-input
+{
+	background-image:url(../images/contact.png) ! important;
+}
+
+.report-average
+{
+	background-image:url(../images/average.png) ! important;
+}
+
+.chart-calculate
+{
+	background-image:url(../images/linereport.png) ! important;
+}
+
+.chart-speed
+{
+	background-image:url(../images/speedtime.jpg) ! important;
+}
+
+.pie-speed
+{
+	background-image:url(../images/record.png) ! important;
+}
+.icon-light
+{
+	background-image:url(../images/lightbulb.png) ! important;
+}
+.icon-route-add
+{
+	background-image:url(../images/add.png) ! important;
+}
+
+.icon-route-edit
+{
+	background-image:url(../images/er.png) ! important;
+}
+
+.icon-edit
+{
+    background-image:url(../images/edit.gif) ! important;
+}
+
+.icon-route-delete
+{
+	background-image:url(../images/dr.png) ! important;
+}
+
+.icon-led-edit
+{
+	background-image:url(../images/edit.gif) ! important;
+}
+
+.icon-led-del
+{
+	background-image:url(../images/delete.png) ! important;
+}
+
+.Group
+{
+	background-image: url(../images/group16.gif) !important;
+}	   
+.User
+{
+	background-image: url(../images/user16.gif) !important;
+}
+.Tracker
+{
+	background-image: url(../images/device16.gif) !important;
+}
+.icon-route-next 
+{
+    background-image: url(../images/arrow_redo.png) !important;
+}
+.icon-about
+{
+    background-image: url(../images/wrench.png) !important;
+}
+.icon-route-prev
+{
+    background-image: url(../images/arrow_undo.png) !important;
+}
+
+.icon-gray-user
+{
+    background-image: url(../images/user_gray.png) !important;
+}
+
+.icon-green-user
+{
+    background-image: url(../images/user_green.png) !important;
+}
+
+.icon-orange-user
+{
+    background-image: url(../images/user_orange.png) !important; 
+}
+
+.icon-red-user
+{
+    background-image: url(../images/user_red.png) !important;
+}
+.icon-sms
+{
+    background-image: url(../images/comment_edit.png) !important;
+}
+.icon-group
+{
+    background-image: url(../images/group1.png) !important;      
+}
+ .x-grid3-td-progress-cell .x-grid3-cell-inner {
+            font-weight: bold;
+ }
+ .cornerbutton {
+
+    background: transparent url('images/bg_button_a.gif') no-repeat scroll top right;
+
+    color: #444;
+
+    display: block;
+
+    float: left;
+
+    font: normal 12px arial, sans-serif;
+
+    height: 24px;
+
+    margin-right: 6px;
+
+    padding-right: 18px; /* sliding doors padding */
+
+    text-decoration: none;
+
+}
+
+.x-grid3-td-progress-cell .high {
+    background: transparent url(js/extends/progresscolumn/images/progress-bg-red.gif) 0 -33px;
+}
+
+.x-grid3-td-progress-cell .medium {
+    background: transparent url(js/extends/progresscolumn/images/progress-bg-orange.gif) 0 -33px;
+}
+
+.x-grid3-td-progress-cell .low {
+    background: transparent url(js/extends/progresscolumn/images/progress-bg-green.gif) 0 -33px;
+}
+        
+.x-grid3-td-progress-cell .ux-progress-cell-foreground {
+    color: #fff;
+}
+
+
+.Expand{	background-image: url(../images/expand-all.gif) !important;}
+.Collpase{	background-image: url(../images/collapse-all.gif) !important;}
+
+#myhideheadergird .x-grid3-hd-row {
+  display:none;
+}
+
+#loading-mask{
+ position:absolute;
+ left:0;
+ top:0;
+    width:100%;
+    height:100%;
+    z-index:20000;
+    background-color:white;  
+}
+#loading{
+    position:absolute;
+    left:45%;
+    top:40%;
+    padding:2px;
+    z-index:20001;
+    height:auto;
+}
+#loading img {
+    margin-bottom:5px;
+}
+#loading .loading-indicator{
+    background:white;
+    color:#555;
+    font:bold 13px tahoma,arial,helvetica;
+    padding:10px;
+    margin:0;
+    text-align:center;
+    height:auto;
+}
+
+
+
+.polygon-geofence-label{
+    color:blue;
+    width:150px;
+    font:bold 14px tahoma,arial,helvetica;
+    margin-left:-75;
+    text-align:center;/* for firefox,chorme shadow*/
+    text-align:left \9;  /* for IE*/
+    height:auto;
+    filter: Shadow(Color=#cccccc, Direction=135, Strength=3); height: 1%; /* for IE shadow*/
+    text-shadow: 3px 3px 3px #CCCCCC; /* for firefox,chorme shadow*/
+}
+
+.tracingmessage {
+	background-image: url(../images/message.gif) !important;
+}
+
+.gprsTracing {
+	background-image: url(../images/gprsTracing.gif) !important;
+}
+
+.mainParameter {
+	background-image: url(../images/mainParameter.gif) !important;
+}
+
+.electronicfence {
+	background-image: url(../images/electronicfence.gif) !important;
+}
+
+.accreditNumber {
+	background-image: url(../images/accreditNumber.gif) !important;
+}
+
+.messageEventChar {
+	background-image: url(../images/messageEventChar.gif) !important;
+}
+.PhotoEvent {
+	background-image: url(../images/photoEvent.gif) !important;
+}
+
+.readAllParameter {
+	background-image: url(../images/readAllParameter.gif) !important;
+}
+
+.writeAllParameter {
+	background-image: url(../images/writeAllParameter.gif) !important;
+}
+.textfield_readOnly{
+background-image: url(../images/textfield_readOnly.gif) !important;
+	background-repeat: repeat;
+}
+
+ .itemsColor{
+        background-color: #0099FF;
+        color:White;
+      }
+
+.btn-ViewVertex
+{
+    background-image: url(../images/view.gif) !important;
+}
+
+.btn-AddVertex
+{
+    background-image: url(../images/add.png) !important;
+}
+
+.btn-DrawGeo
+{
+    background-image: url(..images/drawgeo.png) !important;
+}
+ 
