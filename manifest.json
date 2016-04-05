@@ -1,4 +1,4 @@
-{
+﻿{
 	"lang": "es",
 	"name": "GPS Tracker",
 	"short_name": "gpstracker",
@@ -57,5 +57,5 @@
 	"start_url": "https://app.gpstrackerls.html",
 	"display": "standalone",
 	"theme_color": "#2B5493",
-	"background_color": "#2B5493"
+	"background_color": "#000"
 }
