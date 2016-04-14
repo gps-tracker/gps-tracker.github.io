@@ -154,7 +154,7 @@ valign {
 		transition: all 0.2s;
 	}
 	.brand-logo>img {
-		height: 63px;
+		height: 57px;
 	}
 	.affix,
 	.pinned {
@@ -393,4 +393,7 @@ h1.impacto {
 
 #cap2 .imp-3 {
 	left: 185px;
+}
+.svg-portal{
+	margin-bottom: -150px;
 }
