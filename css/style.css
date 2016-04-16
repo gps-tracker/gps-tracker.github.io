@@ -2,8 +2,7 @@ html {
 	font-family: 'Trebuchet MS';
 }
 
-nav ul a,
-nav .brand-logo {
+nav ul a{
 	color: #444;
 	font-size: 1.18em;
 }
@@ -139,7 +138,8 @@ valign {
 }
 
 .brand-logo>img {
-	height: 53px;
+	height: 50px;
+	padding-left: 4px;
 }
 
 @media only screen and (min-width:601px) {
@@ -396,4 +396,7 @@ h1.impacto {
 }
 .svg-portal{
 	margin-bottom: -150px;
+	left:-100px;
+	position: relative;
+	z-index: -1
 }

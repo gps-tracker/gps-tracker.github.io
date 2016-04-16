@@ -78,10 +78,9 @@
 <body onload="window_onload()">
 	<!-- Dropdown Structure -->
 	<ul id="dropdown1" class="dropdown-content black-text">
-			<li><a href="plataforma-a.html">Portal <object height="20" class="right nav-icon" type="image/svg+xml" data="/images/a.svg">A</object></a></li>
-			<li><a href="plataforma-b.html">Portal <object height="20" class="right nav-icon" type="image/svg+xml" data="/images/b.svg">B</object></a></li>
-			<li><a href="https://app.gpstrackerls.com">Portal Móvil</a></li>
-		</ul>
+		<li><a href="plataforma-a.html">Portal <object height="20" class="right nav-icon" type="image/svg+xml" data="/images/a.svg">A</object></a></li>
+		<li><a href="plataforma-b.html">Portal <object height="20" class="right nav-icon" type="image/svg+xml" data="/images/b.svg">B</object></a></li>
+	</ul>
 	<!-- NAV BAR-->
 	<header style="z-index: 1;">
 		<!-- NAV BAR-->
@@ -101,36 +100,40 @@
 					<li><a href="contacto.html">Contáctanos</a></li>
 					<li><a href="plataforma-a.html">Portal <object height="20" class=" nav-icon" type="image/svg+xml" data="/images/a.svg">A</object></a></li>
 					<li><a href="plataforma-b.html">Portal <object height="20" class=" nav-icon" type="image/svg+xml" data="/images/b.svg">B</object></a></li>
+					<li><a href="https://app.gpstrackerls.com">Portal Móvil</a></li>
 				</ul>
 				<a data-activates="nav-mobile" class="button-collapse"><img id="menu-img" src="/images/menu.png" alt="menu"></a>
 			</div>
 		</nav>
 	</header>
 	<main>
-	<br>
-	<div class="container center">
-		<object class="svg-portal" type="image/svg+xml" data="/images/portal-a.svg"><img class="svg-portal" src="/images/portal-a.png" alt="Portal A"></object>
-	</div>
-	<div class="container align-center center">
-		<form id="Form1" method="post" action="">
-			<div class="center"><h4 clas id="lblAccount">Cuenta     :</h4>
-				<input id="account" type="text" name="account" />
-			</div>
-			<div class="center"><h4 clas id="lblPassword">Contraseña:</h4>
-				<input id="password" type="password" name="password" />
-			</div>
-			<br><br>
-			<div class="row">
-				<div class="center col s12">
-					<input class="white-text x-btn-text" name="butLogin" id="butLogin" value="Entrar" onclick="butLogin_onclick()" title="Iniciar" type="button" disabled="disabled"/>
+		<br>
+		<div class="container center">
+			<object class="svg-portal" type="image/svg+xml" data="/images/portal-a.svg"><img class="svg-portal" src="/images/portal-a.png" alt="Portal A"></object>
+		</div>
+		<div class="container align-center center">
+			<form id="Form1" method="post" action="">
+				<div class="center">
+					<h4 clas id="lblAccount">Cuenta     :</h4>
+					<input id="account" type="text" name="account" />
 				</div>
+				<div class="center">
+					<h4 clas id="lblPassword">Contraseña:</h4>
+					<input id="password" type="password" name="password" />
+				</div>
+				<br>
+				<br>
+				<div class="row">
+					<div class="center col s12">
+						<input class="white-text x-btn-text" name="butLogin" id="butLogin" value="Entrar" onclick="butLogin_onclick()" title="Iniciar" type="button" disabled="disabled" />
+					</div>
 
-				<input id="timezone" name="timezone" type="hidden" />
-				<input id="loginurl" name="loginurl" type="hidden" />
-				<input id="clientevent" name="clientevent" type="hidden" />
-			</div>
-		</form>
-	</div>
+					<input id="timezone" name="timezone" type="hidden" />
+					<input id="loginurl" name="loginurl" type="hidden" />
+					<input id="clientevent" name="clientevent" type="hidden" />
+				</div>
+			</form>
+		</div>
 	</main>
 
 

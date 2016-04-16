@@ -71,7 +71,7 @@ input[type=password],
 input[type=text]:focus:not([readonly]),
 input[type=password]:focus:not([readonly]) {
 	color: black;
-	background-color: white;
+	background-color: rgba(255, 255, 255, 0.5);
 	padding: 0px;
 	border: 1px solid #2E3C6E;
 	height: 1.5em;
