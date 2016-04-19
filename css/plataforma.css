@@ -22,7 +22,7 @@
 }
 
 .x-btn-text {
-	background-color: rgba(232, 118, 30, 1);
+	background-color: #F16136;
 	border-radius: 5px;
 	box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
 	font-weight: bold;
@@ -31,6 +31,7 @@
 	border: none;
 	font-style: normal;
 	font-weight: normal;
+	font-size: 1.2em;
 	height: 42px;
 	width: 90px;
 	transform: all .5s;
@@ -141,4 +142,33 @@ iframe.plataforma {
   }
 #logo-container{
 	height: 44px;
+}
+.svg-portal{
+	margin-bottom: -150px;
+	left: 15px;
+	position: relative;
+	z-index: -1
+}
+@media only screen and (min-width:600px) {
+	h4{
+		display: inline;
+		text-align: left;
+		width: 400px;
+		top: 4px;
+    	position: relative;
+	}
+	.row .col.l6{
+		text-align: right;
+	}
+	.row .col.l6.push-m6{
+		text-align: left ;
+	}
+}
+@media only screen and (max-width:600px) {
+	.svg-portal{
+	left: 0px;
+	}
+	.row .col.l6{
+		text-align: center;
+	}
 }

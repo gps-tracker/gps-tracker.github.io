@@ -78,15 +78,15 @@
 <body onload="window_onload()">
 	<!-- Dropdown Structure -->
 	<ul id="dropdown1" class="dropdown-content black-text">
-		<li><a href="plataforma-a.html">Portal <object height="20" class="right nav-icon" type="image/svg+xml" data="/images/a.svg">A</object></a></li>
-		<li><a href="plataforma-b.html">Portal <object height="20" class="right nav-icon" type="image/svg+xml" data="/images/b.svg">B</object></a></li>
+		<li><a href="plataforma-a.html"><span class="indigo-text">Portal</span> <object height="20" class="right nav-icon" type="image/svg+xml" data="/images/a.svg">A</object></a></li>
+		<li><a href="plataforma-b.html"><span class="orange-text">Portal</span> <object height="20" class="right nav-icon" type="image/svg+xml" data="/images/b.svg">B</object></a></li>
 	</ul>
 	<!-- NAV BAR-->
 	<header style="z-index: 1;">
 		<!-- NAV BAR-->
 		<nav class="white">
 			<div class="nav-wrapper " data-spy="affix" data-offset-top="100">
-				<a id="logo-container" href="./index.html" class="brand-logo"><img height=59 src="images/logo-grande.png" alt="GPS tracker Logo"></a>
+				<a id="logo-container" href="./index.html" class="brand-logo"><object  type="image/svg+xml" data="/images/logo.svg" height="50"><img height=59 src="images/logo-grande.png" alt="GPS tracker Logo" ></object></a>
 				<ul class="right hide-on-med-and-down">
 					<li><a href="index.html">Inicio</a></li>
 					<li><a href="empresa.html">Empresa</a></li>
@@ -112,19 +112,26 @@
 			<object class="svg-portal" type="image/svg+xml" data="/images/portal-a.svg"><img class="svg-portal" src="/images/portal-a.png" alt="Portal A"></object>
 		</div>
 		<div class="container align-center center">
+		
 			<form id="Form1" method="post" action="">
-				<div class="center">
-					<h4 clas id="lblAccount">Cuenta     :</h4>
+			<div class="row">
+				<div class="col s12 l6 m6 ">
+					<h4 clas id="lblAccount">Usuario:</h4>
+				</div>
+				<div class="col s12 l6 m6">
 					<input id="account" type="text" name="account" />
 				</div>
-				<div class="center">
+			</div>
+			<div class="row">
+			<div class="col s12 l6 m6 ">
 					<h4 clas id="lblPassword">Contraseña:</h4>
+				</div>
+				<div class="col s12 l6 m6">
 					<input id="password" type="password" name="password" />
 				</div>
-				<br>
-				<br>
+			</div>
 				<div class="row">
-					<div class="center col s12">
+					<div class="col s12 m6 l6 push-m6 push-l6">
 						<input class="white-text x-btn-text" name="butLogin" id="butLogin" value="Entrar" onclick="butLogin_onclick()" title="Iniciar" type="button" disabled="disabled" />
 					</div>
 

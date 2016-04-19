@@ -86,7 +86,7 @@
 		<!-- NAV BAR-->
 		<nav class="white">
 			<div class="nav-wrapper " data-spy="affix" data-offset-top="100">
-				<a id="logo-container" href="./index.html" class="brand-logo"><img height=59 src="images/logo-grande.png" alt="GPS tracker Logo"></a>
+				<a id="logo-container" href="./index.html" class="brand-logo"><object  type="image/svg+xml" data="/images/logo.svg" height="50"><img height=59 src="images/logo-grande.png" alt="GPS tracker Logo" ></object></a>
 				<ul class="right hide-on-med-and-down">
 					<li><a href="index.html">Inicio</a></li>
 					<li><a href="empresa.html">Empresa</a></li>
@@ -113,20 +113,27 @@
 		</div>
 		<div class="container align-center center">
 			<form id="Form1" method="post" action="">
-				<div class="center">
-					<h4 clas id="lblAccount">Cuenta     :</h4>
+			<div class="row">
+				<div class="col s12 l6 m6 ">
+					<h4 clas id="lblAccount">Usuario:</h4>
+				</div>
+				<div class="col s12 l6 m6">
 					<input id="account" type="text" name="account" />
 				</div>
-				<div class="center">
+			</div>
+			<div class="row">
+			<div class="col s12 l6 m6 ">
 					<h4 clas id="lblPassword">Contraseña:</h4>
+				</div>
+				<div class="col s12 l6 m6">
 					<input id="password" type="password" name="password" />
 				</div>
-				<br>
-				<br>
+			</div>
 				<div class="row">
-					<div class="center col s12">
+					<div class="col s12 m6 l6 push-m6 push-l6">
 						<input class="white-text x-btn-text" name="butLogin" id="butLogin" value="Entrar" onclick="butLogin_onclick()" title="Iniciar" type="button" disabled="disabled" />
 					</div>
+
 					<input id="timezone" name="timezone" type="hidden" />
 					<input id="loginurl" name="loginurl" type="hidden" />
 					<input id="clientevent" name="clientevent" type="hidden" />

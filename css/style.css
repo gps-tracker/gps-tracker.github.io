@@ -1,6 +1,19 @@
 html {
 	font-family: 'Trebuchet MS';
 }
+nav .button-collapse img{
+	width: 24px;
+	padding: 16px;
+	box-sizing: content-box;
+}
+@media only screen and (min-width:601px) {
+	nav .button-collapse img{
+	width: 24px;
+	padding: 16px;
+	padding-top: 22px;
+	box-sizing: content-box;
+}
+}
 
 nav ul a{
 	color: #444;
@@ -137,9 +150,9 @@ valign {
 	z-index: 1003;
 }
 
-.brand-logo>img {
+.brand-logo img,.brand-logo object {
 	height: 50px;
-	padding-left: 4px;
+	padding-left: 8px;
 }
 
 @media only screen and (min-width:601px) {
@@ -153,8 +166,9 @@ valign {
 		width: auto;
 		transition: all 0.2s;
 	}
-	.brand-logo>img {
+	.brand-logo img,.brand-logo object {
 		height: 57px;
+		z-index: 100;
 	}
 	.affix,
 	.pinned {
@@ -186,10 +200,6 @@ valign {
 
 .brand-logo {
 	top: 3px;
-}
-
-#menu-img {
-	margin-top: 6px;
 }
 
 .nav-icon {
@@ -393,10 +403,4 @@ h1.impacto {
 
 #cap2 .imp-3 {
 	left: 185px;
-}
-.svg-portal{
-	margin-bottom: -150px;
-	left:-100px;
-	position: relative;
-	z-index: -1
 }
