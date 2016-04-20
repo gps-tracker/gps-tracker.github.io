@@ -1,6 +1,6 @@
 html {
 	font-family: "Eras ITC",'Trebuchet MS';
-	font-weight: 400;
+	font-weight: 500;
 }
 nav .button-collapse img{
 	width: 24px;
@@ -20,11 +20,13 @@ nav ul a{
 	color: #444;
 	font-size: 1.18em;
 }
-
-p {
-	line-height: 2rem;
+nav ul a:hover {
+    background-color: #ddd;
 }
-
+p {
+	line-height: 2.2rem;
+	font-weight: 400;
+}
 .button-collapse {
 	color: #26a69a;
 	margin-left: 10px;
@@ -205,6 +207,11 @@ valign {
 
 .nav-icon {
 	margin-bottom: -6px;
+	
+}
+.dropdown-content .nav-icon{
+	left: -20px;
+    position: relative;
 }
 
 .btn-large.orange:not(.btn-floating) {
@@ -405,3 +412,7 @@ h1.impacto {
 #cap2 .imp-3 {
 	left: 185px;
 }
+#sidenav-overlay{
+	z-index: 0;
+}
+
