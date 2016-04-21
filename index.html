@@ -313,12 +313,19 @@
 				height: 800,
 				interval: 3000
 			});
-			$('nav').pushpin({
-				top: 20,
-				offset: 0,
-			});
+			if ($(window).width()>600){
+				$('nav').pushpin({
+					top: 20,
+					offset: 0,
+				});	
+			}else{
+				$('nav').pushpin({
+					top: 0,
+					offset: 0,
+				});
+			}
 			$('#mobile-ad').height($( window ).height());
-			var h=$( window ).height()/3;
+			var h=$( window ).width()/2;
 			$('#cap4').css({'MarginTop': h});
 			$('#mobile-ad img').removeClass("responsive-img");
 			$('#mobile-ad img').height($( window ).height());
@@ -326,8 +333,9 @@
 		$( window ).resize(function() {
   			$('#mobile-ad').height($( window ).height());
 			$('#mobile-ad img').height($( window ).height());
-			var h=$( window ).height()/4;
-			$('#cap4').css({'MarginTop': h});
+			var h=$( window ).width()/1.1;
+			$('#cap4').css('margin-top', h*(-1)+'px');
+			console.log(h);
 		});
 	</script>
 	<script type="application/ld+json">
