@@ -366,20 +366,20 @@ h1.impacto {
 }
 
 #cap4 h2.impacto {
-	font-size: 1.0em;
+	font-size: 1.2em;
 	text-shadow: 0 1px 2px #000;
 }
 
 #cap4 .imp-1 {
 	margin-bottom: -25px;
 	left: -45px;
-	text-shadow: 0 1px 2px #000;
+	text-shadow: 0 1px 3px #000;
 }
 
 #cap4 .imp-3 {
 	margin-top: -25px;
 	left: 55px;
-	text-shadow: 0 1px 2px #000;
+	text-shadow: 0 1px 3px #000;
 }
 
 @media only screen and (max-width:350px) {
@@ -387,12 +387,12 @@ h1.impacto {
 		margin-top: -27	0px;
 		margin-bottom: 0px;
 	}
-	cap4 h1.impacto {
+	#cap4 h1.impacto {
 		font-size: 1.72.3em;
 		text-shadow: 0 1px 2px #000;
 	}
 	#cap4 h2.impacto {
-		font-size: 0.8em;
+		font-size: 1.1em;
 		text-shadow: 0 1px 2px #000;
 	}
 	#cap4 .imp-1 {

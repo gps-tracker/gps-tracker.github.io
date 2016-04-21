@@ -1,4 +1,4 @@
-﻿{
+{
 	"lang": "es",
 	"name": "GPS Tracker",
 	"short_name": "gpstracker",
@@ -54,7 +54,7 @@
 		"name": "Fega",
 		"url": "http://fega.cienciambiente.com"
 	},
-	"start_url": "https://app.gpstrackerls.html",
+	"start_url": "https://app.gpstrackerls.com",
 	"display": "standalone",
 	"theme_color": "#2B5493",
 	"background_color": "#000"

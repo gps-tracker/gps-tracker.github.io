@@ -306,13 +306,16 @@
 	<script src="js/materialize.js"></script>
 	<script src="js/init.js"></script>
 	<script>
+		//DOCUMENT READY
 		$(document).ready(function () {
+			//SLIDER CREATION
 			$('.slider').slider({
 				full_width: true,
 				indicators: false,
 				height: 800,
 				interval: 3000
 			});
+			//NAVBAR STYLE
 			if ($(window).width()>600){
 				$('nav').pushpin({
 					top: 20,
@@ -324,19 +327,37 @@
 					offset: 0,
 				});
 			}
-			$('#mobile-ad').height($( window ).height());
-			var h=$( window ).width()/2;
-			$('#cap4').css({'MarginTop': h});
 			$('#mobile-ad img').removeClass("responsive-img");
-			$('#mobile-ad img').height($( window ).height());
+			resizing();
 		});
-		$( window ).resize(function() {
-  			$('#mobile-ad').height($( window ).height());
-			$('#mobile-ad img').height($( window ).height());
-			var h=$( window ).width()/1.1;
-			$('#cap4').css('margin-top', h*(-1)+'px');
-			console.log(h);
-		});
+		//jQUERY WINDOW RESIZE
+		$( window ).resize(resizing);
+		//RESIZE FUNCTION
+		function resizing(){
+			var w=$( window ).width();
+			var h=$( window ).height();
+			if (w>h){
+				$('#mobile-ad').width(w);
+				$('#mobile-ad').height('auto');
+				$('#mobile-ad img').width(w);
+				$('#mobile-ad img').height('auto');
+				$('#cap4').css('margin-top', '0px');
+				$('#cap4').css('margin-bottom', '0px');
+				$('#cap4').css('position', 'absolute');
+				$('#cap4').css('top', (	1)*h/2+'px');
+				$('#cap4').css('width', '100%');
+			}else{
+				$('#mobile-ad').height(h);
+				$('#mobile-ad').width('auto');
+				$('#mobile-ad img').height(h);
+				$('#mobile-ad img').width('auto');
+				$('#cap4').css('margin-top', '0px');
+				$('#cap4').css('margin-bottom', '0px');
+				$('#cap4').css('position', 'absolute');
+				$('#cap4').css('top', (1)*h*(1/4)+'px');
+				$('#cap4').css('width', '100%');	
+			}
+		}
 	</script>
 	<script type="application/ld+json">
 		{ "@context" : "http://schema.org", "@type" : "Organization", "url" : "http://principal.gpstrackerls.com", "logo": "http://principal.gpstrackerls.com/images/logo-mega.png", "contactPoint" : [{ "@type" : "ContactPoint", "telephone" : "+57-320-253-7257", "contactType" : "customer support" },{ "@type" : "ContactPoint", "telephone" : "+57-320-253-7257", "contactType" : "sales" }], "sameAs" : [ "https://www.facebook.com/gpstracker.localizadorsatelital", "http://plus.google.com/113843641102652527025", "https://www.linkedin.com/in/gps-tracker-localizador-satelital-81b11a69" ], "name":"Gps Tracker ls" }
