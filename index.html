@@ -129,10 +129,11 @@
 			</li>
 		</ul>
 	</div>
-	<div><img class="responsive-img hide-on-med-and-up" src="images/background-mobile.jpg" alt="manejando Header">
+	<div id="mobile-ad">
+		<img class="hide-on-med-and-up responsive-img" src="images/pexels-photo.jpg" alt="manejando Header">
 		<div id="cap4" class="caption center left-transition">
 			<h2 class="imp-1 impacto white-text hide-on-med-and-up">Control, Rastreo y Seguridad.</h2>
-			<h1 class="impacto orange-text hide-on-med-and-up"><span class="imp-2 indigo-text">Sin Pagar</span> Mensualidad</h1>
+			<h1 class="impacto indigo-text hide-on-med-and-up"><span class="imp-2 indigo-text">Sin Pagar Mensualidad </span></h1>
 			<h2 class="imp-3 impacto light white-text hide-on-med-and-up"> por concepto de monitoreo</h2>
 		</div>
 	</div>
@@ -316,6 +317,17 @@
 				top: 20,
 				offset: 0,
 			});
+			$('#mobile-ad').height($( window ).height());
+			var h=$( window ).height()/3;
+			$('#cap4').css({'MarginTop': h});
+			$('#mobile-ad img').removeClass("responsive-img");
+			$('#mobile-ad img').height($( window ).height());
+		});
+		$( window ).resize(function() {
+  			$('#mobile-ad').height($( window ).height());
+			$('#mobile-ad img').height($( window ).height());
+			var h=$( window ).height()/4;
+			$('#cap4').css({'MarginTop': h});
 		});
 	</script>
 	<script type="application/ld+json">
