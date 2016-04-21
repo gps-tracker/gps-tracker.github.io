@@ -354,10 +354,12 @@ h1.impacto {
 }
 #mobile-ad img,#mobile-ad{
 	margin-bottom: 00px;
+	overflow: hidden;
 }
 #cap4 {
 	margin-top: -300px;
 	margin-bottom: 100px;
+	overflow: hidden;
 }
 
 #cap4 h1.impacto {

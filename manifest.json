@@ -54,7 +54,7 @@
 		"name": "Fega",
 		"url": "http://fega.cienciambiente.com"
 	},
-	"start_url": "https://app.gpstrackerls.com/index.html",
+	"start_url": "/plataforma-a.html",
 	"display": "standalone",
 	"theme_color": "#2B5493",
 	"background_color": "#000"
