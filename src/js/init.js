@@ -1,11 +1,13 @@
 //DOCUMENT READY
 		$(document).ready(function () {
+			//SIDE NAV
+			$(".button-collapse").sideNav();
 			//SLIDER CREATION
 			$('.slider').slider({
 				full_width: true,
 				indicators: false,
 				height: 800,
-				interval: 3000
+				interval: 6000
 			});
 			//NAVBAR STYLE
 			if ($(window).width()>600){

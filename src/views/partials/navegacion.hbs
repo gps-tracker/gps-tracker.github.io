@@ -1,23 +1,30 @@
 <header>
-		<!-- Dropdown Structure -->
+		<!-- Dropdown de plataformas -->
 		<ul id="dropdown1" class="dropdown-content black-text">
 			<li><a href="plataforma-a.html"><span class="indigo-text">Portal</span> <object height="20" class="right nav-icon" type="image/svg+xml" data="/images/a.svg">A</object></a></li>
 			<li><a href="plataforma-b.html"><span class="orange-text">Portal</span> <object height="20" class="right nav-icon" type="image/svg+xml" data="/images/b.svg">B</object></a></li>
+		</ul>
+		<!-- Dropdown para soluciones -->
+		<ul id="dropdown-soluciones" class="dropdown-content black-text">
+			<li><a class="black-text" href="plataforma-a.html">Carga</a></li>
+			<li><a class="black-text" href="plataforma-a.html">Particulares</a></li>
+			<li><a class="black-text" href="plataforma-a.html">Maquinaria</a></li>
+			<li><a class="black-text" href="plataforma-a.html">Personas</a></li>
 		</ul>
 		<!-- NAV BAR-->
 		<nav class="white">
 			<div class="nav-wrapper " data-spy="affix" data-offset-top="100">
 				<a id="logo-container" href="./index.html" class="brand-logo"><object  type="image/svg+xml" data="/images/logo.svg" height="50"><img height=59 src="images/logo-grande.png" alt="GPS tracker Logo" ></object></a>
 				<ul class="right hide-on-med-and-down">
-					<li><a href="index.html">Inicio</a></li>
-					<li><a href="empresa.html">Empresa</a></li>
+					{{#if front.inicio}}<li><a href="index.html">Inicio</a></li>{{/if}}
+					<li><a class="dropdown-button" data-activates="dropdown-soluciones">Soluciones</a></li>
 					<li><a id="contact-btn" href="/contacto.html">Contáctanos</a></li>
 					<li><a id="plat-btn" class="dropdown-button" data-activates="dropdown1">Portales <img class="nav-icon" src="/images/arrow.png" alt="plataformas"></a></li>
 				</ul>
 
 				<ul id="nav-mobile" class="side-nav">
-					<li><a href="index.html">Inicio</a></li>
-					<li><a href="empresa.html">Empresa</a></li>
+					{{#if front.inicio}}<li><a href="index.html">Inicio</a></li>{{/if}}
+					<li><a href="empresa.html">Soluciones</a></li>
 					<li><a href="contacto.html">Contáctanos</a></li>
 					<li><a href="plataforma-a.html">Portal <object height="20" class=" nav-icon" type="image/svg+xml" data="/images/a.svg">A</object></a></li>
 					<li><a href="plataforma-b.html">Portal <object height="20" class=" nav-icon" type="image/svg+xml" data="/images/b.svg">B</object></a></li>

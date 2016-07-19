@@ -2,6 +2,43 @@ html {
 	font-family: "Eras ITC",'Trebuchet MS';
 	font-weight: 500;
 }
+.indigo{
+	background-color:#2E3C6E !important;
+}
+.orange-text {
+    color: #F16136 !important;
+}
+.orange-text.text-lighten-2 {
+    color: #F79741 !important;
+}
+.orange {
+    background-color: #F16136 !important;
+}
+.indigo-text {
+    color: #2E3C6E !important;
+}
+p .bold,h1 .bold,h2 .bold,h3 .bold,h4 .bold,h5.bold,span.bold {
+    font-weight: bold;
+}
+span.bold {
+    font-weight: 500 !important;
+}
+.container.c85 {
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 90%;
+}
+@media only screen and (min-width: 601px) {
+  .container.c85 {
+    width: 85%;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .container.c85 {
+    width: 85%;
+  }
+}
 nav .button-collapse img{
 	width: 24px;
 	padding: 16px;
@@ -96,7 +133,9 @@ valign {
 	color: black;
 	font-size: 1.3em;
 }
-
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-floating){
+	color: #F16136 !important;
+}
 .card .card-action a:not(.btn):not(.btn-large):not(.btn-floating):hover {
 	color: inherit;
 }
@@ -228,6 +267,10 @@ valign {
 	min-width: 200px;
 	max-width: 300px;
 }
+.btn-large.orange.not-grow:hover:not(.btn-floating) {
+	text-transform: none;
+	font-size: 1.4em;
+}
 .btn-large.orange.btn-floating i:hover {
 	text-transform: none;
 	font-size: 2.6em;
@@ -257,7 +300,12 @@ valign {
 	padding: 30px;
 	width: 500px;
 }
-
+img.otras-ventajas{
+	max-width: 70px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	border-radius: 10px;
+}
 .full-width {
 	width: 100%;
 }

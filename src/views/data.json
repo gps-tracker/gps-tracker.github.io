@@ -1,0 +1,33 @@
+{
+	"titulo": "GPS Tracker Rastreador Satelital",
+	"propietario":"Alfonso Angulo Forero",
+	"descripcion":"Sistema de Localización Satelital para vehiculos que le permite obtener todos los reportes de Control, Rastreo y Ubicación sin pagar Mensualidad, Control, Rastreo y Seguridad. GPS tracker.",
+	"google-analytica":"UA-65215019-3",
+	
+	"version":"1",
+	"subversion":"0",
+	"build":"0",
+
+	"google-plus":"http://hola.com",
+	"twitter":"http://hola.com",
+	"linkedin":"http://hola.com",
+	"share-img":"shareimg",
+	"share-title":"SimulaPro: ",
+	"share-description":"Sistemas de simulación en ambientes de universitarios",
+
+
+	"theme":"#3F5FFF",
+
+	"primary"	   	:"#ffffff",
+	"primary-light"	:"#ffffff",
+	"primary-dark" 	:"#ffffff",
+	"primary-text" 	:"#000000",
+
+	"accent"		:"#3F5FFF", 
+	"accent-dark"	:"#101840",
+	"accent-text"	:"#3F5FFF",
+	"accent-light"	:"#eceff1 ",
+
+	"footer-color"	:"#ffffff",
+	"nav-color"		:"#ffffff" 
+}

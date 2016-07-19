@@ -1,0 +1,27 @@
+	<script language="javascript" type="text/javascript">
+		function window_onload() {
+			var butLogin = document.getElementById('butLogin');
+			var hidTimeZone = document.getElementById('timezone');
+			var hidLoginUrl = document.getElementById('loginurl');
+			butLogin.disabled = false;
+			var now = new Date();
+			hidTimeZone.value = now.getTimezoneOffset();
+			hidLoginUrl.value = window.location;
+		}
+
+		function butLogin_onclick() {
+			var ff = document.getElementById('Form1');
+			var evnobj = document.getElementById('clientevent');
+			evnobj.value = "0";
+			ff.action = "http://{{front.plataforma}}.gpstrackerls.com/rlogin.aspx";
+			ff.submit();
+		}
+
+		function butForgetPassword_onclick() {
+			var ff = document.getElementById('Form1');
+			var evnobj = document.getElementById('clientevent');
+			evnobj.value = "1";
+			ff.action = "http://{{front.plataforma}}.gpstrackerls.com/rlogin.aspx";
+			ff.submit();
+		}
+	</script>

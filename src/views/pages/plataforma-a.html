@@ -1,0 +1,82 @@
+---
+titulo: Portal A
+descripcion: Acceso a la portal A de monitoreo satelital.
+plataforma: a
+banner:
+    img : images/banners/promo.png
+    acccion :
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title> {{front.titulo}} | {{data.titulo}} </title>
+	<meta name="description" content="{{front.descripcion}}">
+	{{>head}}
+
+	<!-- CSS  -->
+	<link href="css/min.css" type="text/css" rel="stylesheet" media="screen" />
+	<link href="css/plataforma.css" type="text/css" rel="stylesheet" media="screen" />
+	<link href="css/print.css" type="text/css" rel="stylesheet" media="print" />
+	<style type="text/css">
+		.align-center {
+			margin: 0 auto;
+			width: 300px;
+			text-align: left;
+		}
+	</style>
+	{{>sections/script-plataforma}}
+
+</head>
+<body onload="window_onload()">
+	{{>analytics}}
+	{{>navegacion}}
+	{{!contenido principal}}
+	
+	<main>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<div class="container center">
+			<object class="svg-portal" type="image/svg+xml" data="/images/portal-a.svg"><img class="svg-portal" src="/images/portal-a.png" alt="Portal A"></object>
+		</div>
+		<div class="container align-center center">
+		
+			<form id="Form1" method="post" action="">
+			<div class="row">
+				<div class="col s12 l6 m6 ">
+					<h4 clas id="lblAccount">Usuario:</h4>
+				</div>
+				<div class="col s12 l6 m6">
+					<input id="account" type="text" name="account" />
+				</div>
+			</div>
+			<div class="row">
+			<div class="col s12 l6 m6 ">
+					<h4 clas id="lblPassword">Contraseña:</h4>
+				</div>
+				<div class="col s12 l6 m6">
+					<input id="password" type="password" name="password" />
+				</div>
+			</div>
+				<div class="row">
+					<div class="col s12 m6 l6 push-m6 push-l6">
+						<input class="white-text x-btn-text" name="butLogin" id="butLogin" value="Entrar" onclick="butLogin_onclick()" title="Iniciar" type="button" disabled="disabled" />
+					</div>
+
+					<input id="timezone" name="timezone" type="hidden" />
+					<input id="loginurl" name="loginurl" type="hidden" />
+					<input id="clientevent" name="clientevent" type="hidden" />
+				</div>
+			</form>
+		</div>
+	</main>
+
+	{{>footer-plataforma}}
+	<script src="/js/min.js"></script>
+	{{>microdatos}}
+	{{>service-worker}}
+</body>
+</html>

@@ -14,7 +14,7 @@ var frontMatter = require('gulp-front-matter');
 var plumber = require('gulp-plumber');
 var notify = require('gulp-notify');
 //var sourcemaps = require('gulp-sourcemaps');
-//var ghPages = require('gulp-gh-pages')
+var ghPages = require('gulp-gh-pages')
 
 function plumberit(errTitle) {
 return plumber({
@@ -50,10 +50,10 @@ gulp.task('build',   function () {
         //.pipe(browserSync.reload({ stream: false }));
 });
 gulp.task('build-watch', ['build'], browserSync.reload);
-//gulp.task('deploy', function() {
-//  return gulp.src('./dist/**/*')
-//    .pipe(ghPages({'branch':'master'}));
-//});
+gulp.task('deploy', function() {
+  return gulp.src('./dist/**/*')
+    .pipe(ghPages({'branch':'master', 'remoteUrl':'http://github.com/gps-tracker/gps-tracker.github.io.git'}));
+});
 /*///////////////////////////////////////
 linters
 ///////////////////////////////////////*/
@@ -84,7 +84,7 @@ gulp.task('js',  function () {
 CSS watcher 
 ///////////////////////////////////////*/
 gulp.task('css', function () { 
-  return gulp.src(['./src/css/materialize.css','./src/css/*.css'])
+  return gulp.src(['./src/css/materialize.css','./src/css/style.css'])
         //.pipe(sourcemaps.init())
             .pipe(plumberit('CSS parsing error'))
             .pipe(csso())
@@ -100,14 +100,14 @@ gulp.task('svg', function () {
     return gulp.src('./src/img/**/*.svg')
         .pipe(plumberit('Svg minification error'))
         .pipe(imagemin())
-        .pipe(gulp.dest('./dist/img'))
+        .pipe(gulp.dest('./dist/images'))
         .pipe(browserSync.reload({ stream: true }));
 });
 gulp.task('img', function(){
 	return gulp.src('./src/img/**/*.+(png|jpg|jpeg|gif)')
     .pipe(plumberit('Img minification error'))
 	.pipe(cache(imagemin({interlaced: true})))// Caching images that ran through imagemin
-	.pipe(gulp.dest('dist/img'))
+	.pipe(gulp.dest('dist/images'))
     .pipe(browserSync.reload({ stream: true }));
 });
 /*///////////////////////////////////////
@@ -124,13 +124,21 @@ RELOAD YOUR BROWSER
 gulp.task('bs-reload', function () {
 	browserSync.reload();
 });
-
+/*///////////////////////////////////////
+copy root folder
+///////////////////////////////////////*/
+gulp.task('root', function () {
+    return gulp.src('./src/root/**/*')
+        .pipe(gulp.dest('./dist/'))
+        .pipe(browserSync.reload({ stream: true }));
+});
 /*///////////////////////////////////////
 WATCHER
 ///////////////////////////////////////*/
-gulp.task('default', ['browser-sync','js','css','build','svg','img'], function () {
+gulp.task('default', ['browser-sync','js','css','build','svg','img','root'], function () {
 	gulp.watch(['./src/js/*.js'],   ['js','jslint']);
 	gulp.watch('./src/**/*.css',  ['css','csslint']);
+	gulp.watch('./src/root/*',  ['root']);
 	//gulp.watch('./dist/**/*.html', ['bs-reload']);
 	gulp.watch(['./src/views/**/*'], ['build-watch']);
 	gulp.watch('./src/img/**/*.svg', ['svg']);
