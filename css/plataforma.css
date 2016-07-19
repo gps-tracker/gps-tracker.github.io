@@ -118,7 +118,9 @@ div {
 h4 {
 	margin-bottom: 0px;
 }
-
+footer.page-footer{
+	padding: 0px;
+}
 div.container.footer-copyright {
 	font-size: 0.3em;
 }
