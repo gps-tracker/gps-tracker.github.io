@@ -11,6 +11,7 @@ footer,
 @page {
 margin: 0.5cm;
 }
+
 img {
 	max-width: 300px;
 }
@@ -28,6 +29,11 @@ h4,
 h5 {
 	font-size:  1.1em;
 }
+
+
+
+
+
 
 .container .row {
   margin-left: -0.75rem;
