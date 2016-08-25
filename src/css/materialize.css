@@ -3,9 +3,6 @@
  * Copyright 2014-2015 Materialize
  * MIT License (https://raw.githubusercontent.com/Dogfalo/materialize/master/LICENSE)
  */
-
-
-
 .indigo {
   background-color: #3f51b5 !important;
 }
@@ -13,7 +10,6 @@
 .indigo-text {
   color: #3f51b5 !important;
 }
-
 .indigo.lighten-5 {
   background-color: #e8eaf6 !important;
 }
@@ -29,205 +25,12 @@
 .indigo-text.text-lighten-4 {
   color: #c5cae9 !important;
 }
-
-.indigo.lighten-3 {
-  background-color: #9fa8da !important;
-}
-
-.indigo-text.text-lighten-3 {
-  color: #9fa8da !important;
-}
-
-.indigo.lighten-2 {
-  background-color: #7986cb !important;
-}
-
-.indigo-text.text-lighten-2 {
-  color: #7986cb !important;
-}
-
-.indigo.lighten-1 {
-  background-color: #5c6bc0 !important;
-}
-
-.indigo-text.text-lighten-1 {
-  color: #5c6bc0 !important;
-}
-
-.indigo.darken-1 {
-  background-color: #3949ab !important;
-}
-
-.indigo-text.text-darken-1 {
-  color: #3949ab !important;
-}
-
-.indigo.darken-2 {
-  background-color: #303f9f !important;
-}
-
-.indigo-text.text-darken-2 {
-  color: #303f9f !important;
-}
-
-.indigo.darken-3 {
-  background-color: #283593 !important;
-}
-
-.indigo-text.text-darken-3 {
-  color: #283593 !important;
-}
-
-.indigo.darken-4 {
-  background-color: #1a237e !important;
-}
-
-.indigo-text.text-darken-4 {
-  color: #1a237e !important;
-}
-
-.indigo.accent-1 {
-  background-color: #8c9eff !important;
-}
-
-.indigo-text.text-accent-1 {
-  color: #8c9eff !important;
-}
-
-.indigo.accent-2 {
-  background-color: #536dfe !important;
-}
-
-.indigo-text.text-accent-2 {
-  color: #536dfe !important;
-}
-
-.indigo.accent-3 {
-  background-color: #3d5afe !important;
-}
-
-.indigo-text.text-accent-3 {
-  color: #3d5afe !important;
-}
-
-.indigo.accent-4 {
-  background-color: #304ffe !important;
-}
-
-.indigo-text.text-accent-4 {
-  color: #304ffe !important;
-}
-
 .orange {
   background-color: #ff9800 !important;
 }
 
 .orange-text {
   color: #ff9800 !important;
-}
-
-.orange.lighten-5 {
-  background-color: #fff3e0 !important;
-}
-
-.orange-text.text-lighten-5 {
-  color: #fff3e0 !important;
-}
-
-.orange.lighten-4 {
-  background-color: #ffe0b2 !important;
-}
-
-.orange-text.text-lighten-4 {
-  color: #ffe0b2 !important;
-}
-
-.orange.lighten-3 {
-  background-color: #ffcc80 !important;
-}
-
-.orange-text.text-lighten-3 {
-  color: #ffcc80 !important;
-}
-
-.orange.lighten-2 {
-  background-color: #ffb74d !important;
-}
-
-.orange-text.text-lighten-2 {
-  color: #ffb74d !important;
-}
-
-.orange.lighten-1 {
-  background-color: #ffa726 !important;
-}
-
-.orange-text.text-lighten-1 {
-  color: #ffa726 !important;
-}
-
-.orange.darken-1 {
-  background-color: #fb8c00 !important;
-}
-
-.orange-text.text-darken-1 {
-  color: #fb8c00 !important;
-}
-
-.orange.darken-2 {
-  background-color: #f57c00 !important;
-}
-
-.orange-text.text-darken-2 {
-  color: #f57c00 !important;
-}
-
-.orange.darken-3 {
-  background-color: #ef6c00 !important;
-}
-
-.orange-text.text-darken-3 {
-  color: #ef6c00 !important;
-}
-
-.orange.darken-4 {
-  background-color: #e65100 !important;
-}
-
-.orange-text.text-darken-4 {
-  color: #e65100 !important;
-}
-
-.orange.accent-1 {
-  background-color: #ffd180 !important;
-}
-
-.orange-text.text-accent-1 {
-  color: #ffd180 !important;
-}
-
-.orange.accent-2 {
-  background-color: #ffab40 !important;
-}
-
-.orange-text.text-accent-2 {
-  color: #ffab40 !important;
-}
-
-.orange.accent-3 {
-  background-color: #ff9100 !important;
-}
-
-.orange-text.text-accent-3 {
-  color: #ff9100 !important;
-}
-
-.orange.accent-4 {
-  background-color: #ff6d00 !important;
-}
-
-.orange-text.text-accent-4 {
-  color: #ff6d00 !important;
 }
 
 .grey {
@@ -977,7 +780,7 @@ video.responsive-video {
 .breadcrumb:last-child {
   color: #fff;
 }
-
+/*
 .parallax-container {
   position: relative;
   overflow: hidden;
@@ -1005,7 +808,7 @@ video.responsive-video {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
-
+*/
 .pin-top, .pin-bottom {
   position: relative;
 }
@@ -1118,7 +921,7 @@ table {
   width: 100%;
   display: table;
 }
-
+/*
 table.bordered > thead > tr,
 table.bordered > tbody > tr {
   border-bottom: 1px solid #d0d0d0;
@@ -1143,7 +946,7 @@ table.highlight > tbody > tr:hover {
 table.centered thead tr th, table.centered tbody tr td {
   text-align: center;
 }
-
+*/
 thead {
   border-bottom: 1px solid #d0d0d0;
 }
@@ -1155,7 +958,7 @@ td, th {
   vertical-align: middle;
   border-radius: 2px;
 }
-
+/*
 @media only screen and (max-width: 992px) {
   table.responsive-table {
     width: 100%;
@@ -1163,7 +966,6 @@ td, th {
     border-spacing: 0;
     display: block;
     position: relative;
-    /* sort out borders */
   }
   table.responsive-table td:empty:before {
     content: '\00a0';
@@ -1230,7 +1032,8 @@ td, th {
     border-right: 1px solid #d0d0d0;
   }
 }
-
+*/
+/*
 .collection {
   margin: 0.5rem 0 1rem 0;
   border: 1px solid #e0e0e0;
@@ -1321,7 +1124,7 @@ td, th {
 .collection.with-header .collection-item.avatar {
   padding-left: 72px;
 }
-
+*/
 .secondary-content {
   float: right;
   color: #26a69a;
@@ -1376,7 +1179,7 @@ nav ul a span.badge {
   width: 100%;
   height: 100%;
 }
-
+/*
 .progress {
   position: relative;
   height: 4px;
@@ -1697,7 +1500,7 @@ input[type=range] + .thumb {
   left: auto;
   right: auto;
 }
-
+/*
 .row .col.offset-s1 {
   margin-left: 8.3333333333%;
 }
@@ -1841,7 +1644,7 @@ input[type=range] + .thumb {
 .row .col.push-s12 {
   left: 100%;
 }
-
+*/
 @media only screen and (min-width: 601px) {
   .row .col.m1 {
     width: 8.3333333333%;
@@ -1915,6 +1718,7 @@ input[type=range] + .thumb {
     left: auto;
     right: auto;
   }
+  /*
   .row .col.offset-m1 {
     margin-left: 8.3333333333%;
   }
@@ -2022,7 +1826,7 @@ input[type=range] + .thumb {
   }
   .row .col.push-m12 {
     left: 100%;
-  }
+  }*/
 }
 
 @media only screen and (min-width: 993px) {
@@ -2098,6 +1902,7 @@ input[type=range] + .thumb {
     left: auto;
     right: auto;
   }
+  /*
   .row .col.offset-l1 {
     margin-left: 8.3333333333%;
   }
@@ -2205,7 +2010,7 @@ input[type=range] + .thumb {
   }
   .row .col.push-l12 {
     left: 100%;
-  }
+  }*/
 }
 
 nav {
@@ -2517,7 +2322,7 @@ small {
 .flow-text {
   font-weight: 300;
 }
-
+/*
 @media only screen and (min-width: 360px) {
   .flow-text {
     font-size: 1.2rem;
@@ -2649,7 +2454,7 @@ small {
     font-size: 1.2rem;
   }
 }
-
+*/
 .card-panel {
   transition: box-shadow .25s;
   padding: 20px;
@@ -2785,7 +2590,7 @@ small {
   cursor: pointer;
   display: block;
 }
-
+/*
 #toast-container {
   display: block;
   position: fixed;
@@ -2870,7 +2675,8 @@ small {
     float: right;
   }
 }
-
+*/
+/*
 .tabs {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2952,7 +2758,7 @@ small {
   pointer-events: none;
   will-change: top, left;
 }
-
+*/
 .backdrop {
   position: absolute;
   opacity: 0;
@@ -3222,6 +3028,7 @@ button.btn-floating {
  * Released under the MIT license
  * https://github.com/fians/Waves/blob/master/LICENSE
  */
+ /*
 .waves-effect {
   position: relative;
   cursor: pointer;
@@ -3326,12 +3133,11 @@ button.btn-floating {
 .waves-block {
   display: block;
 }
-
-/* Firefox Bug: link not triggered */
 a.waves-effect .waves-ripple {
   z-index: -1;
 }
-
+*/
+/*
 .modal {
   display: none;
   position: fixed;
@@ -3420,7 +3226,8 @@ a.waves-effect .waves-ripple {
   border-radius: 0;
   will-change: bottom, opacity;
 }
-
+*/
+/*
 .collapsible {
   border-top: 1px solid #ddd;
   border-right: 1px solid #ddd;
@@ -3515,7 +3322,8 @@ a.waves-effect .waves-ripple {
   box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
   margin: 16px 0;
 }
-
+*/
+/*
 .chip {
   display: inline-block;
   height: 32px;
@@ -3543,7 +3351,8 @@ a.waves-effect .waves-ripple {
   line-height: 32px;
   padding-left: 8px;
 }
-
+*/
+/*
 .materialboxed {
   display: block;
   cursor: -webkit-zoom-in;
@@ -3589,7 +3398,7 @@ a.waves-effect .waves-ripple {
   z-index: 1000;
   -webkit-font-smoothing: antialiased;
 }
-
+*/
 select:focus {
   outline: 1px solid #c9f3ef;
 }
@@ -4001,6 +3810,7 @@ textarea.materialize-textarea + label:after {
 }
 
 /* Textarea */
+/*
 textarea {
   width: 100%;
   height: 3rem;
@@ -4009,9 +3819,7 @@ textarea {
 
 textarea.materialize-textarea {
   overflow-y: hidden;
-  /* prevents scroll bar flash */
   padding: 1.6rem 0;
-  /* prevents text jump on Enter keypress */
   resize: none;
   min-height: 3rem;
 }
@@ -4021,13 +3829,12 @@ textarea.materialize-textarea {
   white-space: pre-wrap;
   word-wrap: break-word;
   overflow-wrap: break-word;
-  /* future version of deprecated 'word-wrap' */
   padding-top: 1.2rem;
-  /* prevents text jump on Enter keypress */
 }
 
 /* Radio Buttons
    ========================================================================== */
+/*
 [type="radio"]:not(:checked),
 [type="radio"]:checked {
   position: absolute;
@@ -4045,7 +3852,6 @@ textarea.materialize-textarea {
   line-height: 25px;
   font-size: 1rem;
   transition: .28s ease;
-  /* webkit (konqueror) browsers */
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -4065,7 +3871,6 @@ textarea.materialize-textarea {
   transition: .28s ease;
 }
 
-/* Unchecked styles */
 [type="radio"]:not(:checked) + label:before,
 [type="radio"]:not(:checked) + label:after,
 [type="radio"]:checked + label:before,
@@ -4086,7 +3891,6 @@ textarea.materialize-textarea {
           transform: scale(0);
 }
 
-/* Checked styles */
 [type="radio"]:checked + label:before {
   border: 2px solid transparent;
 }
@@ -4108,18 +3912,15 @@ textarea.materialize-textarea {
           transform: scale(1.02);
 }
 
-/* Radio With gap */
 [type="radio"].with-gap:checked + label:after {
   -webkit-transform: scale(0.5);
           transform: scale(0.5);
 }
 
-/* Focused styles */
 [type="radio"].tabbed:focus + label:before {
   box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Disabled Radio With gap */
 [type="radio"].with-gap:disabled:checked + label:before {
   border: 2px solid rgba(0, 0, 0, 0.26);
 }
@@ -4129,7 +3930,6 @@ textarea.materialize-textarea {
   background-color: rgba(0, 0, 0, 0.26);
 }
 
-/* Disabled style */
 [type="radio"]:disabled:not(:checked) + label:before,
 [type="radio"]:disabled:checked + label:before {
   background-color: transparent;
@@ -4152,6 +3952,7 @@ textarea.materialize-textarea {
 /* Checkboxes
    ========================================================================== */
 /* CUSTOM CSS CHECKBOXES */
+/*
 form p {
   margin-bottom: 10px;
   text-align: left;
@@ -4161,7 +3962,6 @@ form p:last-child {
   margin-bottom: 0;
 }
 
-/* Remove default checkbox */
 [type="checkbox"]:not(:checked),
 [type="checkbox"]:checked {
   position: absolute;
@@ -4170,7 +3970,6 @@ form p:last-child {
 }
 
 [type="checkbox"] {
-  /* checkbox aspect */
 }
 
 [type="checkbox"] + label {
@@ -4182,13 +3981,9 @@ form p:last-child {
   line-height: 25px;
   font-size: 1rem;
   -webkit-user-select: none;
-  /* webkit (safari, chrome) browsers */
   -moz-user-select: none;
-  /* mozilla browsers */
   -khtml-user-select: none;
-  /* webkit (konqueror) browsers */
   -ms-user-select: none;
-  /* IE10+ */
 }
 
 [type="checkbox"] + label:before,
@@ -4248,7 +4043,6 @@ form p:last-child {
   border-bottom: 2px solid rgba(0, 0, 0, 0.26);
 }
 
-/* Indeterminate checkbox */
 [type="checkbox"]:indeterminate + label:before {
   top: -11px;
   left: -12px;
@@ -4280,7 +4074,6 @@ form p:last-child {
   content: '';
   left: 0;
   position: absolute;
-  /* .1s delay is for check animation */
   transition: border .25s, background-color .25s, width .20s .1s, height .20s .1s, top .20s .1s, left .20s .1s;
   z-index: 1;
 }
@@ -4363,7 +4156,7 @@ form p:last-child {
 
 /* Switch
    ========================================================================== */
-.switch,
+/*.switch,
 .switch * {
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -4439,6 +4232,7 @@ input[type=checkbox]:not(:disabled).tabbed:focus ~ .lever::after {
 
 /* Select Field
    ========================================================================== */
+/*
 select {
   display: none;
 }
@@ -4506,11 +4300,11 @@ select:disabled {
   color: rgba(0, 0, 0, 0.3);
   cursor: default;
   -webkit-user-select: none;
-  /* webkit (safari, chrome) browsers */
+
   -moz-user-select: none;
-  /* mozilla browsers */
+
   -ms-user-select: none;
-  /* IE10+ */
+
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
 
@@ -4560,7 +4354,7 @@ select:disabled {
 
 /* File Input
    ========================================================================== */
-.file-field {
+/*.file-field {
   position: relative;
 }
 
@@ -4600,7 +4394,7 @@ select:disabled {
 
 /* Range
    ========================================================================== */
-.range-field {
+/*.range-field {
   position: relative;
 }
 
@@ -4687,9 +4481,7 @@ input[type=range]:focus::-webkit-slider-runnable-track {
 }
 
 input[type=range] {
-  /* fix for FF unable to apply focus style bug  */
   border: 1px solid white;
-  /*required for proper track sizing in FF*/
 }
 
 input[type=range]::-moz-range-track {
@@ -4721,7 +4513,6 @@ input[type=range]::-ms-track {
   background: transparent;
   border-color: transparent;
   border-width: 6px 0;
-  /*remove default tick marks*/
   color: transparent;
 }
 
@@ -4945,7 +4736,7 @@ input[type=range]:focus::-ms-fill-upper {
  *      CONTAINERWIDTH = 28px
  *      SHRINK_TIME = 400ms
  */
-.preloader-wrapper {
+/*.preloader-wrapper {
   display: inline-block;
   position: relative;
   width: 48px;
@@ -4963,7 +4754,6 @@ input[type=range]:focus::-ms-fill-upper {
 }
 
 .preloader-wrapper.active {
-  /* duration: 360 * ARCTIME / (ARCSTARTROT + (360-ARCSIZE)) */
   -webkit-animation: container-rotate 1568ms linear infinite;
   animation: container-rotate 1568ms linear infinite;
 }
@@ -5022,26 +4812,27 @@ input[type=range]:focus::-ms-fill-upper {
  * specific properties properly, treats them as -webkit-animation, and overrides the
  * other animation rules. See https://github.com/Polymer/platform/issues/53.
  */
+ /*
 .active .spinner-layer.spinner-blue {
-  /* durations: 4 * ARCTIME */
+
   -webkit-animation: fill-unfill-rotate 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both, blue-fade-in-out 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
   animation: fill-unfill-rotate 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both, blue-fade-in-out 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
 }
 
 .active .spinner-layer.spinner-red {
-  /* durations: 4 * ARCTIME */
+
   -webkit-animation: fill-unfill-rotate 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both, red-fade-in-out 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
   animation: fill-unfill-rotate 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both, red-fade-in-out 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
 }
 
 .active .spinner-layer.spinner-yellow {
-  /* durations: 4 * ARCTIME */
+
   -webkit-animation: fill-unfill-rotate 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both, yellow-fade-in-out 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
   animation: fill-unfill-rotate 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both, yellow-fade-in-out 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
 }
 
 .active .spinner-layer.spinner-green {
-  /* durations: 4 * ARCTIME */
+
   -webkit-animation: fill-unfill-rotate 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both, green-fade-in-out 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
   animation: fill-unfill-rotate 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both, green-fade-in-out 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
 }
@@ -5051,7 +4842,7 @@ input[type=range]:focus::-ms-fill-upper {
 .active .spinner-layer.spinner-red-only,
 .active .spinner-layer.spinner-yellow-only,
 .active .spinner-layer.spinner-green-only {
-  /* durations: 4 * ARCTIME */
+
   opacity: 1;
   -webkit-animation: fill-unfill-rotate 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
   animation: fill-unfill-rotate 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
@@ -5061,35 +4852,35 @@ input[type=range]:focus::-ms-fill-upper {
   12.5% {
     -webkit-transform: rotate(135deg);
   }
-  /* 0.5 * ARCSIZE */
+
   25% {
     -webkit-transform: rotate(270deg);
   }
-  /* 1   * ARCSIZE */
+
   37.5% {
     -webkit-transform: rotate(405deg);
   }
-  /* 1.5 * ARCSIZE */
+
   50% {
     -webkit-transform: rotate(540deg);
   }
-  /* 2   * ARCSIZE */
+
   62.5% {
     -webkit-transform: rotate(675deg);
   }
-  /* 2.5 * ARCSIZE */
+
   75% {
     -webkit-transform: rotate(810deg);
   }
-  /* 3   * ARCSIZE */
+
   87.5% {
     -webkit-transform: rotate(945deg);
   }
-  /* 3.5 * ARCSIZE */
+
   to {
     -webkit-transform: rotate(1080deg);
   }
-  /* 4   * ARCSIZE */
+
 }
 
 @keyframes fill-unfill-rotate {
@@ -5097,42 +4888,42 @@ input[type=range]:focus::-ms-fill-upper {
     -webkit-transform: rotate(135deg);
             transform: rotate(135deg);
   }
-  /* 0.5 * ARCSIZE */
+
   25% {
     -webkit-transform: rotate(270deg);
             transform: rotate(270deg);
   }
-  /* 1   * ARCSIZE */
+
   37.5% {
     -webkit-transform: rotate(405deg);
             transform: rotate(405deg);
   }
-  /* 1.5 * ARCSIZE */
+
   50% {
     -webkit-transform: rotate(540deg);
             transform: rotate(540deg);
   }
-  /* 2   * ARCSIZE */
+
   62.5% {
     -webkit-transform: rotate(675deg);
             transform: rotate(675deg);
   }
-  /* 2.5 * ARCSIZE */
+
   75% {
     -webkit-transform: rotate(810deg);
             transform: rotate(810deg);
   }
-  /* 3   * ARCSIZE */
+
   87.5% {
     -webkit-transform: rotate(945deg);
             transform: rotate(945deg);
   }
-  /* 3.5 * ARCSIZE */
+
   to {
     -webkit-transform: rotate(1080deg);
             transform: rotate(1080deg);
   }
-  /* 4   * ARCSIZE */
+
 }
 
 @-webkit-keyframes blue-fade-in-out {
@@ -5289,6 +5080,7 @@ input[type=range]:focus::-ms-fill-upper {
  * Patch the gap that appear between the two adjacent div.circle-clipper while the
  * spinner is rotating (appears on Chrome 38, Safari 7.1, and IE 11).
  */
+ /*
 .gap-patch {
   position: absolute;
   top: 0;
@@ -5317,7 +5109,7 @@ input[type=range]:focus::-ms-fill-upper {
   width: 200%;
   height: 100%;
   border-width: 3px;
-  /* STROKEWIDTH */
+
   border-style: solid;
   border-color: inherit;
   border-bottom-color: transparent !important;
@@ -5345,13 +5137,13 @@ input[type=range]:focus::-ms-fill-upper {
 }
 
 .active .circle-clipper.left .circle {
-  /* duration: ARCTIME */
+
   -webkit-animation: left-spin 1333ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
   animation: left-spin 1333ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
 }
 
 .active .circle-clipper.right .circle {
-  /* duration: ARCTIME */
+
   -webkit-animation: right-spin 1333ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
   animation: right-spin 1333ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
 }
@@ -5411,7 +5203,6 @@ input[type=range]:focus::-ms-fill-upper {
 }
 
 #spinnerContainer.cooldown {
-  /* duration: SHRINK_TIME */
   -webkit-animation: container-rotate 1568ms linear infinite, fade-out 400ms cubic-bezier(0.4, 0, 0.2, 1);
   animation: container-rotate 1568ms linear infinite, fade-out 400ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -5433,7 +5224,7 @@ input[type=range]:focus::-ms-fill-upper {
     opacity: 0;
   }
 }
-
+*/
 .slider {
   position: relative;
   height: 400px;
@@ -5524,7 +5315,7 @@ input[type=range]:focus::-ms-fill-upper {
 .slider .indicators .indicator-item.active {
   background-color: #4CAF50;
 }
-
+/*
 .carousel {
   overflow: hidden;
   position: relative;
@@ -5566,9 +5357,7 @@ input[type=range]:focus::-ms-fill-upper {
 /* ==========================================================================
    $BASE-PICKER
    ========================================================================== */
-/**
- * Note: the root picker element should *NOT* be styled more than what's here.
- */
+/*
 .picker {
   font-size: 16px;
   text-align: left;
@@ -5582,39 +5371,20 @@ input[type=range]:focus::-ms-fill-upper {
   user-select: none;
 }
 
-/**
- * The picker input element.
- */
 .picker__input {
   cursor: default;
 }
 
-/**
- * When the picker is opened, the input element is "activated".
- */
 .picker__input.picker__input--active {
   border-color: #0089ec;
 }
 
-/**
- * The holder is the only "scrollable" top-level container element.
- */
 .picker__holder {
   width: 100%;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
 }
 
-/*!
- * Default mobile-first, responsive styling for pickadate.js
- * Demo: http://amsul.github.io/pickadate.js
- */
-/**
- * Note: the root picker element should *NOT* be styled more than what's here.
- */
-/**
- * Make the holder and frame fullscreen.
- */
 .picker__holder,
 .picker__frame {
   bottom: 0;
@@ -5623,18 +5393,12 @@ input[type=range]:focus::-ms-fill-upper {
   top: 100%;
 }
 
-/**
- * The holder should overlay the entire screen.
- */
 .picker__holder {
   position: fixed;
   transition: background 0.15s ease-out, top 0s 0.15s;
   -webkit-backface-visibility: hidden;
 }
 
-/**
- * The frame that bounds the box contents of the picker.
- */
 .picker__frame {
   position: absolute;
   margin: 0 auto;
@@ -5663,9 +5427,6 @@ input[type=range]:focus::-ms-fill-upper {
   }
 }
 
-/**
- * The wrapper sets the stage to vertically align the box contents.
- */
 .picker__wrap {
   display: table;
   width: 100%;
@@ -5678,9 +5439,6 @@ input[type=range]:focus::-ms-fill-upper {
   }
 }
 
-/**
- * The box contains all the picker contents.
- */
 .picker__box {
   background: #ffffff;
   display: table-cell;
@@ -5698,9 +5456,6 @@ input[type=range]:focus::-ms-fill-upper {
   }
 }
 
-/**
- * When the picker opens...
- */
 .picker--opened .picker__holder {
   top: 0;
   background: transparent;
@@ -5731,6 +5486,7 @@ input[type=range]:focus::-ms-fill-upper {
 /* ==========================================================================
    CUSTOM MATERIALIZE STYLES
    ========================================================================== */
+/*
 .picker__input.picker__input--active {
   border-color: #E3F2FD;
 }
@@ -5750,25 +5506,17 @@ input[type=range]:focus::-ms-fill-upper {
 /* ==========================================================================
    $BASE-DATE-PICKER
    ========================================================================== */
-/**
- * The picker box.
- */
+/*
 .picker__box {
   padding: 0 1em;
 }
 
-/**
- * The header containing the month and year stuff.
- */
 .picker__header {
   text-align: center;
   position: relative;
   margin-top: .75em;
 }
 
-/**
- * The month and year labels.
- */
 .picker__month,
 .picker__year {
   display: inline-block;
@@ -5776,9 +5524,6 @@ input[type=range]:focus::-ms-fill-upper {
   margin-right: .25em;
 }
 
-/**
- * The month and year selectors.
- */
 .picker__select--month,
 .picker__select--year {
   height: 2em;
@@ -5804,9 +5549,6 @@ input[type=range]:focus::-ms-fill-upper {
   border-color: rgba(0, 0, 0, 0.05);
 }
 
-/**
- * The month navigation buttons.
- */
 .picker__nav--prev,
 .picker__nav--next {
   position: absolute;
@@ -5837,9 +5579,6 @@ input[type=range]:focus::-ms-fill-upper {
   border-left-color: #f5f5f5;
 }
 
-/**
- * The calendar table of dates
- */
 .picker__table {
   text-align: center;
   border-collapse: collapse;
@@ -5860,16 +5599,13 @@ input[type=range]:focus::-ms-fill-upper {
   padding: 0;
 }
 
-/**
- * The weekday labels
- */
 .picker__weekday {
   width: 14.285714286%;
   font-size: .75em;
   padding-bottom: .25em;
   color: #999999;
   font-weight: 500;
-  /* Increase the spacing a tad */
+
 }
 
 @media (min-height: 33.875em) {
@@ -5878,9 +5614,6 @@ input[type=range]:focus::-ms-fill-upper {
   }
 }
 
-/**
- * The days on the calendar
- */
 .picker__day--today {
   position: relative;
   color: #595959;
@@ -5941,9 +5674,6 @@ input[type=range]:focus::-ms-fill-upper {
   background: #bbbbbb;
 }
 
-/**
- * The footer containing the "today", "clear", and "close" buttons.
- */
 .picker__footer {
   text-align: center;
   display: -webkit-flex;
@@ -6038,6 +5768,7 @@ input[type=range]:focus::-ms-fill-upper {
 /* ==========================================================================
    CUSTOM MATERIALIZE STYLES
    ========================================================================== */
+/*
 .picker__box {
   border-radius: 2px;
   overflow: hidden;
@@ -6166,22 +5897,17 @@ input[type=range]:focus::-ms-fill-upper {
 button.picker__today:focus, button.picker__clear:focus, button.picker__close:focus {
   background-color: #a1ded8;
 }
-
+*/
 /* ==========================================================================
    $BASE-TIME-PICKER
    ========================================================================== */
-/**
- * The list of times.
- */
+/*
 .picker__list {
   list-style: none;
   padding: 0.75em 0 4.2em;
   margin: 0;
 }
 
-/**
- * The times on the clock.
- */
 .picker__list-item {
   border-bottom: 1px solid #dddddd;
   border-top: 1px solid #dddddd;
@@ -6196,8 +5922,6 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
     padding: .5em 1em;
   }
 }
-
-/* Hovered time */
 .picker__list-item:hover {
   cursor: pointer;
   color: #000000;
@@ -6206,7 +5930,6 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   z-index: 10;
 }
 
-/* Highlighted and hovered/focused time */
 .picker__list-item--highlighted {
   border-color: #0089ec;
   z-index: 10;
@@ -6219,7 +5942,6 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   background: #b1dcfb;
 }
 
-/* Selected and hovered/focused time */
 .picker__list-item--selected,
 .picker__list-item--selected:hover,
 .picker--focused .picker__list-item--selected {
@@ -6228,7 +5950,6 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   z-index: 10;
 }
 
-/* Disabled time */
 .picker__list-item--disabled,
 .picker__list-item--disabled:hover,
 .picker--focused .picker__list-item--disabled {
@@ -6240,9 +5961,6 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   z-index: auto;
 }
 
-/**
- * The clear button
- */
 .picker--time .picker__button--clear {
   display: block;
   width: 80%;
@@ -6279,21 +5997,16 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 .picker--time .picker__button--clear:focus:before {
   color: #ffffff;
 }
-
+*/
 /* ==========================================================================
    $DEFAULT-TIME-PICKER
    ========================================================================== */
-/**
- * The frame the bounds the time picker.
- */
+/*
 .picker--time .picker__frame {
   min-width: 256px;
   max-width: 320px;
 }
 
-/**
- * The picker box.
- */
 .picker--time .picker__box {
   font-size: 1em;
   background: #f2f2f2;
@@ -6305,3 +6018,4 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
     margin-bottom: 5em;
   }
 }
+*/

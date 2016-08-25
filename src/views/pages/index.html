@@ -11,22 +11,22 @@ descripcion: Sistema de Localización Satelital para vehiculos que le permite ob
 ventajas:
  - titulo: Ahorro
    descripcion: Reducción de costos inherentes a la operatividad y administración de la plataforma, manteniendo la calidad del servicio sin pagar mensualidad por concepto de monitoreo y/o contrataciones sujetas a vencimientos.
-   img: /images/iconos/reduccion-costes.png
+   img: /images/iconos/reduccion-costes.jpg
  - titulo: Seguridad
    descripcion: Tener el Control, Rastreo y Seguridad de sus activos las 24 horas de los 365 días del año de forma autónoma.
-   img: /images/iconos/seguridad.png 
+   img: /images/iconos/seguridad.jpg 
  - titulo: Accesibilidad
    descripcion: Suministramos a nuestros clientes Dos claves de acceso al portal Web. (Administrador y Terceros).
-   img: /images/iconos/acceso.png
+   img: /images/iconos/acceso.jpg
  - titulo: Respaldo 
    descripcion: Contamos con una plataforma de respaldo en caso de fallas técnicas que impidan el acceso a la plataforma principal. www.gpsrespaldo.com.
-   img: /images/iconos/candado.png
+   img: /images/iconos/candado.jpg
  - titulo: Servicio 
    descripcion: Servicio personalizado de Acompañamiento posventa durante el tiempo vinculado a nuestra empresa.
-   img: /images/iconos/reduccion-costes.png
+   img: /images/iconos/servicio.jpg
  - titulo: Capacitación
    descripcion: Capacitaciones permanentes; personalizadas o virtuales sobre el manejo de la plataforma cada vez que el cliente lo solicite.
-   img: /images/iconos/capacitacion.png
+   img: /images/iconos/capacitacion.jpg
 
 ##########
 #Ventajas Secundarias
@@ -34,25 +34,25 @@ ventajas:
 ventajas2:
  - titulo: Botón de Emergencia (S.O.S)
    descripcion: Al accionar este botón se enviará una alarma visual y sonora al portal informando que se encuentra en peligro y enviará un SMS a dos teléfono celulares autorizados. 
-   img: /images/iconos/sos.png
+   img: /images/iconos/sos.jpg
  - titulo: Alarma de Sobre velocidad
    descripcion:  En caso que un dispositivo exceda el límite de velocidad establecido enviará una alarma visual y sonora al portal informando el evento, velocidad, fecha y hora en tiempo real. 
-   img: /images/iconos/velocidad.png
+   img: /images/iconos/velocidad.jpg
  - titulo: Función Manos Libres
    descripcion:  El conductor podrá recibir llamadas de 2 teléfonos autorizados o se podrá monitorear conversaciones dentro de la cabina del vehículo sin ser detectado. 
-   img: /images/iconos/manos-libres.png
+   img: /images/iconos/manos-libres.jpg
  - titulo: Apagado remoto del vehículo
    descripcion: Con solo ejecutar un comando en la lista se podrá detener la marcha del vehículo. (Aplica especificaciones técnicas)
-   img: /images/iconos/stop.png
+   img: /images/iconos/stop.jpg
  - titulo: Alarma de Encendido/Apagado
    descripcion:  Cada vez que el vehículo es encendido o apagado enviará una alarma al portal para ser consultado en el momento que requiera. 
-   img: /images/iconos/alarma.png
+   img: /images/iconos/alarma.jpg
  - titulo: Restricciones de área o Geocercas
    descripcion: Permite conocer cuando el dispositivo ingresa o cruza por un lugar programado; se puede crear hasta 8 puntos de control por unidad.
-   img: /images/iconos/geocerca.png
+   img: /images/iconos/geocerca.jpg
  - titulo: Puntos de interés (PDI)
    descripcion:  Mediante esta opción se podrá identificar sitios de interés dentro del mapa para posteriormente utilizarlos como referente.
-   img: /images/iconos/mapa.png
+   img: /images/iconos/mapa.jpg
 ##########
 #Mini banners
 ##########
@@ -69,7 +69,7 @@ banner2:
 
 ---
 <!DOCTYPE html> 
-<html lang="en">
+<html lang="es">
 <head>
 	<meta charset="UTF-8">
 	<title>{{data.titulo}} | {{front.titulo}} </title>
@@ -77,7 +77,7 @@ banner2:
 	{{>head}}
 	<!-- CSS  -->
 	<link href="css/min.css" type="text/css" rel="stylesheet" media="screen" />
-	<link href="css/print.css" type="text/css" rel="stylesheet" media="print" />
+  <link href="css/print.css" type="text/css" rel="stylesheet" media="print" />
 </head> 
 <body>
 	{{>analytics}}
@@ -88,10 +88,10 @@ banner2:
 		{{>sections/4clients}}
 		{{>sections/6ventajas info=front.ventajas}}
 		{{>sections/mini-banner-boton info=front.banner1}}
-	    {{>sections/imagen}}
-	    {{>sections/otrasVentajas info=front.ventajas2}}
-	    {{>sections/mini-banner-boton info=front.banner2}}
-	    {{>sections/nosotros}}
+	  {{>sections/imagen}}
+	  {{>sections/otrasVentajas info=front.ventajas2}}
+	  {{>sections/mini-banner-boton info=front.banner2}}
+	  {{>sections/nosotros}}
 
 	</main>
 	{{>footer}}
@@ -103,3 +103,4 @@ banner2:
 	{{>microdatos}}
 </body>
 </html>
+

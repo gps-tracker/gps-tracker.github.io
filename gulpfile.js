@@ -14,8 +14,12 @@ var frontMatter = require('gulp-front-matter');
 var plumber = require('gulp-plumber');
 var notify = require('gulp-notify');
 //var sourcemaps = require('gulp-sourcemaps');
-var ghPages = require('gulp-gh-pages')
+var ghPages = require('gulp-gh-pages');
+//var inlineImg = require('gulp-inline-image-html');
 
+/*///////////////////////////////////////
+Send a message in error
+///////////////////////////////////////*/
 function plumberit(errTitle) {
 return plumber({
 errorHandler: notify.onError({
@@ -42,9 +46,10 @@ build and deploy
 gulp.task('build',   function () {
     return gulp
         .src('./src/views/pages/**/*.html')
-        .pipe(plumberit('Build Error'))
+        //.pipe(plumberit('Build Error'))
         .pipe(frontMatter({property: 'data.front' }))
         .pipe(hb({partials: './src/views/partials/**/*.hbs',data: './src/views/data.json',debug:0}))
+        //.pipe(inlineImg('./src'))
         .pipe(htmlmin({collapseWhitespace: true,minifyCSS:true,minifyJS:true,removeComments:true}))
         .pipe(gulp.dest('./dist'))
         //.pipe(browserSync.reload({ stream: false }));
@@ -93,19 +98,26 @@ gulp.task('css', function () {
         .pipe(gulp.dest('./dist/css'))
         .pipe(browserSync.reload({ stream: true }));
 });
+gulp.task('css-root', function () { 
+  return gulp.src(['./src/root/css/**/*.css'])
+        .pipe(plumberit('CSS parsing error'))
+        .pipe(csso())
+        .pipe(gulp.dest('./dist/css'))
+        .pipe(browserSync.reload({ stream: true }));
+});
 /*///////////////////////////////////////
 img minifier 
 ///////////////////////////////////////*/
 gulp.task('svg', function () {
-    return gulp.src('./src/img/**/*.svg')
+    return gulp.src('./src/images/**/*.svg')
         .pipe(plumberit('Svg minification error'))
         .pipe(imagemin())
         .pipe(gulp.dest('./dist/images'))
         .pipe(browserSync.reload({ stream: true }));
 });
 gulp.task('img', function(){
-	return gulp.src('./src/img/**/*.+(png|jpg|jpeg|gif)')
-    .pipe(plumberit('Img minification error'))
+	return gulp.src('./src/images/**/*.+(png|jpg|jpeg|gif)')
+    .pipe(plumberit('Images minification error'))
 	.pipe(cache(imagemin({interlaced: true})))// Caching images that ran through imagemin
 	.pipe(gulp.dest('dist/images'))
     .pipe(browserSync.reload({ stream: true }));
@@ -138,9 +150,9 @@ WATCHER
 gulp.task('default', ['browser-sync','js','css','build','svg','img','root'], function () {
 	gulp.watch(['./src/js/*.js'],   ['js','jslint']);
 	gulp.watch('./src/**/*.css',  ['css','csslint']);
-	gulp.watch('./src/root/*',  ['root']);
+	gulp.watch('./src/root/*',  ['browser-sync','root','css-root']);
 	//gulp.watch('./dist/**/*.html', ['bs-reload']);
 	gulp.watch(['./src/views/**/*'], ['build-watch']);
-	gulp.watch('./src/img/**/*.svg', ['svg']);
+	gulp.watch('./src/images/**/*.svg', ['svg']);
 	gulp.watch('src/**/*.+(png|jpg|jpeg|gif)', ['img']);
 });

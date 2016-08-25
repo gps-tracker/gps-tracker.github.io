@@ -6,7 +6,7 @@
 			$('.slider').slider({
 				full_width: true,
 				indicators: false,
-				height: 800,
+				height: 600,
 				interval: 6000
 			});
 			//NAVBAR STYLE

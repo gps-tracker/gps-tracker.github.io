@@ -301,10 +301,19 @@ valign {
 	width: 500px;
 }
 img.otras-ventajas{
-	max-width: 70px;
+	width: 70px;
+	height: 70px;
 	margin-top: 15px;
 	margin-bottom: 15px;
 	border-radius: 10px;
+}
+img.ventajas-6{
+	width: 150px;
+	height: 150px;
+}
+#experiencia-img{
+ max-height:250px;
+ margin-top:20px;
 }
 .full-width {
 	width: 100%;
@@ -349,29 +358,35 @@ h5 {
 }
 
 .impacto {
+	font-size: 25px;
 	position: relative;
 	/* Impact-based sans serif stack */
 	font-family: "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans-serif;
 }
 
 h1.impacto {
-	font-size: 3em;
 	text-shadow: 0 0px 6px #000;
 }
 
 .imp-1 {
+	font-size: 25px;
 	margin-bottom: -30px;
 	left: -100px;
 	text-shadow: 0 0px 6px #000;
 }
 
 .imp-3 {
+	font-size:  25px;
 	margin-top: -30px;
 	left: 115px;
 	text-shadow: 0 0px 4px #000;
 }
 
 .imp-2 {
+	font-size:  45px;
+	text-shadow: 0 0px 6px #000;
+}
+span.imp-2{
 	text-shadow: 0 0px 6px #FFF;
 }
 
@@ -380,23 +395,10 @@ h1.impacto {
 		top: 200px;
 		left: -50px;
 	}
-	#cap3 {
-		top: 150px;
-		left: 400px;
-	}
-	#cap2 {
-		top: 100px;
-	}
 }
 
 @media only screen and (min-width:600px) {
 	#cap1 {
-		top: 100px;
-	}
-	#cap3 {
-		top: 150px;
-	}
-	#cap2 {
 		top: 100px;
 	}
 }
