@@ -1,6 +1,11 @@
 html {
-	font-family: "Eras ITC",'Trebuchet MS';
+	font-family: "Eras ITC",'Trebuchet MS',sans-serif;
 	font-weight: 500;
+}
+p{
+	font-family: sans-serif;
+	line-height: 1.7rem;
+	font-size: 18px;
 }
 .indigo{
 	background-color:#2E3C6E !important;
@@ -246,7 +251,7 @@ valign {
 
 .nav-icon {
 	margin-bottom: -6px;
-	
+
 }
 .dropdown-content .nav-icon{
 	left: -20px;
@@ -308,8 +313,8 @@ img.otras-ventajas{
 	border-radius: 10px;
 }
 img.ventajas-6{
-	width: 150px;
-	height: 150px;
+	width: 100px;
+	height: 100px;
 }
 #experiencia-img{
  max-height:250px;
@@ -333,33 +338,36 @@ div.container.footer-copyright {
 }
 
 h1 {
-	font-size: 1.7em;
+	font-size: 2em;
 	color: #2E3C6E;
 }
 
 h2 {
-	font-size: 1.5em;
+	font-size: 1.9em;
 	color: #2E3C6E;
 }
 
 h3 {
-	font-size: 1.3em;
+	font-size: 1.8em;
 	color: #2E3C6E;
 }
 
 h4 {
-	font-size: 1.2em;
+	font-size: 1.7em;
 	color: #2E3C6E;
 }
 
 h5 {
-	font-size: 1.1em;
+	font-size: 1.6em;
 	color: #2E3C6E;
 }
 
 .impacto {
 	font-size: 25px;
-	position: relative;
+	position: absolute;
+   top: 250px;
+   left: 0;
+   width: 100%;
 	/* Impact-based sans serif stack */
 	font-family: "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans-serif;
 }
@@ -369,16 +377,18 @@ h1.impacto {
 }
 
 .imp-1 {
-	font-size: 25px;
+	/*font-size: 25px;
 	margin-bottom: -30px;
-	left: -100px;
+	left: -100px;*/
+	top:220px;
 	text-shadow: 0 0px 6px #000;
 }
 
 .imp-3 {
-	font-size:  25px;
+	/*font-size:  25px;
 	margin-top: -30px;
-	left: 115px;
+	left: 115px;*/
+	top:300px;
 	text-shadow: 0 0px 4px #000;
 }
 
@@ -389,7 +399,6 @@ h1.impacto {
 span.imp-2{
 	text-shadow: 0 0px 6px #FFF;
 }
-
 @media only screen and (min-width:992px) {
 	#cap1 {
 		top: 200px;
@@ -406,14 +415,10 @@ span.imp-2{
 	margin-bottom: 00px;
 	overflow: hidden;
 }
-#cap4 {
-	margin-top: -300px;
-	margin-bottom: 100px;
-	overflow: hidden;
-}
+
 
 #cap4 h1.impacto {
-	font-size: 2.3em;
+	font-size: 1.7em;
 	text-shadow: 0 1px 2px #000;
 }
 
@@ -423,15 +428,14 @@ span.imp-2{
 }
 
 #cap4 .imp-1 {
-	margin-bottom: -25px;
-	left: -45px;
 	text-shadow: 0 1px 3px #000;
 }
 
 #cap4 .imp-3 {
-	margin-top: -25px;
-	left: 55px;
 	text-shadow: 0 1px 3px #000;
+}
+#cap4 .imp-2 {
+	font-size: 1.2em;
 }
 
 @media only screen and (max-width:350px) {
@@ -453,20 +457,15 @@ span.imp-2{
 		text-shadow: 0 1px 2px #000;
 	}
 	#cap4 .imp-3 {
+		top:370px;
 		margin-top: -25px;
 		left: 0px;
 		text-shadow: 0 1px 2px #000;
 	}
-}
-
-#cap2 span {
-	font-size: 1.8em;
-}
-
-#cap2 .imp-3 {
-	left: 185px;
+	#cap4 .imp-2 {
+		font-size: 1em;
+	}
 }
 #sidenav-overlay{
 	z-index: 0;
 }
-

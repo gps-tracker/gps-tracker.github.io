@@ -10,18 +10,18 @@ descripcion: Sistema de Localización Satelital para vehiculos que le permite ob
 ##########
 ventajas:
  - titulo: Ahorro
-   descripcion: Reducción de costos inherentes a la operatividad y administración de la plataforma, manteniendo la calidad del servicio sin pagar mensualidad por concepto de monitoreo y/o contrataciones sujetas a vencimientos.
+   descripcion: Somos el unico servicio sin pagar mensualidad por concepto de monitoreo.
    img: /images/iconos/reduccion-costes.jpg
  - titulo: Seguridad
-   descripcion: Tener el Control, Rastreo y Seguridad de sus activos las 24 horas de los 365 días del año de forma autónoma.
-   img: /images/iconos/seguridad.jpg 
+   descripcion: Ten el control, rastreo y seguridad de tus activos de forma autónoma
+   img: /images/iconos/seguridad.jpg
  - titulo: Accesibilidad
-   descripcion: Suministramos a nuestros clientes Dos claves de acceso al portal Web. (Administrador y Terceros).
+   descripcion: Cuenta con una plataforma de respaldo en caso de fallas técnicas que impidan el ingreso.
    img: /images/iconos/acceso.jpg
- - titulo: Respaldo 
+ - titulo: Respaldo
    descripcion: Contamos con una plataforma de respaldo en caso de fallas técnicas que impidan el acceso a la plataforma principal. www.gpsrespaldo.com.
    img: /images/iconos/candado.jpg
- - titulo: Servicio 
+ - titulo: Servicio
    descripcion: Servicio personalizado de Acompañamiento posventa durante el tiempo vinculado a nuestra empresa.
    img: /images/iconos/servicio.jpg
  - titulo: Capacitación
@@ -33,19 +33,19 @@ ventajas:
 ##########
 ventajas2:
  - titulo: Botón de Emergencia (S.O.S)
-   descripcion: Al accionar este botón se enviará una alarma visual y sonora al portal informando que se encuentra en peligro y enviará un SMS a dos teléfono celulares autorizados. 
+   descripcion: Al accionar este botón se enviará una alarma visual y sonora al portal informando que se encuentra en peligro y enviará un SMS a dos teléfono celulares autorizados.
    img: /images/iconos/sos.jpg
  - titulo: Alarma de Sobre velocidad
-   descripcion:  En caso que un dispositivo exceda el límite de velocidad establecido enviará una alarma visual y sonora al portal informando el evento, velocidad, fecha y hora en tiempo real. 
+   descripcion:  En caso que un dispositivo exceda el límite de velocidad establecido enviará una alarma visual y sonora al portal informando el evento, velocidad, fecha y hora en tiempo real.
    img: /images/iconos/velocidad.jpg
  - titulo: Función Manos Libres
-   descripcion:  El conductor podrá recibir llamadas de 2 teléfonos autorizados o se podrá monitorear conversaciones dentro de la cabina del vehículo sin ser detectado. 
+   descripcion:  El conductor podrá recibir llamadas de 2 teléfonos autorizados o se podrá monitorear conversaciones dentro de la cabina del vehículo sin ser detectado.
    img: /images/iconos/manos-libres.jpg
  - titulo: Apagado remoto del vehículo
    descripcion: Con solo ejecutar un comando en la lista se podrá detener la marcha del vehículo. (Aplica especificaciones técnicas)
    img: /images/iconos/stop.jpg
  - titulo: Alarma de Encendido/Apagado
-   descripcion:  Cada vez que el vehículo es encendido o apagado enviará una alarma al portal para ser consultado en el momento que requiera. 
+   descripcion:  Cada vez que el vehículo es encendido o apagado enviará una alarma al portal para ser consultado en el momento que requiera.
    img: /images/iconos/alarma.jpg
  - titulo: Restricciones de área o Geocercas
    descripcion: Permite conocer cuando el dispositivo ingresa o cruza por un lugar programado; se puede crear hasta 8 puntos de control por unidad.
@@ -59,16 +59,16 @@ ventajas2:
 banner1:
     texto: ¿Listo para conocer nuestros precios?
     boton: Pide una Cotización.
-    accion: 
+    accion:
 
 banner2:
     texto: "Ya que conoces a nuestros clientes:"
-    boton: Llámanos! 
+    boton: Llámanos!
     accion:
 
 
 ---
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
@@ -78,29 +78,28 @@ banner2:
 	<!-- CSS  -->
 	<link href="css/min.css" type="text/css" rel="stylesheet" media="screen" />
   <link href="css/print.css" type="text/css" rel="stylesheet" media="print" />
-</head> 
+</head>
 <body>
 	{{>analytics}}
-	{{>navegacion}}
+	{{>navegacionHome}}
 	{{!contenido principal}}
-	{{>slider}} 
+	{{>slider}}
 	<main>
 		{{>sections/4clients}}
 		{{>sections/6ventajas info=front.ventajas}}
 		{{>sections/mini-banner-boton info=front.banner1}}
-	  {{>sections/imagen}}
+	  {{!>sections/imagen}}
 	  {{>sections/otrasVentajas info=front.ventajas2}}
 	  {{>sections/mini-banner-boton info=front.banner2}}
 	  {{>sections/nosotros}}
 
 	</main>
 	{{>footer}}
-	
+
 	<script src="/js/min.js"></script>
 	<script>
-	 
+
 	 </script>
 	{{>microdatos}}
 </body>
 </html>
-

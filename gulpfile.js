@@ -1,3 +1,4 @@
+/*env node*/
 var gulp = require('gulp');
 var hb = require('gulp-hb');
 var csso = require('gulp-csso');
@@ -48,7 +49,19 @@ gulp.task('build',   function () {
         .src('./src/views/pages/**/*.html')
         //.pipe(plumberit('Build Error'))
         .pipe(frontMatter({property: 'data.front' }))
-        .pipe(hb({partials: './src/views/partials/**/*.hbs',data: './src/views/data.json',debug:0}))
+        .pipe(hb({
+          partials: './src/views/partials/**/*.hbs',
+          data: './src/views/data.json',
+          helpers: {
+            even:  function(conditional, options) {
+                  if((conditional % 2) != 0) {
+                    return options.fn(this);
+                  } else {
+                    return options.inverse(this);
+                  }
+                }
+          },
+          debug:0}))
         //.pipe(inlineImg('./src'))
         .pipe(htmlmin({collapseWhitespace: true,minifyCSS:true,minifyJS:true,removeComments:true}))
         .pipe(gulp.dest('./dist'))
@@ -73,7 +86,7 @@ gulp.task('csslint', function() {
     .pipe(csslint.reporter('compact'));
 });
 /*///////////////////////////////////////
-JS watcher 
+JS watcher
 ///////////////////////////////////////*/
 gulp.task('js',  function () {
   return gulp.src(['./src/libraries/*.js','./src/js/*.js'])
@@ -86,9 +99,9 @@ gulp.task('js',  function () {
     .pipe(browserSync.reload({ stream: true }));
 });
 /*///////////////////////////////////////
-CSS watcher 
+CSS watcher
 ///////////////////////////////////////*/
-gulp.task('css', function () { 
+gulp.task('css', function () {
   return gulp.src(['./src/css/materialize.css','./src/css/style.css'])
         //.pipe(sourcemaps.init())
             .pipe(plumberit('CSS parsing error'))
@@ -98,7 +111,7 @@ gulp.task('css', function () {
         .pipe(gulp.dest('./dist/css'))
         .pipe(browserSync.reload({ stream: true }));
 });
-gulp.task('css-root', function () { 
+gulp.task('css-root', function () {
   return gulp.src(['./src/root/css/**/*.css'])
         .pipe(plumberit('CSS parsing error'))
         .pipe(csso())
@@ -106,7 +119,7 @@ gulp.task('css-root', function () {
         .pipe(browserSync.reload({ stream: true }));
 });
 /*///////////////////////////////////////
-img minifier 
+img minifier
 ///////////////////////////////////////*/
 gulp.task('svg', function () {
     return gulp.src('./src/images/**/*.svg')

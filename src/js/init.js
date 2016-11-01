@@ -1,7 +1,9 @@
+/*global $ document window*/
 //DOCUMENT READY
 		$(document).ready(function () {
 			//SIDE NAV
 			$(".button-collapse").sideNav();
+			verMasBtn();
 			//SLIDER CREATION
 			$('.slider').slider({
 				full_width: true,
@@ -14,7 +16,7 @@
 				$('nav').pushpin({
 					top: 20,
 					offset: 0,
-				});	
+				});
 			}else{
 				$('nav').pushpin({
 					top: 0,
@@ -49,6 +51,12 @@
 				$('#cap4').css('margin-bottom', '0px');
 				$('#cap4').css('position', 'absolute');
 				$('#cap4').css('top', (1)*h*(1/4)+'px');
-				$('#cap4').css('width', '100%');	
+				$('#cap4').css('width', '100%');
 			}
+		}
+		function verMasBtn(){
+			$("#mas-planes-btn").click(function(){
+				$(this).slideUp();
+				$("#ver-mas-row").slideDown();
+			})
 		}

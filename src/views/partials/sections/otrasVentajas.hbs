@@ -4,16 +4,25 @@
 		<h2 class="center">Otras funcionalidades de GPS tracker</h2>
 		{{!seccion para pantallas muy grandes y muy pequeñas}}
 		<div class="container">
+			<div class="row">
 			{{#each info}}
-			<div class="row no-mar">
+			{{#even @index}}
+			<div class="row">
+			{{/even}}
 				<div class="col s12 m3 l2 center">
 					<img class="responsive-img otras-ventajas"  src="{{this.img}}" alt="{{this.titulo}}">
 				</div>
-				<div class="col s12 m9 l10">
-					<p><span class="orange-text bold">{{this.titulo}}: </span> {{this.descripcion}}</p>
+				<div class="col s12 m9 l4">
+					<p><span class=" bold">{{this.titulo}} </span>
+						{{!this.descripcion}}
+					</p>
 				</div>
-			</div>
+				{{#even @index}}
+				</div>
+				{{/even}}
 			{{/each}}
+
+			</div>
 		</div>
 	</div>
 </div>
