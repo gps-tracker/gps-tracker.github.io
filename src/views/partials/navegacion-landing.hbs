@@ -1,0 +1,31 @@
+{{!--
+info:
+	titulo:
+	subtitulo:
+	btn:
+	action:
+--}}
+<header>
+		{{!--  NAV BAR--}}
+	<nav class="white fix" style="z-index:100">
+		<div class="nav-wrapper " data-spy="affix" data-offset-top="100">
+			<a id="logo-container" href="/index.html" class="brand-logo"><object  type="image/svg+xml" data="/images/logo.svg" height="50"><img height=59 src="images/logo-grande.png" alt="GPS tracker Logo" ></object></a>
+			<ul class="right hide-on-med-and-down">
+				<li><a href="{{info.accion}}" class="btn orange {{info.accionclass}}">{{info.btn}}</a></li>
+			</ul>
+			<ul class="right hide-on-med-and-down">
+				<li><a href="sass.html"><i class="button-collapse"><img src="/images/phone.svg" alt=""></i>321 263 9189</a></li>
+			</ul>
+		</div>
+	</nav>
+	<div class="caption cover center" style="background-image:url({{info.imagen}})">
+		{{!-- <h1 class="imp-1  white-text hide">GPS tracker Carga</h1> --}}
+		<h1 class="imp-2  white-text shadow-text bold">{{info.titulo}} </h2>
+		<h2 class="imp-3  light white-text  shadow-text bold">{{info.subtitulo}} </h2>
+		<a href="{{info.accion}}" class="btn orange {{info.accionclass}}">{{info.btn}}</a>
+	</div>
+</header>
+
+<footer class="white nav-wrapper z-depth-2 fixed hide-on-large-only">
+	<h5 class="center"><a class="black-text" href="sass.html"><i class="button-collapse"><img src="/images/phone.svg" alt="" alt="Telefono de Gps-Tracker" style="margin-bottom: -4px;"></i>321 263 9189</a></h5>
+</footer>

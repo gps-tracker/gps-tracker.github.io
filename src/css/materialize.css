@@ -3137,7 +3137,7 @@ a.waves-effect .waves-ripple {
   z-index: -1;
 }
 */
-/*
+
 .modal {
   display: none;
   position: fixed;
@@ -3226,7 +3226,7 @@ a.waves-effect .waves-ripple {
   border-radius: 0;
   will-change: bottom, opacity;
 }
-*/
+
 /*
 .collapsible {
   border-top: 1px solid #ddd;

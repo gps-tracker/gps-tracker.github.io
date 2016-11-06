@@ -1,49 +1,48 @@
 <div class="section   indigo lighten-5">
 	<div class="row container c85">
 		{{!titulo}}
-		<h2 class="center">Ventajas de usar GPS tracker</h2>
-		{{!seccion para pantallas muy grandes y muy pequeñas}}
+		<h2 class="center">Ventajas de usar GPS tracker</h2>{{!seccion para pantallas muy grandes y muy pequeñas}}
 		<div class="row hide-on-med-only">
 			<div class="col s12 m12 l4 center">
 				<img class="responsive-img circle ventajas-6" src="{{info.0.img}}" alt="{{info.0.titulo}}">
-				<h5 class="indigo-text bold">{{info.0.titulo}}</h5>
+				<h5 class="indigo-text">{{info.0.titulo}}</h5>
 				<p>{{info.0.descripcion}}</p>
 			</div>
 			<div class="col s12 m12 l4 center">
 				<img class="responsive-img circle ventajas-6" src="{{info.1.img}}" alt="{{info.1.titulo}}">
-				<h5 class="indigo-text bold">{{info.1.titulo}}</h5>
+				<h5 class="indigo-text">{{info.1.titulo}}</h5>
 				<p>{{info.1.descripcion}}</p>
 			</div>
 			<div class="col s12 m12 l4 center">
 				<img class="responsive-img circle ventajas-6" src="{{info.2.img}}" alt="{{info.2.titulo}}">
-				<h5 class="indigo-text bold">{{info.2.titulo}}</h5>
+				<h5 class="indigo-text">{{info.2.titulo}}</h5>
 				<p>{{info.2.descripcion}}</p>
 			</div>
 		</div>
-		{{!-- <div class="row hide-on-med-only">
-			<div class="col s12 m12 l4 center">
-				<img class="responsive-img circle ventajas-6" src="{{info.3.img}}" alt="{{info.3.titulo}}">
-				<h5 class="indigo-text bold">{{info.3.titulo}}</h5>
-				<p>{{info.3.descripcion}}</p>
+		{{#if info.3.titulo}}
+			<div class="row hide-on-med-only">
+				<div class="col s12 m12 l4 center">
+					<img class="responsive-img circle ventajas-6" src="{{info.3.img}}" alt="{{info.3.titulo}}">
+					<h5 class="indigo-text">{{info.3.titulo}}</h5>
+					<p>{{info.3.descripcion}}</p>
+				</div>
+				<div class="col s12 m12 l4 center">
+					<img class="responsive-img circle ventajas-6" src="{{info.4.img}}" alt="{{info.4.titulo}}">
+					<h5 class="indigo-text">{{info.4.titulo}}</h5>
+					<p>{{info.4.descripcion}}</p>
+				</div>
+				<div class="col s12 m12 l4 center">
+					<img class="responsive-img circle ventajas-6" src="{{info.5.img}}" alt="{{info.5.titulo}}">
+					<h5 class="indigo-text">{{info.5.titulo}}</h5>
+					<p>{{info.5.descripcion}}</p>
+				</div>
 			</div>
-			<div class="col s12 m12 l4 center">
-				<img class="responsive-img circle ventajas-6" src="{{info.4.img}}" alt="{{info.4.titulo}}">
-				<h5 class="indigo-text bold">{{info.4.titulo}}</h5>
-				<p>{{info.4.descripcion}}</p>
-			</div>
-			<div class="col s12 m12 l4 center">
-				<img class="responsive-img circle ventajas-6" src="{{info.5.img}}" alt="{{info.5.titulo}}">
-				<h5 class="indigo-text bold">{{info.5.titulo}}</h5>
-				<p>{{info.5.descripcion}}</p>
-			</div>
-		</div> --}}
-
-
+		{{/if}}
 		{{!seccion para pantallas medianas}}
 		<div class="row hide-on-small-only hide-on-large-only">
 			<div class="col s12 m6 l4 center">
 				<img class="responsive-img circle ventajas-6" src="{{info.0.img}}" alt="calidad">
-				<h5 class="indigo-text bold">{{info.0.titulo}}</h5>
+				<h5 class="indigo-text">{{info.0.titulo}}</h5>
 				<p>{{info.0.descripcion}}</p>
 			</div>
 			<div class="col s12 m6 l4 center">
@@ -55,27 +54,28 @@
 		<div class="row hide-on-small-only hide-on-large-only">
 			<div class="col s12 m6 l4 center">
 				<img class="responsive-img circle ventajas-6" src="{{info.2.img}}" alt="calidad">
-				<h5 class="indigo-text bold">{{info.2.titulo}}</h5>
+				<h5 class="indigo-text">{{info.2.titulo}}</h5>
 				<p>{{info.2.descripcion}}</p>
 			</div>
 
-			<div class="col s12 m6 l4 center">
-				<img class="responsive-img circle ventajas-6" src="{{info.3.img}}" alt="calidad">
-				<h5 class="indigo-text bold">{{info.3.titulo}}</h5>
+			{{!-- <div class="col s12 m6 l4 center">
+				<img class="responsive-img circle ventajas-6" src="{{info.3.img}}
+			" alt=" calidad ">
+				<h5 class="indigo-text ">{{info.3.titulo}}</h5>
 				<p>{{info.3.descripcion}}</p>
 			</div>
 		</div>
-		<div class="row hide-on-small-only hide-on-large-only">
-			<div class="col s12 m6 l4 center">
-				<img class="responsive-img circle ventajas-6" src="{{info.4.img}}" alt="calidad">
-				<h5 class="indigo-text bold">{{info.4.titulo}}</h5>
+		<div class="row hide-on-small-only hide-on-large-only ">
+			<div class="col s12 m6 l4 center ">
+				<img class="responsive-img circle ventajas-6 " src="{{info.4.img}}" alt="calidad">
+				<h5 class="indigo-text">{{info.4.titulo}}</h5>
 				<p>{{info.4.descripcion}}</p>
-			</div>
-			<div class="col s12 m6 l4 center">
-				<img class="responsive-img circle ventajas-6" src="{{info.5.img}}" alt="calidad">
-				<h5 class="indigo-text bold">{{info.5.titulo}}</h5>
-				<p>{{info.5.descripcion}}</p>
-			</div>
+		</div>
+		<div class="col s12 m6 l4 center">
+			<img class="responsive-img circle ventajas-6" src="{{info.5.img}}" alt="calidad">
+			<h5 class="indigo-text">{{info.5.titulo}}</h5>
+			<p>{{info.5.descripcion}}</p> --}}
 		</div>
 	</div>
+</div>
 </div>

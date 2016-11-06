@@ -31,11 +31,12 @@ ventajas:
 ##########
 #Ventajas Secundarias
 ##########
+ventajas2Titulo: "Funcionalidades de GPS tracker"
 ventajas2:
  - titulo: Botón de Emergencia (S.O.S)
    descripcion: Al accionar este botón se enviará una alarma visual y sonora al portal informando que se encuentra en peligro y enviará un SMS a dos teléfono celulares autorizados.
    img: /images/iconos/sos.jpg
- - titulo: Alarma de Sobre velocidad
+ - titulo: Alarma de Exceso velocidad
    descripcion:  En caso que un dispositivo exceda el límite de velocidad establecido enviará una alarma visual y sonora al portal informando el evento, velocidad, fecha y hora en tiempo real.
    img: /images/iconos/velocidad.jpg
  - titulo: Función Manos Libres
@@ -44,7 +45,7 @@ ventajas2:
  - titulo: Apagado remoto del vehículo
    descripcion: Con solo ejecutar un comando en la lista se podrá detener la marcha del vehículo. (Aplica especificaciones técnicas)
    img: /images/iconos/stop.jpg
- - titulo: Alarma de Encendido/Apagado
+ - titulo: Alarma de Encendido/ Apagado
    descripcion:  Cada vez que el vehículo es encendido o apagado enviará una alarma al portal para ser consultado en el momento que requiera.
    img: /images/iconos/alarma.jpg
  - titulo: Restricciones de área o Geocercas
@@ -52,7 +53,51 @@ ventajas2:
    img: /images/iconos/geocerca.jpg
  - titulo: Puntos de interés (PDI)
    descripcion:  Mediante esta opción se podrá identificar sitios de interés dentro del mapa para posteriormente utilizarlos como referente.
-   img: /images/iconos/mapa.jpg
+   img: /images/iconos/mapa.png
+ - titulo: Reporte de ubicación cada 5 minutos
+   img: /images/iconos/reporte-5-min.jpg
+ - titulo: Antena de corte GPS
+   img: /images/iconos/alarma-antena.jpg
+ - titulo: Bateria interna baja
+   img: /images/iconos/bateria.jpg
+ - titulo: Alarma de corte de corriente
+   img: /images/iconos/alarma-corriente.jpg
+ - titulo: Memoria de 8Mb #TODO: es una buena descripcion?
+   img: /images/iconos/8mb.png
+ - titulo: Capacitación permanente
+   img: /images/iconos/presentacion.jpg
+ - titulo: Protección contra agua y polvo
+   img: /images/iconos/paraguas.jpg
+##########
+#Servicios opcionales
+##########
+opcionalesTitulo: "Servicios opcionales"
+opcionales:
+ - titulo: Apagado remoto del vehiculo
+   img: /images/iconos/paraguas.jpg
+ - titulo: llamada a Cabina
+   img: /images/iconos/headphones.jpg
+ - titulo: Alarma puerta abierta
+   img: /images/iconos/cargo.jpg
+ - titulo: Alarma de activacón de planchon
+   img: /images/iconos/grua.jpg
+ - titulo: Alertas vía e-mail
+   img: /images/iconos/alertas-email.jpg
+ - titulo: Alertas vía Mensaje de texto
+   img: /images/iconos/email.jpg
+ - titulo: Sensor de temperatura
+   img: /images/iconos/temperatura.jpg
+ - titulo: Alarma de activacón de brazo
+   img: /images/iconos/brazo.jpg
+ - titulo: Plaqueta maquinaria amarilla
+   img: /images/iconos/seguro.jpg
+ - titulo: Apagado remoto de moto
+   img: /images/iconos/moto.jpg
+ - titulo: Control remoto
+   img: /images/iconos/control.jpg
+ - titulo: Zumbador
+   img: /images/iconos/zumbador.jpg
+
 ##########
 #Mini banners
 ##########
@@ -81,15 +126,23 @@ banner2:
 </head>
 <body>
 	{{>analytics}}
-	{{>navegacionHome}}
-	{{!contenido principal}}
+	{{>navegacion}}
 	{{>slider}}
 	<main>
 		{{>sections/4clients}}
 		{{>sections/6ventajas info=front.ventajas}}
 		{{>sections/mini-banner-boton info=front.banner1}}
 	  {{!>sections/imagen}}
-	  {{>sections/otrasVentajas info=front.ventajas2}}
+	  {{>sections/otrasVentajas info=front.ventajas2 title=front.ventajas2Titulo}}
+    <div class="indigo  lighten-5">
+      <div id="mas-servicios" style="display: none;">
+        {{>sections/otrasVentajas info=front.opcionales title=front.opcionalesTitulo}}
+      </div>
+        <div class="center-align">
+          <a id="mas-servicios-btn"class="orange btn">Ver  opcionales</a>
+        </div>
+        <br>
+    </div>
 	  {{>sections/mini-banner-boton info=front.banner2}}
 	  {{>sections/nosotros}}
 

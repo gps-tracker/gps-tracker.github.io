@@ -5,31 +5,30 @@
 	<title>{{datos.titulo}} | Plataforma Móvil.</title>
 	<meta name="description" content="{{datos.descripcion}}">
 	{{>head}}
-
 	<!-- CSS  -->
-	<link href="css/plataforma.css" type="text/css" rel="stylesheet" media="screen" />
+	<link href="css/min.css" type="text/css" rel="stylesheet" media="screen" />
+		<link href="css/plataforma.css" type="text/css" rel="stylesheet" media="screen" />
 	<link href="css/print.css" type="text/css" rel="stylesheet" media="print" />
 </head>
 <body>
 	{{>analytics}}
-	{{>navegacion-movil}}
+	{{>navegacion-portal}}
 	{{!contenido principal}}
-	
+
 	<main>
 		<div class="container center">
 			<h1 class="indigo-text">GPS tracker, Plataforma para móvil</h1>
 			<h1 class="indigo-text">Seleccione su plataforma</h1>
 			<br>
 			<div class="row">
-				<div class="col s12 m6 l6 center"> <a href="http://a.gpstrackerls.com/mt/" class=" plat-link btn-large orange waves-effect">PLATAFORMA A</a></div>
-				<div class="col s12 m6 l6 center"> <a href="http://b.gpstrackerls.com/mt/" class="plat-link btn-large orange waves-effect">PLATAFORMA B</a></div>
+				<div class="col s12 m6 l6 center" style="text-align: center;"> <a href="http://a.gpstrackerls.com/mt/" class=" plat-link btn-large orange waves-effect">PLATAFORMA A</a></div>
+				<div class="col s12 m6 l6 center" style="    text-align: center;"> <a href="http://b.gpstrackerls.com/mt/" class="plat-link btn-large orange waves-effect">PLATAFORMA B</a></div>
 			</div>
 			<br>
 		</div>
 	</main>
-
 	{{>footer-plataforma}}
-	<script src="/js/plataforma.js"></script>
+	<script src="/js/min.js"></script>
 	{{>microdatos}}
 	{{>service-worker}}
 	<script>
@@ -44,5 +43,6 @@
 			}
 		});
 	</script>
+
 </body>
 </html>

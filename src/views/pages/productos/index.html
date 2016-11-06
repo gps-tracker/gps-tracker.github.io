@@ -1,0 +1,99 @@
+---
+##########
+#Titulo de la pagina
+##########
+titulo: Sistemas de rastreo satelital para vehículos. Control, Rastreo y Seguridad.
+descripcion: Sistema de Localización Satelital para vehiculos que le permite obtener todos los reportes de Control, Rastreo y Ubicación sin pagar Mensualidad.
+
+##########
+#Ventajas principales
+##########
+ventajas:
+ - titulo: Ahorro
+   descripcion: Somos el unico servicio sin pagar mensualidad por concepto de monitoreo.
+   img: /images/iconos/reduccion-costes.jpg
+ - titulo: Seguridad
+   descripcion: Ten el control, rastreo y seguridad de tus activos de forma autónoma
+   img: /images/iconos/seguridad.jpg
+ - titulo: Accesibilidad
+   descripcion: Cuenta con una plataforma de respaldo en caso de fallas técnicas que impidan el ingreso.
+   img: /images/iconos/acceso.jpg
+ - titulo: Respaldo
+   descripcion: Contamos con una plataforma de respaldo en caso de fallas técnicas que impidan el acceso a la plataforma principal. www.gpsrespaldo.com.
+   img: /images/iconos/candado.jpg
+ - titulo: Servicio
+   descripcion: Servicio personalizado de Acompañamiento posventa durante el tiempo vinculado a nuestra empresa.
+   img: /images/iconos/servicio.jpg
+ - titulo: Capacitación
+   descripcion: Capacitaciones permanentes; personalizadas o virtuales sobre el manejo de la plataforma cada vez que el cliente lo solicite.
+   img: /images/iconos/capacitacion.jpg
+
+##########
+#Ventajas Secundarias
+##########
+ventajas2:
+ - titulo: Botón de Emergencia (S.O.S)
+   descripcion: Al accionar este botón se enviará una alarma visual y sonora al portal informando que se encuentra en peligro y enviará un SMS a dos teléfono celulares autorizados.
+   img: /images/iconos/sos.jpg
+ - titulo: Alarma de Sobre velocidad
+   descripcion:  En caso que un dispositivo exceda el límite de velocidad establecido enviará una alarma visual y sonora al portal informando el evento, velocidad, fecha y hora en tiempo real.
+   img: /images/iconos/velocidad.jpg
+ - titulo: Función Manos Libres
+   descripcion:  El conductor podrá recibir llamadas de 2 teléfonos autorizados o se podrá monitorear conversaciones dentro de la cabina del vehículo sin ser detectado.
+   img: /images/iconos/manos-libres.jpg
+ - titulo: Apagado remoto del vehículo
+   descripcion: Con solo ejecutar un comando en la lista se podrá detener la marcha del vehículo. (Aplica especificaciones técnicas)
+   img: /images/iconos/stop.jpg
+ - titulo: Alarma de Encendido/Apagado
+   descripcion:  Cada vez que el vehículo es encendido o apagado enviará una alarma al portal para ser consultado en el momento que requiera.
+   img: /images/iconos/alarma.jpg
+ - titulo: Restricciones de área o Geocercas
+   descripcion: Permite conocer cuando el dispositivo ingresa o cruza por un lugar programado; se puede crear hasta 8 puntos de control por unidad.
+   img: /images/iconos/geocerca.jpg
+ - titulo: Puntos de interés (PDI)
+   descripcion:  Mediante esta opción se podrá identificar sitios de interés dentro del mapa para posteriormente utilizarlos como referente.
+   img: /images/iconos/mapa.jpg
+##########
+#Mini banners
+##########
+banner1:
+    texto: ¿Listo para conocer nuestros precios?
+    boton: Pide una Cotización.
+    accion:
+
+banner2:
+    texto: "Ya que conoces a nuestros clientes:"
+    boton: Llámanos!
+    accion:
+
+
+---
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>{{data.titulo}} | {{front.titulo}} </title>
+	<meta name="description" content="{{front.descripcion}}">
+	{{>head}}
+	<!-- CSS  -->
+	<link href="/css/min.css" type="text/css" rel="stylesheet" media="screen" />
+  <link href="/css/print.css" type="text/css" rel="stylesheet" media="print" />
+</head>
+<body>
+	{{>analytics}}
+	{{>navegacion}}
+	{{!contenido principal}}
+	{{>slider}}
+	<main>
+		{{>sections/4clients}}
+
+	</main>
+	{{>footer}}
+
+	<script src="/js/min.js"></script>
+	<script>
+
+	 </script>
+	{{>microdatos}}
+</body>
+</html>

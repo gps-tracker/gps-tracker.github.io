@@ -4,6 +4,8 @@
 			//SIDE NAV
 			$(".button-collapse").sideNav();
 			verMasBtn();
+			verOpcionalesBtn();
+			$('.modal').modal();
 			//SLIDER CREATION
 			$('.slider').slider({
 				full_width: true,
@@ -13,12 +15,12 @@
 			});
 			//NAVBAR STYLE
 			if ($(window).width()>600){
-				$('nav').pushpin({
+				$('nav.fix').pushpin({
 					top: 20,
 					offset: 0,
 				});
 			}else{
-				$('nav').pushpin({
+				$('nav.fix').pushpin({
 					top: 0,
 					offset: 0,
 				});
@@ -50,7 +52,7 @@
 				$('#cap4').css('margin-top', '0px');
 				$('#cap4').css('margin-bottom', '0px');
 				$('#cap4').css('position', 'absolute');
-				$('#cap4').css('top', (1)*h*(1/4)+'px');
+				$('#cap4').css('top', (1)*h*(1/2)+'px');
 				$('#cap4').css('width', '100%');
 			}
 		}
@@ -58,5 +60,11 @@
 			$("#mas-planes-btn").click(function(){
 				$(this).slideUp();
 				$("#ver-mas-row").slideDown();
+			})
+		}
+		function verOpcionalesBtn(){
+			$("#mas-servicios-btn").click(function(){
+				$(this).slideUp();
+				$("#mas-servicios").slideDown();
 			})
 		}

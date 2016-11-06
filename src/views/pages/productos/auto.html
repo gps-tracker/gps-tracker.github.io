@@ -1,0 +1,154 @@
+---
+##########
+#Titulo de la pagina
+##########
+titulo: Sistemas de rastreo satelital para vehículos de Carga.
+descripcion: Controle rápida y efectivamente la logística operativa de su compañía.
+imagen:
+client: "Carga"
+##########
+#Zona Heroe
+##########
+hero:
+ titulo: "La tranquilidad de rastrear su vehiculo"
+ subtitulo: "a un click de distancia"
+ btn: "Protejer mi vehiculo"
+ accion: "#modal-inscripcion"
+ accionclass: "modal-trigger"
+ imagen: "/images/carro-autopista.jpg"
+##########
+#Ventajas principales
+##########
+ventajas:
+ - titulo: Rapidez
+   descripcion: Reciba en su celular alarmas por excesos de velocidad o salidas de zonas restringidas
+
+   img: /images/iconos/fast.png
+ - titulo: Respaldo
+   descripcion: Permite reaccionar de manera oportuna ante cualquier suceso que involucra sus seres queridos.
+
+   img: /images/iconos/seguridad.jpg
+ - titulo: Soporte
+   descripcion: Contamos con líneas directas las 24 horas del día para atender cada una de sus solicitudes.
+   img: /images/iconos/servicio.jpg
+
+##########
+#Ventajas Secundarias
+##########
+ventajas2Titulo: "Funcionalidades de GPS tracker"
+ventajas2:
+#first row
+ - titulo: Alarma de Exceso velocidad
+   img: /images/iconos/velocidad.jpg
+ - titulo: Reporte de ubicación cada 5 minutos
+   img: /images/iconos/reporte-5-min.jpg
+ - titulo: Botón de Emergencia (S.O.S)
+   img: /images/iconos/sos.jpg
+ - titulo: Alarma de Encendido/Apagado
+   img: /images/iconos/alarma.jpg
+#second row
+ - titulo: Antena de corte GPS
+   img: /images/iconos/alarma-antena.jpg
+ - titulo: Alarma bateria interna baja
+   img: /images/iconos/bateria.jpg
+ - titulo: Alarma de corte de corriente
+   img: /images/iconos/alarma-corriente.jpg
+ - titulo: Restricciones de área o Geocercas
+   img: /images/iconos/geocerca.jpg
+#second row
+ - titulo: Puntos de identificación (PDI)
+   img: /images/iconos/mapa.png
+ - titulo: Memoria de 8Mb #TODO: es una buena descripcion?
+   img: /images/iconos/8mb.png
+ - titulo: Capacitación permanente
+   img: /images/iconos/presentacion.jpg
+ - titulo: Protección contra agua y polvo
+   img: /images/iconos/paraguas.jpg
+ # - titulo: Función Manos Libres
+ #   img: /images/iconos/manos-libres.jpg
+ # - titulo: Apagado remoto del vehículo
+ #   img: /images/iconos/stop.jpg
+opcionalesTitulo: "Servicios opcionales"
+opcionales:
+  - titulo: Apagado remoto del vehiculo
+    img: /images/iconos/stop.jpg
+  - titulo: llamada a Cabina
+    img: /images/iconos/headphones.jpg
+  - titulo: Alarma puerta abierta
+    img: /images/iconos/cargo.jpg
+  # - titulo: Alarma de activacón de planchon
+  #   img: /images/iconos/grua.jpg
+  - titulo: Alertas vía e-mail
+    img: /images/iconos/alertas-email.jpg
+  - titulo: Alertas vía Mensaje de texto
+    img: /images/iconos/email.jpg
+  # - titulo: Sensor de temperatura
+  #   img: /images/iconos/temperatura.jpg
+  # - titulo: Alarma de activacón de brazo
+  #   img: /images/iconos/brazo.jpg
+  # - titulo: Plaqueta maquinaria amarilla
+  #   img: /images/iconos/seguro.jpg
+  # - titulo: Apagado remoto de moto
+  #   img: /images/iconos/moto.jpg
+  # - titulo: Control remoto
+  #   img: /images/iconos/control.jpg
+  # - titulo: Zumbador
+  #   img: /images/iconos/zumbador.jpg
+##########
+#Mini banners
+##########
+banner1:
+ texto: ¿Listo para conocer nuestros precios?
+ boton: Pide una Cotización.
+ accion: "#modal-inscripcion"
+ class: "modal-trigger"
+
+banner2:
+ texto: "Ya que conoces a nuestros clientes:"
+ boton: Llámanos!
+ accion: "#modal-inscripcion"
+ class: "modal-trigger"
+---
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>{{data.titulo}} | {{front.titulo}} </title>
+	<meta name="description" content="{{front.descripcion}}">
+	{{>head}}
+	<!-- CSS  -->
+	<link href="/css/min.css" type="text/css" rel="stylesheet" media="screen" />
+  <link href="/css/print.css" type="text/css" rel="stylesheet" media="print" />
+</head>
+<body>
+	{{>analytics}}
+	{{>navegacion-landing info=front.hero}}
+	<main>
+    {{>sections/6ventajas info=front.ventajas}}
+    {{>sections/mini-banner-boton info=front.banner1}}
+    {{>sections/otrasVentajas info=front.ventajas2 title=front.ventajas2Titulo}}
+    {{>sections/modal-inscripcion}}
+    <div class="indigo  lighten-5">
+      <div id="mas-servicios" style="display: none;">
+        {{>sections/otrasVentajas info=front.opcionales title=front.opcionalesTitulo}}
+      </div>
+        <div class="center-align">
+          <a id="mas-servicios-btn"class="orange btn">Ver  opcionales</a>
+        </div>
+        <br>
+    </div>
+	</main>
+  <div class="center cover fixed" style="background-image: url(/images/finish.jpg)">
+    <div class="container " >
+      <br>
+      <br>
+      <h1 class="white-text center imp-2 shadow-text">Más de 500 clientes ya confían en nosotros</h1>
+      <h3 class="white-text center shadow-text">Es hora de tomar el control y seguridad de tus activos</h3>
+      <br><br>
+    </div>
+  </div>
+	{{>footer-landing}}
+	<script src="/js/min.js"></script>
+	{{>microdatos}}
+</body>
+</html>

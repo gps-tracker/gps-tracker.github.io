@@ -1,21 +1,19 @@
 <div class="section  indigo  lighten-5">
-	<div class="row">
+	<div class="row no-mar">
 		{{!titulo}}
-		<h2 class="center">Otras funcionalidades de GPS tracker</h2>
+		<h2 class="center">{{title}}</h2>
 		{{!seccion para pantallas muy grandes y muy pequeñas}}
 		<div class="container">
-			<div class="row">
+			<div class="row no-mar">
 			{{#each info}}
 			{{#even @index}}
-			<div class="row">
+			<div class="row no-mar">
 			{{/even}}
-				<div class="col s12 m3 l2 center">
+				<div class="col s12 m1 l2 center ">
 					<img class="responsive-img otras-ventajas"  src="{{this.img}}" alt="{{this.titulo}}">
 				</div>
-				<div class="col s12 m9 l4">
-					<p><span class=" bold">{{this.titulo}} </span>
-						{{!this.descripcion}}
-					</p>
+				<div class="col s12 m3 l2">
+					<p class="center-m-l">{{this.titulo}}</p>
 				</div>
 				{{#even @index}}
 				</div>

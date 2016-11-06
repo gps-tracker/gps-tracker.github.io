@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="70"
+   height="70"
+   viewBox="0 0 70.000001 70.000001"
+   id="svg4748"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   inkscape:export-filename="C:\Users\Fabian Gutierrez\Desktop\path374.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90"
+   sodipodi:docname="headphones.svg">
+  <defs
+     id="defs4750">
+    <pattern
+       y="0"
+       x="0"
+       height="6"
+       width="6"
+       patternUnits="userSpaceOnUse"
+       id="EMFhbasepattern" />
+    <pattern
+       y="0"
+       x="0"
+       height="6"
+       width="6"
+       patternUnits="userSpaceOnUse"
+       id="EMFhbasepattern-3" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="5.6"
+     inkscape:cx="24.145965"
+     inkscape:cy="35.550168"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     units="px"
+     inkscape:window-width="1280"
+     inkscape:window-height="1001"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     showguides="true"
+     inkscape:guide-bbox="true">
+    <sodipodi:guide
+       position="76.140249,65.000001"
+       orientation="0,1"
+       id="guide5628"
+       inkscape:label=""
+       inkscape:color="rgb(0,0,255)" />
+    <sodipodi:guide
+       position="28.663079,5.0000001"
+       orientation="0,1"
+       id="guide5630"
+       inkscape:label=""
+       inkscape:color="rgb(0,0,255)" />
+    <sodipodi:guide
+       position="5.0000001,72.730984"
+       orientation="1,0"
+       id="guide5632"
+       inkscape:label=""
+       inkscape:color="rgb(0,0,255)" />
+    <sodipodi:guide
+       position="65.000001,46.593287"
+       orientation="1,0"
+       id="guide5634"
+       inkscape:label=""
+       inkscape:color="rgb(0,0,255)" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata4753">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-982.36213)">
+    <rect
+       style="opacity:1;fill:#222d55;fill-opacity:1"
+       id="rect5505"
+       width="70"
+       height="70"
+       x="0"
+       y="982.36212" />
+    <path
+       class="fil4"
+       d="m 96.589619,1019.2634 c -0.932387,0.2193 -1.426006,1.042 -1.426006,2.139 0,3.0165 4.991037,3.8392 4.991037,-0.2195 0,-1.0968 -0.548471,-1.7002 -1.426011,-1.9195 l 4.552261,-10.6952 c 2.41324,-5.8137 6.52673,-12.50496 1.70024,-17.49598 -1.70024,-1.80994 -3.78441,-2.79719 -5.813731,-3.07148 l -2.02932,0 c -2.632634,0.32909 -5.155573,1.97449 -6.800968,4.77169 -1.700241,2.96173 -1.096929,6.088 0.164539,9.21427 l 4.607106,12.7791 c 0.438773,1.152 1.426013,3.1812 1.480853,4.4976 z"
+       id="path4431"
+       inkscape:connector-curvature="0"
+       style="clip-rule:evenodd;fill:#f16136;fill-opacity:1;fill-rule:evenodd;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision" />
+    <path
+       class="fil3"
+       d="m 8.9597284,1011.9502 c -2.6224305,0.5981 -3.7266121,3.4506 -4.0026584,6.6711 l 0,3.5886 c 0.1840313,2.5304 0.7361215,4.9689 1.2882118,6.303 1.7482869,4.4168 3.4965738,4.3247 6.6710952,4.0948 10.765767,-0.8743 9.01748,0.092 8.005314,-13.3422 -0.138022,-1.6104 -0.322052,-3.4507 -0.506083,-5.1528 -0.414068,-3.9107 -4.186687,-2.6686 -5.106837,-2.6225 0,-8.2815 8.419381,-16.65483 16.654733,-16.65483 5.198852,0 9.615577,1.51831 13.204164,5.10693 2.760454,2.7144 5.244861,7.4992 5.336876,11.5479 -5.152846,-0.4141 -4.968814,-0.7361 -5.658928,8.4194 -0.138023,2.0242 -1.150188,8.8794 -0.55209,10.4436 0.644105,1.5183 2.070339,1.7024 4.094671,1.7943 5.290869,0.138 6.947141,1.7022 9.431548,-0.8741 0.828137,-0.8282 1.748287,-2.8064 2.07034,-4.0486 1.656272,1.8861 0.828136,3.6346 -0.230038,5.8429 -2.714445,5.567 -1.840302,7.2691 -9.38554,7.2691 -1.058174,0 -0.690113,-1.6101 -2.62243,-1.6101 l -7.49923,0 c -0.690115,0 -1.886309,1.1502 -1.886309,1.8403 0,6.671 -0.230038,5.6588 9.385539,5.6588 1.150188,0 1.794295,-0.598 1.88631,-1.6562 2.714444,0 4.692769,0.1841 6.809116,-0.5061 1.748287,-0.5521 3.266536,-1.7023 4.324711,-3.1286 1.10418,-1.4722 1.748286,-3.3124 2.484408,-5.0608 1.426234,-3.2664 1.886308,-3.4505 1.886308,-7.0391 0,-2.6223 -2.254369,-5.7969 -4.232694,-6.303 0,-2.8985 -0.09203,-8.2814 -2.622431,-10.0297 -0.690113,-0.4601 -0.690113,-0.23 -1.380225,-0.5521 0,-7.6372 -4.002657,-14.26225 -9.799608,-18.81709 -0.874144,-0.64414 -2.576424,-1.74833 -3.634599,-2.20836 -6.7171,-3.12847 -14.170323,-3.45061 -20.795409,-0.0922 -2.346387,1.19625 -4.922809,2.94447 -6.763111,4.73883 -4.002657,4.00272 -6.8551246,10.35172 -6.8551246,16.37872 z"
+       id="path4696"
+       inkscape:connector-curvature="0"
+       style="clip-rule:evenodd;fill:#fefefe;fill-rule:evenodd;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision" />
+    <path
+       class="fil4"
+       d="m 40.658929,1039.6008 6.763111,0 c 0.828135,0 1.47224,0.644 1.47224,1.4262 l 0,2.8525 c 0,0.7821 -0.644105,1.4263 -1.47224,1.4263 l -6.763111,0 c -0.782128,0 -1.472242,-0.6442 -1.472242,-1.4263 l 0,-2.8525 c 0,-0.7822 0.690114,-1.4262 1.472242,-1.4262 z"
+       id="path4698"
+       inkscape:connector-curvature="0"
+       style="clip-rule:evenodd;fill:#f16136;fill-rule:evenodd;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision;fill-opacity:1" />
+  </g>
+</svg>

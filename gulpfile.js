@@ -1,4 +1,5 @@
 /*env node*/
+/*global require*/
 var gulp = require('gulp');
 var hb = require('gulp-hb');
 var csso = require('gulp-csso');
@@ -47,14 +48,14 @@ build and deploy
 gulp.task('build',   function () {
     return gulp
         .src('./src/views/pages/**/*.html')
-        //.pipe(plumberit('Build Error'))
+        .pipe(plumberit('Build Error'))
         .pipe(frontMatter({property: 'data.front' }))
         .pipe(hb({
           partials: './src/views/partials/**/*.hbs',
           data: './src/views/data.json',
           helpers: {
             even:  function(conditional, options) {
-                  if((conditional % 2) != 0) {
+                  if(((conditional+1) % 3) === 0) {
                     return options.fn(this);
                   } else {
                     return options.inverse(this);
