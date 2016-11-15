@@ -16,10 +16,11 @@ ventajas:
    descripcion: Ten el control, rastreo y seguridad de tus activos de forma autónoma
    img: /images/iconos/seguridad.jpg
  - titulo: Accesibilidad
-   descripcion: Cuenta con una plataforma de respaldo en caso de fallas técnicas que impidan el ingreso.
+   descripcion: Suministramos a nuestros clientes dos claves de acceso al portal, (Administrador y terceros)
+
    img: /images/iconos/acceso.jpg
  - titulo: Respaldo
-   descripcion: Contamos con una plataforma de respaldo en caso de fallas técnicas que impidan el acceso a la plataforma principal. www.gpsrespaldo.com.
+   descripcion: Cuenta con una plataforma de respaldo para no perder ni un minuto el control
    img: /images/iconos/candado.jpg
  - titulo: Servicio
    descripcion: Servicio personalizado de Acompañamiento posventa durante el tiempo vinculado a nuestra empresa.
@@ -42,7 +43,7 @@ ventajas2:
  - titulo: Función Manos Libres
    descripcion:  El conductor podrá recibir llamadas de 2 teléfonos autorizados o se podrá monitorear conversaciones dentro de la cabina del vehículo sin ser detectado.
    img: /images/iconos/manos-libres.jpg
- - titulo: Apagado remoto del vehículo
+ - titulo: Apagado remoto del motor
    descripcion: Con solo ejecutar un comando en la lista se podrá detener la marcha del vehículo. (Aplica especificaciones técnicas)
    img: /images/iconos/stop.jpg
  - titulo: Alarma de Encendido/ Apagado
@@ -73,8 +74,8 @@ ventajas2:
 ##########
 opcionalesTitulo: "Servicios opcionales"
 opcionales:
- - titulo: Apagado remoto del vehiculo
-   img: /images/iconos/paraguas.jpg
+ - titulo: Apagado remoto del motor
+   img: /images/iconos/stop.jpg
  - titulo: llamada a Cabina
    img: /images/iconos/headphones.jpg
  - titulo: Alarma puerta abierta
@@ -104,12 +105,14 @@ opcionales:
 banner1:
     texto: ¿Listo para conocer nuestros precios?
     boton: Pide una Cotización.
-    accion:
+    accion: "#modal-inscripcion"
+    class: "modal-trigger"
 
 banner2:
     texto: "Ya que conoces a nuestros clientes:"
     boton: Llámanos!
-    accion:
+    accion: "#modal-inscripcion"
+    class: "modal-trigger"
 
 
 ---
@@ -145,7 +148,7 @@ banner2:
     </div>
 	  {{>sections/mini-banner-boton info=front.banner2}}
 	  {{>sections/nosotros}}
-
+    {{>sections/modal-inscripcion}}
 	</main>
 	{{>footer}}
 

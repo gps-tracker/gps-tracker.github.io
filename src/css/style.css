@@ -121,7 +121,7 @@ h5 {
     width: 85%;
   }
 }
-/*Nav btn improvements*/
+/*Nav improvements*/
 .button-collapse {
 	margin-left: 10px;
 }
@@ -144,6 +144,9 @@ nav ul a{
 }
 nav ul a:hover {
     background-color: #ddd;
+}
+nav{
+	    transition: all 0.5s;
 }
 .nav.fix {
 	/*margin-bottom: -64px;*/
@@ -169,7 +172,7 @@ nav ul a:hover {
 		margin-left: 15%;
 		margin-right: 15%;
 		width: 70%;
-		transition: all 0.2s;
+		transition: all 0.4s;
 	}
 	.brand-logo img,.brand-logo object {
 		height: 57px;
@@ -182,7 +185,7 @@ nav ul a:hover {
 		z-index: 1003;
 		margin-left: 0px;
 		margin-right: 0px;
-		transition: all 0s;
+		transition: all 0.4s;
 	}
 	.up {
 		top: -50px;
@@ -207,6 +210,19 @@ nav ul a:hover {
 .brand-logo {
 	top: 3px;
 }
+/*phone-icon style*/
+.phone-icon{
+	float: left;
+    position: relative;
+    z-index: 1;
+}
+.phone-icon img{
+	padding: 22px 16px 16px 0px;
+
+}
+.phone-text{
+	font-size: 1.18em;
+}
 /*footer style*/
 footer.page-footer {
 	margin: 0;
@@ -218,7 +234,7 @@ footer.page-footer .footer-copyright {
 div.container.footer-copyright {
 	font-size: 0.8em;
 }
-footer.fixed{
+nav.phone{
 	width: 100%;
 	position:fixed;
 	bottom: 0;

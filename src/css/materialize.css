@@ -1033,7 +1033,7 @@ td, th {
   }
 }
 */
-/*
+
 .collection {
   margin: 0.5rem 0 1rem 0;
   border: 1px solid #e0e0e0;
@@ -1124,7 +1124,7 @@ td, th {
 .collection.with-header .collection-item.avatar {
   padding-left: 72px;
 }
-*/
+
 .secondary-content {
   float: right;
   color: #26a69a;

@@ -28,6 +28,20 @@
        width="6"
        patternUnits="userSpaceOnUse"
        id="EMFhbasepattern" />
+    <pattern
+       y="0"
+       x="0"
+       height="6"
+       width="6"
+       patternUnits="userSpaceOnUse"
+       id="EMFhbasepattern-3" />
+    <pattern
+       y="0"
+       x="0"
+       height="6"
+       width="6"
+       patternUnits="userSpaceOnUse"
+       id="EMFhbasepattern-9" />
   </defs>
   <sodipodi:namedview
      id="base"
@@ -36,9 +50,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="5.6"
-     inkscape:cx="21.364943"
-     inkscape:cy="41.432381"
+     inkscape:zoom="7.919596"
+     inkscape:cx="35.333174"
+     inkscape:cy="30.636618"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -107,38 +121,38 @@
        style="clip-rule:evenodd;fill:#f16136;fill-opacity:1;fill-rule:evenodd;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision" />
     <g
        style="clip-rule:evenodd;fill-rule:evenodd;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"
-       id="g4414"
-       transform="matrix(0.0465369,0,0,0.0465369,-521.32537,682.78509)">
+       id="g4372"
+       transform="matrix(0.04632687,0,0,0.04632687,-518.71179,684.21545)">
       <path
          style="fill:#fefefe"
          inkscape:connector-curvature="0"
-         id="path4416"
-         d="m 11399,7650 c 0,15 5,30 20,30 l 1071,0 c 15,0 20,-15 20,-30 l 0,-630 -1111,0 0,630 z"
-         class="fil3" />
+         id="path4374"
+         d="m 11402,7647 c 0,15 4,30 20,30 l 1065,0 c 15,0 20,-15 20,-30 l 0,-628 -1105,0 0,628 z"
+         class="fil2" />
       <path
          style="fill:#fefefe"
          inkscape:connector-curvature="0"
-         id="path4418"
-         d="m 11529,6724 0,55 -195,0 c -12,0 -20,9 -20,20 l 0,140 c 0,12 3,15 15,15 l 1251,0 c 12,0 15,-3 15,-15 l 0,-140 c 0,-11 -8,-20 -20,-20 l -195,0 c 0,-42 3,-44 -5,-80 l -175,0 c -9,36 -5,38 -5,80 l -481,0 c 0,-42 4,-44 -5,-80 l -175,0 c -3,11 -5,12 -5,25 z"
-         class="fil3" />
+         id="path4376"
+         d="m 11531,6726 0,54 -194,0 c -12,0 -20,9 -20,20 l 0,140 c 0,11 4,15 15,15 l 1245,0 c 11,0 15,-4 15,-15 l 0,-140 c 0,-11 -9,-20 -20,-20 l -194,0 c 0,-42 3,-44 -5,-79 l -175,0 c -8,35 -5,37 -5,79 l -478,0 c 0,-42 4,-44 -5,-79 l -174,0 c -2,11 -5,11 -5,25 z"
+         class="fil2" />
     </g>
     <polygon
-       style="clip-rule:evenodd;fill:#f16136;fill-rule:evenodd;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision;fill-opacity:1"
-       id="polygon4420"
-       points="11642,7288 11565,7288 11565,7222 11500,7222 11500,7145 11565,7145 11565,7080 11642,7080 11642,7145 11708,7145 11708,7222 11642,7222 "
-       class="fil4"
-       transform="matrix(0.0465369,0,0,0.0465369,-521.32537,682.78509)" />
+       style="clip-rule:evenodd;fill:#222d55;fill-opacity:1;fill-rule:evenodd;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"
+       id="polygon4378"
+       points="11643,7079 11643,7145 11709,7145 11709,7221 11643,7221 11643,7286 11567,7286 11567,7221 11502,7221 11502,7145 11567,7145 11567,7079 "
+       class="fil1"
+       transform="matrix(0.04632687,0,0,0.04632687,-518.71179,684.21545)" />
     <polygon
-       style="clip-rule:evenodd;fill:#f16136;fill-rule:evenodd;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision;fill-opacity:1"
-       id="polygon4422"
-       points="12198,7227 12198,7151 12406,7151 12406,7227 "
-       class="fil4"
-       transform="matrix(0.0465369,0,0,0.0465369,-521.32537,682.78509)" />
+       style="clip-rule:evenodd;fill:#222d55;fill-opacity:1;fill-rule:evenodd;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"
+       id="polygon4380"
+       points="12403,7226 12196,7226 12196,7150 12403,7150 "
+       class="fil1"
+       transform="matrix(0.04632687,0,0,0.04632687,-518.71179,684.21545)" />
     <path
-       class="fil4"
-       d="m 14.733176,1000.1202 c 0,2.7457 1.303033,3.2575 3.350658,5.3517 1.535718,1.5358 11.355003,11.1224 11.866909,11.9135 -0.511906,0.7446 -10.331191,10.3776 -11.866909,11.9134 -2.047625,2.0476 -3.350658,2.6062 -3.350658,5.3517 0,1.4892 1.489182,2.9785 3.024899,2.9785 2.699141,0 3.257583,-1.3031 5.305207,-3.3506 1.535718,-1.5358 11.168856,-11.3086 11.913446,-11.8205 0.791128,0.5119 10.424265,10.2847 11.913447,11.8205 2.09416,2.0475 2.652604,3.3506 5.351743,3.3506 1.535717,0 3.024898,-1.4893 3.024898,-2.9785 0,-2.7455 -1.303033,-3.3041 -3.350657,-5.3517 -1.535716,-1.5358 -11.355003,-11.1688 -11.866909,-11.9134 0.511906,-0.7911 10.331193,-10.3777 11.866909,-11.9135 2.047624,-2.0942 3.350657,-2.606 3.350657,-5.3517 0,-1.53565 -1.489181,-3.02493 -3.024898,-3.02493 -2.699139,0 -3.257583,1.30314 -5.351743,3.35063 -1.489182,1.5358 -11.122319,11.3551 -11.913447,11.8669 -0.74459,-0.5118 -10.377728,-10.3311 -11.913446,-11.8669 -2.047624,-2.04749 -2.606066,-3.35063 -5.305207,-3.35063 -1.535717,0 -3.024899,1.48928 -3.024899,3.02493 z"
-       id="path4424"
+       class="fil3"
+       d="m 15.020098,1000.1647 c 0,2.6869 1.297153,3.2428 3.335535,5.2813 1.528788,1.5288 11.211103,11.0258 11.720699,11.8133 -0.509596,0.7413 -10.191911,10.2846 -11.720699,11.7671 -2.038382,2.0384 -3.335535,2.5943 -3.335535,5.3276 0,1.4824 1.48246,2.9649 2.964921,2.9649 2.733285,0 3.289208,-1.2971 5.32759,-3.3355 1.48246,-1.5288 11.025795,-11.2111 11.767026,-11.7208 0.787556,0.5097 10.284565,10.192 11.813351,11.7208 2.038384,2.0384 2.594305,3.3355 5.281263,3.3355 1.528788,0 3.011248,-1.4825 3.011248,-2.9649 0,-2.7333 -1.297153,-3.2892 -3.335535,-5.3276 -1.528786,-1.4825 -11.211103,-11.0258 -11.720699,-11.7671 0.509596,-0.7875 10.191913,-10.2845 11.720699,-11.8133 2.038382,-2.0385 3.335535,-2.5944 3.335535,-5.2813 0,-1.52882 -1.48246,-3.0112 -3.011248,-3.0112 -2.686958,0 -3.242879,1.29712 -5.281263,3.3356 -1.528786,1.5286 -11.025795,11.2111 -11.813351,11.7206 -0.741231,-0.5095 -10.284566,-10.192 -11.767026,-11.7206 -2.038382,-2.03848 -2.594305,-3.3356 -5.32759,-3.3356 -1.482461,0 -2.964921,1.48238 -2.964921,3.0112 z"
+       id="path4382"
        inkscape:connector-curvature="0"
-       style="clip-rule:evenodd;fill:#f16136;fill-rule:evenodd;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision;fill-opacity:1" />
+       style="clip-rule:evenodd;fill:#f16136;fill-opacity:1;fill-rule:evenodd;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision" />
   </g>
 </svg>

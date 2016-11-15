@@ -65,8 +65,8 @@ ventajas2:
  #   img: /images/iconos/stop.jpg
 opcionalesTitulo: "Servicios opcionales"
 opcionales:
-  - titulo: Apagado remoto del vehiculo
-    img: /images/iconos/paraguas.jpg
+  - titulo: Apagado remoto del motor
+    img: /images/iconos/stop.jpg
   - titulo: llamada a Cabina
     img: /images/iconos/headphones.jpg
   - titulo: Alarma puerta abierta
@@ -103,6 +103,11 @@ banner2:
  boton: Llámanos!
  accion: "#modal-inscripcion"
  class: "modal-trigger"
+
+frase:
+ img: "/images/finish.jpg"
+ titulo: "Más de 500 clientes ya confían en nosotros"
+ subtitulo: "Es hora de tomar el control y seguridad de tus activos"
 ---
 <!DOCTYPE html>
 <html lang="es">
@@ -133,15 +138,8 @@ banner2:
         <br>
     </div>
 	</main>
-  <div class="center cover fixed" style="background-image: url(/images/finish.jpg)">
-    <div class="container " >
-      <br>
-      <br>
-      <h1 class="white-text center imp-2 shadow-text">Más de 500 clientes ya confían en nosotros</h1>
-      <h3 class="white-text center shadow-text">Es hora de tomar el control y seguridad de tus activos</h3>
-      <br><br>
-    </div>
-  </div>
+  {{>sections/closing-statement info=front.frase}}
+
 	{{>footer-landing}}
 	<script src="/js/min.js"></script>
 	{{>microdatos}}
