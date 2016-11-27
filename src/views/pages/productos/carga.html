@@ -102,10 +102,10 @@ banner1:
  class: "modal-trigger"
 
 banner2:
- texto: "Ya que conoces a nuestros clientes:"
- boton: Llámanos!
- accion: "#modal-inscripcion"
- class: "modal-trigger"
+  texto: Instalamos equipos los 7 días de la semana
+  boton: Pide una Cotización.
+  accion: "#modal-inscripcion"
+  class: "modal-trigger"
 
 frase:
  img: "/images/camion-oscuro.jpg"
@@ -127,6 +127,7 @@ frase:
 	{{>analytics}}
 	{{>navegacion-landing info=front.hero}}
 	<main>
+    {{>sections/mini-banner-reloj info=front.banner2}}
     {{>sections/6ventajas info=front.ventajas}}
     {{>sections/mini-banner-boton info=front.banner1}}
     {{>sections/otrasVentajas info=front.ventajas2 title=front.ventajas2Titulo}}

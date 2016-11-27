@@ -309,10 +309,12 @@ img.otras-ventajas{
 	margin-top: 15px;
 	margin-bottom: 15px;
 	border-radius: 10px;
+	border: 2px solid #f16136;
 }
 img.ventajas-6{
 	width: 100px;
 	height: 100px;
+	border: 2px solid #f16136;
 }
 #experiencia-img{
  max-height:150px;
@@ -411,4 +413,105 @@ span.imp-2{
 }
 .input-field.white-input input[type=text] {
     border-bottom: 1px solid white;
+}
+/*CLOCK */
+.clock {
+   width: 100px;
+   height: 100px;
+   border:3px solid tomato;
+	 background: #2E3C6E;
+   margin: 0 auto;
+   border-radius: 50%;
+   position: relative;
+	 margin-top: -100px;
+	top: 75px;
+}
+
+.short-hand, .long-hand {
+   width: 2px;
+   background: #fff;
+   position: absolute;
+   top: 47px;
+   left: 47px;
+   -webkit-transform: rotate(-180deg);
+   -moz-transform: rotate(-180deg);
+   -o-transform: rotate(-180deg);
+   transform: rotate(-180deg);
+   -webkit-transform-origin: 0 1px;
+   -moz-transform-origin: 0 1px;
+   -o-transform-origin: 0 1px;
+   transform-origin: 0 1px;
+}
+
+.nut {
+   width: 14px;
+   height: 14px;
+   border-radius: 50%;
+   position: absolute;
+   top: 41px;
+   left: 41px;
+   background: #fff
+}
+
+.short-hand {
+   height: 30px;
+   -webkit-animation: rotation 60s infinite linear;
+   -moz-animation: rotation 60s infinite linear;
+   -o-animation: rotation 60s infinite linear;
+   animation: rotation 60s infinite linear
+}
+.long-hand {
+   height: 40px;
+   -webkit-animation: rotation 8s infinite linear;
+   -moz-animation: rotation 8s infinite linear;
+   -o-animation: rotation 8s infinite linear;
+   animation: rotation 8s infinite linear
+}
+
+@-webkit-keyframes rotation {
+   0% {
+      -webkit-transform: rotate(-180deg);
+      transform: rotate(-180deg);
+   }
+   100% {
+      -webkit-transform: rotate(180deg);
+      transform: rotate(180deg);
+   }
+}
+
+@-moz-keyframes rotation {
+   0% {
+      -moz-transform: rotate(-180deg);
+      transform: rotate(-180deg);
+   }
+   100% {
+      -moz-transform: rotate(180deg);
+      transform: rotate(180deg);
+   }
+}
+
+@-o-keyframes rotation {
+   0% {
+      -o-transform: rotate(-180deg);
+      transform: rotate(-180deg);
+   }
+   100% {
+      -o-transform: rotate(180deg);
+      transform: rotate(180deg);
+   }
+}
+
+@keyframes rotation {
+   0% {
+      -webkit-transform: rotate(-180deg);
+      -moz-transform: rotate(-180deg);
+      -o-transform: rotate(-180deg);
+      transform: rotate(-180deg);
+   }
+   100% {
+      -webkit-transform: rotate(180deg);
+      -moz-transform: rotate(180deg);
+      -o-transform: rotate(180deg);
+      transform: rotate(180deg);
+   }
 }
