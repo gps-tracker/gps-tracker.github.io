@@ -52,7 +52,7 @@
 				$('#cap4').css('margin-top', '0px');
 				$('#cap4').css('margin-bottom', '0px');
 				$('#cap4').css('position', 'absolute');
-				$('#cap4').css('top', (1)*h*(1/4)+'px');
+				$('#cap4').css('top', (1)*h*(1/10)+'px');
 				$('#cap4').css('width', '100%');
 			}
 		}
