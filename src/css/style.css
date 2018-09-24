@@ -160,7 +160,7 @@ nav{
 	z-index: 1003;
 }
 .brand-logo img,.brand-logo object {
-	height: 50px;
+	height: 30px;
 	padding-left: 8px;
 }
 @media only screen and (min-width:601px) {
@@ -175,7 +175,9 @@ nav{
 		transition: all 0.4s;
 	}
 	.brand-logo img,.brand-logo object {
-		height: 57px;
+		height: 37px;
+		margin-top: 10px;
+		margin-left: 10px;
 		z-index: 100;
 	}
 	.affix,
