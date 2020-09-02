@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Pagina Web de GPS Tracker",
   "main": "gulpfile.js",
+  "engines": {
+    "node": "~8"
+  },
   "scripts": {
     "test": "gulp",
     "start": "gulp",
@@ -48,3 +51,4 @@
     "time-require": "^0.1.2"
   }
 }
+ 
