@@ -1,16 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&display=swap');
 /*SET FONT FAMILY*/
 html {
-	font-family: "Eras ITC",'Trebuchet MS',sans-serif;
+	/* font-family: "Eras ITC",'Trebuchet MS',sans-serif; */
 	font-weight: 500;
+	font-family: 'Poppins', sans-serif !important;
 }
 p{
-	font-family: sans-serif;
+	/* font-family: sans-serif; */
 	line-height: 1.7rem;
 	font-size: 18px;
 	font-weight: 400;
 }
 .btn{
 	font-size: 14.5px;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 /*sticky footer*/
 main {
@@ -25,6 +28,8 @@ h1 {
 }
 h2 {
 	font-size: 1.9em;
+	margin-top: 60px;
+	margin-bottom: 60px;
 }
 h3 {
 	font-size: 1.8em;
@@ -70,8 +75,8 @@ h5 {
 	position:relative;
 	top: -64px;
 	margin-bottom: -64px;
-	padding-top: 250px;
-	padding-bottom: 150px;
+	padding-top: 300px;
+	padding-bottom: 200px;
 }
 /*Bold and shadow text helper*/
 .bold {
@@ -277,6 +282,9 @@ nav.phone{
 	color: black;
 	font-size: 1.3em;
 }
+.btn-large, .card{
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
 
 /*weid orange button style*/
 .btn-large.orange:not(.btn-floating) {
@@ -304,19 +312,22 @@ nav.phone{
 .btn-large.orange.btn-floating i {
 	text-transform: none;
 	font-size: 1.7em;
-	transition: all 0.3s;
+	transition: all 0.3s;   
 }
+
 
 img.otras-ventajas{
 	margin-top: 15px;
 	margin-bottom: 15px;
 	border-radius: 10px;
-	border: 2px solid #f16136;
+	/* border: 2px solid #f16136; */
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 img.ventajas-6{
 	width: 100px;
 	height: 100px;
-	border: 2px solid #f16136;
+	/* border: 2px solid #f16136; */
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 #experiencia-img{
  max-height:150px;
@@ -327,7 +338,7 @@ img.ventajas-6{
 	font-size: 25px;
 	position: absolute;
    width: 100%;
-	font-family: "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans-serif;
+	/* font-family: "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans-serif; */
 }
 .imp-2 {
 	font-size:  45px;
@@ -468,6 +479,10 @@ span.imp-2{
    -moz-animation: rotation 8s infinite linear;
    -o-animation: rotation 8s infinite linear;
    animation: rotation 8s infinite linear
+}
+
+#acerca-de-nosotros-text{
+	margin-bottom: 80px;
 }
 
 @-webkit-keyframes rotation {
