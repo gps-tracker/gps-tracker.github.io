@@ -14,6 +14,7 @@ p{
 .btn{
 	font-size: 14.5px;
 	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	border-radius: 15px;
 }
 /*sticky footer*/
 main {
@@ -286,6 +287,22 @@ nav.phone{
 	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
+.card-image{
+	border-radius: 15px 15px 0 0;
+}
+.card .card-action, .card{
+	border-radius: 15px;
+}
+.card .card-image img{
+	border-radius: 15px 15px 0px 0px;
+}
+ 
+#mas-planes-btn, #mas-servicios-btn {
+	margin-top: 45px;
+	margin-bottom: 35px;
+	border-radius: 15px;
+}
+
 /*weid orange button style*/
 .btn-large.orange:not(.btn-floating) {
 	text-transform: none;
@@ -319,7 +336,7 @@ nav.phone{
 img.otras-ventajas{
 	margin-top: 15px;
 	margin-bottom: 15px;
-	border-radius: 10px;
+	border-radius: 15px;
 	/* border: 2px solid #f16136; */
 	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
@@ -332,6 +349,10 @@ img.ventajas-6{
 #experiencia-img{
  max-height:150px;
  margin-top:20px;
+}
+
+#section-ventajas{
+	margin-bottom: 30px;
 }
 
 .impacto {
