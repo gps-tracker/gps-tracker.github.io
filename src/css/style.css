@@ -77,7 +77,7 @@ h5 {
 	top: -64px;
 	margin-bottom: -64px;
 	padding-top: 300px;
-	padding-bottom: 200px;
+	padding-bottom: 100px;
 }
 /*Bold and shadow text helper*/
 .bold {
@@ -153,7 +153,8 @@ nav ul a:hover {
 }
 nav{
 	    transition: all 0.5s;
-}
+			border-radius: 15px 15px 15px 15px;
+		}
 .nav.fix {
 	/*margin-bottom: -64px;*/
 	position: fixed;
@@ -164,6 +165,7 @@ nav{
 }
 .pinned {
 	z-index: 1003;
+	border-radius: 0px;
 }
 .brand-logo img,.brand-logo object {
 	height: 30px;
@@ -346,6 +348,23 @@ img.ventajas-6{
 	/* border: 2px solid #f16136; */
 	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
+img.integracion-img{
+	width: 180px;
+	padding: 10px;
+
+}
+
+img.integracion-img-top{
+	width: 120px;
+	filter: drop-shadow(0px 0px 1px white);
+	padding: 10px;
+}
+img.gps-img{
+	width: 100px;
+	padding: 10px;
+	filter: drop-shadow(0px 0px 0px black);
+}
+
 #experiencia-img{
  max-height:150px;
  margin-top:20px;

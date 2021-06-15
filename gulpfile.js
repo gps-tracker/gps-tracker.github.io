@@ -151,7 +151,7 @@ gulp.task('default', gulp.parallel('browser-sync','js','css','build','svg','img'
 	gulp.watch('./src/js/*.js',   gulp.series(['js']));
 	gulp.watch('./src/**/*.css',  gulp.series(['css']));
 	gulp.watch('./src/root/*',  gulp.series(['browser-sync','root','css-root']));
-	//gulp.watch('./dist/**/*.html', ['bs-reload']);
+	gulp.watch('./dist/**/*.html',  gulp.series(['bs-reload']));
 	gulp.watch(['./src/views/**/*'], gulp.series(['build-watch']));
 	gulp.watch('./src/images/**/*.svg', gulp.series(['svg']));
 	gulp.watch('src/**/*.+(png|jpg|jpeg|gif)', gulp.series(['img']));
