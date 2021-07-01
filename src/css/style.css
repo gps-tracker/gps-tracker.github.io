@@ -16,6 +16,34 @@ p{
 	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 	border-radius: 15px;
 }
+.whatsapp-btn{
+	background-color: #00e676;
+	display: block;
+	position: fixed;
+	width: 50px;
+	height: 50px;
+	bottom: 10px;
+	right: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 100px;
+	box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
+	transition: all 0.3s;
+}
+.whatsapp-btn svg{
+	color:white;
+	width: 33px;
+}
+.whatsapp-btn:hover {
+	font-size: 2.6em;
+	background-color: #075e54;
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+
+}
+
+
 /*sticky footer*/
 main {
 	flex: 1 0 auto;
