@@ -35,7 +35,6 @@
     "gulp-hb": "^8.0.0",
     "gulp-htmlmin": "^5.0.1",
     "gulp-imagemin": "^7.1.0",
-    "gulp-inline-image-html": "^0.2.5",
     "gulp-jshint": "^2.1.0",
     "gulp-jsmin": "^0.1.5",
     "gulp-notify": "^4.0.0",

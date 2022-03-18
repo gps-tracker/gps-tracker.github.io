@@ -15,7 +15,6 @@ var plumber = require('gulp-plumber');
 var notify = require('gulp-notify');
 //var sourcemaps = require('gulp-sourcemaps');
 var ghPages = require('gulp-gh-pages');
-//var inlineImg = require('gulp-inline-image-html');
 
 /*///////////////////////////////////////
 Send a message in error
