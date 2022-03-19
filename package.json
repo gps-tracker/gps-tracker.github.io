@@ -51,5 +51,8 @@
   },
   "dependencies": {
     "gift": "^0.10.2"
+  },
+  "resolutions": {
+    "gift": "^0.10.2"
   }
 }
